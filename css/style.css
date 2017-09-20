@@ -1,0 +1,34 @@
+#headingOne {
+    /*margin: auto;
+    width: 25%;*/
+}
+#spanProject {
+
+}
+#developersDiv{
+    /*margin: auto;
+    width: 20%;*/
+}
+
+#liste {
+    list-style-type: none;
+    padding: 0;
+}
+body {
+    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
+    margin: auto;
+    text-align: center;
+}
+#problems {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+#problemsList {
+    text-align: left;
+    list-style-type: none;
+}
+p {
+    margin: auto;
+    width: 400px;
+}
