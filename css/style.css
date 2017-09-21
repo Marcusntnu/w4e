@@ -13,76 +13,46 @@
 #liste {
     list-style-type: none;
     padding: 0;
+    font-weight: bold;
+
 }
 body {
+    font-size: 17px;
     font-family: "Proxima Nova", "Times New Roman", "sans-serif";
-    margin: auto;
-    text-align: center;
-    width:1000px;
-    height:auto;
-    background-color: #feefc6;
-
-
+    line-height: 150%;
+    /*margin: auto;
+    text-align: center;*/
 }
-.double-border {
-
-    background-color: #ffffff;
-    border: 2px solid black;
-    padding: 2em;
-    width: 600px;
-    height: auto;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.double-border:before {
-    background: none;
-    border: 8px solid #aeccca;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    right: 4px;
-    bottom: 4px;
-    pointer-events: none;
-}
-#headingOne{
-    color: #e99d87;
-    text-shadow: 2px 2px 0px #f7d1aa; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
-
-    /*text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;*/
-}
-#page{
-    position:relative;
-    width: 600px;
-/*
-    border: 10px solid #aeccca;
-    padding: 25px;
-    margin: auto;
-    margin-top: 50px;
-    background-color: #ffffff;*/
-
-    text-align: center;
-
-
-
-}
-
-#problems {
+/*#problems {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-}
+}*/
 #problemsList {
     text-align: left;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 25%;
     list-style-type: none;
 }
 p {
     margin: auto;
-    width: 400px;
+    width: 500px;
+}
+#page {
+    margin: auto;
+    width: 600px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 5px;
+}
+#page:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #ffea00;
 }
