@@ -20,6 +20,9 @@ body {
     font-size: 17px;
     font-family: "Proxima Nova", "Times New Roman", "sans-serif";
     line-height: 150%;
+   /* #background-color: #ffe6a2;*/
+    background-image: url("https://cdn.dribbble.com/users/26059/screenshots/428707/beerpattern.jpg");
+    background-repeat: repeat;
     /*margin: auto;
     text-align: center;*/
 }
@@ -42,7 +45,6 @@ p {
 #page {
     margin: auto;
     width: 600px;
-    background-color: antiquewhite;
     text-align: center;
     padding: 5px;
 }
@@ -55,4 +57,45 @@ p {
     right: 5px;
     bottom: 5px;
     border: 5px solid #ffea00;
+}
+
+
+
+
+.double-border {
+
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 2em;
+    width: 600px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.double-border:before {
+    background: none;
+    border: 8px solid #aeccca;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    pointer-events: none;
+}
+#headingOne,h2{
+    color: #c9587b;
+    text-shadow: 1px 1px 0px #d0b08f; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+
+}
+#page{
+    position:relative;
+    width: 600px;
+
+    text-align: center;
+
+
+
 }
