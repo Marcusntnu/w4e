@@ -6,6 +6,7 @@
 
 }
 #developersDiv{
+    font-style: italic;
     /*margin: auto;
     width: 20%;*/
 }
@@ -87,7 +88,7 @@ p {
 }
 #headingOne,h2{
     color: #c9587b;
-    text-shadow: 1px 1px 0px #d0b08f; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    text-shadow: 1px 1px 0 #d0b08f; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 
 }
 #page{
