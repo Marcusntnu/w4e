@@ -72,11 +72,10 @@ p {
     bottom: 4px;
     pointer-events: none;
 }
-
-
 #headingOne,h2 {
     color: #c9587b;
     text-shadow: 1px 1px 0 #d0b08f;
+    text-align: center;
 }
 #innholdListe {
     padding: 0;
@@ -90,6 +89,6 @@ p {
     font-weight: 100;
     text-align: center;
 }
-#spesielleKravListe{
-    text-align: center;
+#spesielleKrav{
+    text-align:center;
 }
