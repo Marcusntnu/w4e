@@ -75,15 +75,20 @@ p {
 
 #headingOne,h2 {
     color: #c9587b;
-    text-shadow: 1px 1px 0 #d0b08f; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    text-shadow: 1px 1px 0 #d0b08f;
 }
 #innholdListe {
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 #innholdListe>li {
+    list-style-type: none;
     font-weight: bold;
 }
 #innholdListe>li>p {
     font-weight: 100;
+    text-align: center;
+}
+#spesielleKravListe{
+    text-align: center;
 }
