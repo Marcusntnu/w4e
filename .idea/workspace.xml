@@ -31,8 +31,13 @@
       <file leaf-file-name="P1_requirements.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/P1_requirements.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="156">
               <caret line="77" column="14" lean-forward="false" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
+=======
+            <state relative-caret-position="307">
+              <caret line="30" column="86" lean-forward="false" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
+>>>>>>> c7c08e8b305b3bfeb2ef230d51bae09d239db272
               <folding />
             </state>
           </provider>
@@ -169,8 +174,13 @@
       <workItem from="1505982509959" duration="3245000" />
       <workItem from="1505986079798" duration="1028000" />
       <workItem from="1506335341863" duration="2918000" />
+<<<<<<< HEAD
       <workItem from="1506338884458" duration="1685000" />
       <workItem from="1506430253050" duration="1214000" />
+=======
+      <workItem from="1506338884458" duration="2183000" />
+      <workItem from="1506430204194" duration="229000" />
+>>>>>>> c7c08e8b305b3bfeb2ef230d51bae09d239db272
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1505845127274</created>
@@ -228,14 +238,28 @@
       <option name="project" value="LOCAL" />
       <updated>1506338300022</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated P1">
+      <created>1506341010903</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1506341010903</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="12480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="61" width="1280" height="723" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="11993000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1280" height="723" extended-state="6" />
+>>>>>>> c7c08e8b305b3bfeb2ef230d51bae09d239db272
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -269,7 +293,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Webstorm test" />
     <MESSAGE value="Updatet P1 and Style" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updatet P1 and Style" />
+    <MESSAGE value="Updated P1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated P1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -295,7 +320,11 @@
     <entry file="file://$PROJECT_DIR$/P1_requirements.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2265">
+<<<<<<< HEAD
           <caret line="151" column="86" lean-forward="true" selection-start-line="151" selection-start-column="86" selection-end-line="151" selection-end-column="86" />
+=======
+          <caret line="151" column="86" lean-forward="false" selection-start-line="151" selection-start-column="86" selection-end-line="151" selection-end-column="86" />
+>>>>>>> c7c08e8b305b3bfeb2ef230d51bae09d239db272
           <folding />
         </state>
       </provider>
@@ -518,8 +547,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/P1_requirements.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="156">
           <caret line="77" column="14" lean-forward="false" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
+=======
+        <state relative-caret-position="307">
+          <caret line="30" column="86" lean-forward="false" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
+>>>>>>> c7c08e8b305b3bfeb2ef230d51bae09d239db272
           <folding />
         </state>
       </provider>
