@@ -33,7 +33,7 @@ p {
 #page {
     position:relative;
     margin: auto;
-    width: 600px;
+    width: 700px;
     text-align: center;
     padding: 5px;
 }
@@ -53,7 +53,7 @@ p {
     background-color: #ffffff;
     border: 2px solid black;
     padding: 2em;
-    width: 600px;
+    width: 700px;
     height: auto;
     position: relative;
     margin: 0 auto;
@@ -73,13 +73,14 @@ p {
     pointer-events: none;
 }
 
+
 #headingOne,h2 {
     color: #c9587b;
     text-shadow: 1px 1px 0 #d0b08f; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 }
 #innholdListe {
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 #innholdListe>li {
     font-weight: bold;
