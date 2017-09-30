@@ -92,3 +92,11 @@ p {
 #spesielleKrav{
     text-align:center;
 }
+a {
+    color: #c9587b;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 110%;
+    color: #b45569;    
+}
