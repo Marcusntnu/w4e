@@ -13,7 +13,7 @@ body {
     font-size: 17px;
     font-family: "Proxima Nova", "Times New Roman", "sans-serif";
     line-height: 150%;
-    background-image: url("https://cdn.dribbble.com/users/26059/screenshots/428707/beerpattern.jpg");
+    background-image: url("../images/beerpattern3.jpg");
     background-repeat: repeat;
 }
 
@@ -23,6 +23,18 @@ body {
     margin-bottom: 10px;
     width: 25%;
     list-style-type: none;
+}
+#logoBilde{
+    width:200px;
+    heigh:auto;
+}
+
+.link{
+    position:relative;
+    top:-20px;
+
+    font-size:16px;
+
 }
 
 p {
@@ -74,8 +86,21 @@ p {
 }
 #headingOne,h2 {
     color: #c9587b;
-    text-shadow: 1px 1px 0 #d0b08f;
+    text-shadow: 1px 1px 1px #d0b08f;
     text-align: center;
+
+
+}
+#headingOne{
+    position:relative;
+    top:-20px;
+}
+hr{
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
 }
 #innholdListe {
     padding: 0;
@@ -97,6 +122,6 @@ a {
     text-decoration: none;
 }
 a:hover {
-    font-size: 110%;
+    font-size: 102%;
     color: #b45569;    
 }
