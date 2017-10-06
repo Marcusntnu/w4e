@@ -7,9 +7,11 @@ ul {
 
 li {
     float: left;
+
 }
 
 li a {
+
     display: block;
     color: lightgrey;
     text-align: center;
@@ -27,8 +29,12 @@ nav {
 }
 #logo {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+
+    position:absolute;
+    top:-50%; bottom:-50%;
+    margin:auto;
+    width: 100%;
+    height: auto;
 }
 body {
     background-image: url("../images/beerpattern3.jpg");
