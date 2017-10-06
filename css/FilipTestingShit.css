@@ -1,0 +1,52 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+
+}
+
+li a {
+    display: block;
+    color: lightgrey;
+
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+nav {
+    margin: auto;
+    width: 50%;
+    background-color: #b4501a
+}
+#logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top:50px;
+}
+body {
+    background-image: url("../images/beerpattern3.jpg");
+}
+
+.linkVenstre{
+
+    text-align:left;
+    float:left;
+
+}
+
+.linkHoyre{
+
+    text-align:right;
+    float:right;
+
+}
