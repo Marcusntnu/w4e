@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <title>P1 requirements</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="images/gbLogo.png" type="image/x-icon"/>
 </head>
 <body>
 <div class="double-border">
     <div id="page">
-        <a href="#kunde">Kunde</a>
-        <a href="#klientrepresentant">Klientrepresentant</a>
-        <a href="#rådgiver">Rådgiver</a>
-        <a href="#mål">Mål</a>
-        <a href="#publikum">Publikum</a>
-        <a href="#innhold">Innhold</a>
-        <a href="#spesielleKrav">Spesielle Krav</a>
-        <a href="#domain">Domene</a>
-        <a href="#utfordringer">Utfordringer</a>
+        <a class="link" href="#kunde">Kunde |</a>
+        <a class="link" href="#klientrepresentant">Klientrepresentant |</a>
+        <a class="link" href="#rådgiver">Rådgiver |</a>
+        <a class="link" href="#mål">Mål |</a>
+        <a class="link" href="#publikum">Publikum |</a>
+        <a class="link" href="#innhold">Innhold |</a>
+        <a class="link" href="#spesielleKrav">Spesielle Krav |</a>
+        <a class="link" href="#domain">Domene |</a>
+        <a class="link" href="#utfordringer">Utfordringer</a>
 
         <div id="developersDiv">
             <h1 id="headingOne">Project requirements</h1>
@@ -32,12 +31,15 @@
             </ul>
         </div>
             <hr/>
+        <br/>
         <section id="kunde">
             <h2>Vår kunde</h2>
             <p><b>Gløshaugen Bryggeforum</b></p>
             <p>Gløshaugen bryggeforum er en paraplyorganisasjon for alle bryggelaugene på Gløshaugen campus, ledet av Trod Standnes.</p>
-
-            <img src="images/gbLogo.png" alt="Logo til GB" width="400px" height="300px">
+            <br>
+            <img id="logoBilde" src="images/gbLogo.png" alt="Logo til GB"> <!--- width="400px" height="300px"--->
+            <br>
+            Bryggeforumet sin logo
         </section>
 
         <section id="klientrepresentant">
@@ -72,7 +74,7 @@
         <section id="innhold">
             <h2>Innholdet til nettsiden</h2>
             <ol id="innholdListe">
-                    Her er en liste over hvilke sider vi planlegger å ha på nettiden
+                    Her er en liste over hvilke sider vi planlegger å ha på nettsiden
                 <li>
                     "Om"
                     <p>
@@ -93,8 +95,8 @@
                 <li>
                     "Bildegalleri"
                     <p>
-                        Denne seksjonen skal inneholde et bildegalleri med bilder fra GBs arrangementer. Dette skal gi et innblikk for hvordan det er å være med på et bryggelaug
-                    </p>.
+                        Denne seksjonen skal inneholde et bildegalleri med bilder fra GBs arrangementer. Dette skal gi et innblikk for hvordan det er å være med på et bryggelaug.
+                    </p>
                 </li>
                 <br>
                 <li>
@@ -156,12 +158,30 @@
                 Annet enn dette står vi fritt til å utforme nettsiden slik vi ønsker.-->
             </p>
             <p>
+
+                <h3>Funksjonelle krav</h3>
+                Bildegalleriet skal ha en slideshowfunksjon, samt en grid visning.
+                <br><br>
+                Bryggelaugene sin facebook side skal være en del av informasjonen om laugene
+            <!-- https://developers.facebook.com/docs/plugins/page-plugin/-->
+            <br><br>
+
+            Mer informasjon om et bryggelaug skal vises når du trykker på et bryggelaug, med grafisk indikasjon.
+                <br><br>
+                Nettsiden skal ha en kalkulator for forskjellige beregninger for hjemmebrygging.
+
+            <br><br>
+                En liste med linker til de forskjellige sidene skal være på toppen av sidene.
+<br><br>
+
+
+
                 <h3>Ikke-funksjonelle krav</h3>
                     Nettsiden skal ha et øltema
                 <br><br>
                     Fargene på nettsiden skal gjenspeile logoen
                 <br><br>
-                    Nettsiden skal være brukervennlig
+                    Nettsiden skal være brukervennlig og oversiktlig
                 <br><br>
                     Liten innlastningstid for bedre opplevelse
                 <br><br>
@@ -169,8 +189,9 @@
                 <br><br>
                     Totalt medlemstall skal vises på forsiden
                 <br><br>
-                <h3>Funksjonelle krav</h3>
-                    Bildegalleriet skal ha en slideshowfunksjon, samt en grid visning.
+                    Profesjonell utseende
+
+
             </p>
         </section>
 
