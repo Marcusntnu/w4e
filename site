@@ -1,0 +1,22 @@
+index.html
+om.html
+bryggelaug.html
+bryggeGuide.html
+bliMedlem.html
+bildeGalleri.html
+beregninger.html
+...
+images/
+    gbLogo.png
+    gjennomsiktigLogo.png
+    gjennomsiktigOutline.png
+    ...
+css/
+    style.css
+    ...
+scripts/
+    slideshow.js
+    expandLaug.js
+    calculator.js
+    olMaaler.js
+    ...
