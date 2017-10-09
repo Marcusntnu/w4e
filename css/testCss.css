@@ -1,24 +1,48 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-li {
-    float: left;
 }
 
 li a {
     display: block;
     color: lightgrey;
+.navt {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+
+
+    background-image: url("../images/testbackground.png");
+
 }
+
+h1{
+    margin-top:0;
+    text-align:center;
+    color:orange;
+}
+.navt li {
+
+    display: inline;
+    text-decoration: none;
+
+}
+.navt a {
 
 li a:hover {
     background-color: #111;
+    display: inline-block;
+    /*padding: 0 12px;*/
+    font-weight: normal;
+    font-size: 1.5vw;
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    /*padding: 14px 16px;*/
+    padding: 14px 0.5vw;
+    font-family:Apple Chancery, sans-serif;
 }
 nav {
     top: 60px;
@@ -40,4 +64,21 @@ nav>ul {
 }
 body {
     background-image: url("../images/beerpattern3.jpg");
+.navt li a:hover {
+    color: white;
+    background-color: pink;
+}
+.navt img {
+    vertical-align: middle;
+}
+
+#logo{
+
+    max-height:200px;
+    width: auto;
+}
+
+p{
+
+    text-align:center;
 }
