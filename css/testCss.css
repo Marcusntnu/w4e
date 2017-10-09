@@ -21,8 +21,6 @@ li a:hover {
     background-color: #111;
 }
 nav {
-    margin: auto;
-    width: 40%;
     top: 60px;
     position: absolute;
     width: 90%;
@@ -38,8 +36,6 @@ nav>ul {
 }
 #logo {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
     align-self: left;
 }
 body {
