@@ -32,3 +32,52 @@
     max-height:200px;
     width: auto;
 }
+#page {
+    position:relative;
+    margin: auto;
+    width: 800px;
+    text-align: center;
+    padding: 5px;
+}
+
+#page:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #ffea00;
+}
+
+.double-border {
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 2em;
+    width: 800px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.double-border:before {
+    background: none;
+    border: 8px solid #aeccca;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    pointer-events: none;
+}
+body {
+    font-size: 17px;
+    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
+    line-height: 150%;
+    background-image: url("../images/beerpattern3.jpg");
+    background-repeat: repeat;
+}

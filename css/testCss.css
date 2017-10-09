@@ -46,6 +46,23 @@ h1{
     padding: 14px 0.5vw;
     font-family:Apple Chancery, sans-serif;
 }
+nav {
+    top: 60px;
+    position: absolute;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: #b4501a
+}
+nav>ul {
+    margin: 0 auto;
+    width: 40%;
+}
+#logo {
+    display: block;
+    align-self: left;
+}
 .navt li a:hover {
     color: white;
     background-color: pink;

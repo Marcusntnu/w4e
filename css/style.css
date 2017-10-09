@@ -13,7 +13,7 @@ body {
     font-size: 17px;
     font-family: "Proxima Nova", "Times New Roman", "sans-serif";
     line-height: 150%;
-    background-image: url("https://cdn.dribbble.com/users/26059/screenshots/428707/beerpattern.jpg");
+    background-image: url("../images/beerpattern3.jpg");
     background-repeat: repeat;
 }
 
@@ -45,7 +45,7 @@ p {
 #page {
     position:relative;
     margin: auto;
-    width: 700px;
+    width: 800px;
     text-align: center;
     padding: 5px;
 }
@@ -65,7 +65,7 @@ p {
     background-color: #ffffff;
     border: 2px solid black;
     padding: 2em;
-    width: 700px;
+    width: 800px;
     height: auto;
     position: relative;
     margin: 0 auto;
@@ -124,4 +124,13 @@ a {
 a:hover {
     font-size: 102%;
     color: #b45569;    
+}
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
 }
