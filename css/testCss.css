@@ -23,12 +23,24 @@ li a:hover {
 nav {
     margin: auto;
     width: 40%;
+    top: 60px;
+    position: absolute;
+    width: 90%;
+    left: px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
     background-color: #b4501a
+}
+nav>ul {
+    margin: 0 auto;
+    width: 40%;
 }
 #logo {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    align-self: left;
 }
 body {
     background-image: url("../images/beerpattern3.jpg");
