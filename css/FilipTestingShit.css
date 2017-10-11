@@ -5,6 +5,9 @@
     text-align: center;
     background-image: url("../images/testbackground.png");
 
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .navt li {
 
@@ -81,6 +84,7 @@ body {
     background-image: url("../images/beerpattern3.jpg");
     background-repeat: repeat;
 }
+<<<<<<< HEAD
 
 .content{
     background-color:#faf5f2;
@@ -101,4 +105,34 @@ h1{
     /* add following */
     background-size:cover;
     background-position:50% 50%;
+=======
+#container {
+    background-color: white;
+    width: 700px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 100px;
+}
+table, th, tr, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table {
+    width: 100%;
+}
+input {
+    width: 40%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+>>>>>>> 4dc150685f5720904b08fdbf36f442562432a80d
 }
