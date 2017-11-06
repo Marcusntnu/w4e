@@ -9,7 +9,7 @@ PURPOSE: Slideshow for the gallery page
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 let slideshow = document.getElementById("slideshow");
-let imageContainer = document.getElementById("content");
+let imageContainer = document.getElementById("imageContainer");
 
 let imageFileNames = [
     {
@@ -78,8 +78,9 @@ prev.onclick = function (evt) {
     slideshow.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 };
 
-function imageClick(evt) {
-    console.log(evt);
+function imageClick(url) {
+    let win = window.open(url, '_blank');
+    win.focus();
 }
 
 
@@ -92,8 +93,7 @@ for(let i = 0; i < imageFileNames.length; i++){
     x.setAttribute("class", "image");
     x.setAttribute("src", "images/bildegalleri/" + imageFileNames[i].fileName);
     x.setAttribute("alt", imageFileNames[i].description);
-
-    x.setAttribute("onclick", "imageClick(this)");
+    x.setAttribute("onclick", "imageClick('http://localhost:63343/w4e/images/bildegalleri/" + imageFileNames[i].fileName + "')");
     y.setAttribute("class", "desc");
     y.innerHTML = imageFileNames[i].description;
     z.appendChild(x);

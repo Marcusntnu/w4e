@@ -44,7 +44,6 @@ p {
 #page {
     position:relative;
     margin: auto;
-
     height: 100vh;
     text-align: center;
     padding: 5px;
@@ -81,11 +80,11 @@ table {
 
 }
 .navt li {
-
+    position: relative;
+    top: 25px;
     display: inline;
 }
 .navt a {
-
     display: inline-block;
     padding: 0 12px;
     font-weight: normal;
@@ -119,12 +118,11 @@ body {
 .content{
     background-color: #faf5f2;
     width: 100%;
-
     display: inline-block;
 }
 #bildeGalleriH1{
     padding-top :0;
-    margin-top: 0;
+    margin-top: 40px;
     text-align: center;
 }
 .image {
@@ -141,10 +139,11 @@ body {
     height:170px;
     margin: 0;
     border:black solid 2px;
+    cursor: pointer;
 }
 #imageContainer{
-    margin-top: 10px;
-    height: 100vh;
+    margin: auto;
+    width: 100vw;
 }
 div.imageGrid{
     margin-top: 40px;
@@ -178,14 +177,19 @@ div.desc{
     color: black;
 }
 
-.previous {
+#prev {
     background-color: #f1f1f1;
     color: black;
+    position: relative;
+    right: 140px;
+    top: 225px;
 }
 
 .next {
     background-color: #4CAF50;
     color: white;
+    position: relative;
+    left: 150px;
 }
 
 .round {

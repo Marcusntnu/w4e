@@ -11,12 +11,12 @@ window.onload = function () {
   navbar.innerHTML = "<ul class=\"navt\">\n" +
       "\n" +
       "\n" +
-      "    <li><a href=\"https://www.google.no\">This</a>\n" +
+      "    <li><a href=\index.html\">Hjem</a>\n" +
       "    </li>\n" +
-      "    <li><a href=\"page.cfm\">And</a>\n" +
+      "    <li><a href=\"om.html\">Om oss</a>\n" +
       "    </li>\n" +
       "\n" +
-      "    <li><a href=\"page.cfm\">And</a>\n" +
+      "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
       "    </li>\n" +
       "    <li>\n" +
       "\n" +
@@ -24,11 +24,11 @@ window.onload = function () {
       "\n" +
       "    </li>\n" +
       "\n" +
-      "    <li><a href=\"page.cfm\">That</a>\n" +
+      "    <li><a href=\"beregninger.html\">Beregninger og tabeller</a>\n" +
       "    </li>\n" +
-      "    <li><a href=\"page.cfm\">Here</a>\n" +
+      "    <li><a href=\"bildegalleri.html\">Bildegalleri</a>\n" +
       "    </li>\n" +
-      "    <li><a href=\"page.cfm\">There</a>\n" +
+      "    <li><a href=\"bryggeguide.html\">Bryggeguide</a>\n" +
       "    </li>\n" +
       "</ul>"
 };
