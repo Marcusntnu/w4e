@@ -20,7 +20,7 @@ window.onload = function () {
       "    </li>\n" +
       "    <li>\n" +
       "\n" +
-      "        <img id=\"logo\" src=\"images/gjennomsiktiglogoOutlineWithShadow.png\" width=\"150px\">\n" +
+      "        <img id=\"logo\" src=\"images/gjennomsiktiglogoOutlineWithShadow.png\">\n" +
       "\n" +
       "    </li>\n" +
       "\n" +
