@@ -1,3 +1,10 @@
+/*
+FILE NAME: scripts/calculator.js
+WRITTEN BY: Sander Bjerklund Lindberg
+WHEN: October 2017
+PURPOSE: Calculator for abv in beer brew
+ */
+
 let og = document.getElementById("og");
 let fg = document.getElementById("fg");
 let result = document.getElementById("result");
