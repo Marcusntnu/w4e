@@ -10,26 +10,28 @@ PURPOSE: Give info on calculations of beer brewing and tables for different beer
     <meta charset="UTF-8">
     <title>Beregninger</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="scripts/navbar.js"></script>
 </head>
 <body>
     <div id="page">
         <div id="navbar"></div>
         <div class="content">
-        <div id="container">
-            <p>Beregn ABV (alkoholprosent) her!</p>
-            <form>
-                <label for="og">Original gravity:</label>
-                <br>
-                <input type="number" name="og" id="og">
-                <br>
-                <label for="fg">Endelig gravity:</label>
-                <br>
-                <input type="number" name="fg" id="fg">
-                <br>
-                <button type="submit" id="btnSubmit">Regn om!</button>
-            </form>
-            <span id="result"></span>
+        <div id="calculatorContainer">
+            <div id="calculator">
+                <form id="calculatorFrm">
+                    <p>Beregn ABV (alkoholprosent) her!</p>
+                    <label for="og">Original gravity:</label>
+                    <br>
+                    <input type="number" name="og" id="og">
+                    <br>
+                    <label for="fg">Endelig gravity:</label>
+                    <br>
+                    <input type="number" name="fg" id="fg">
+                    <br>
+                    <button type="submit" id="btnSubmit">Regn om!</button>
+                    <button tyoe="button" id="btnReset">Tilbakestill</button>
+                </form>
+                <span id="result"></span>
+            </div>
             <br><br>
             <table>
                 <tr>
@@ -133,5 +135,6 @@ PURPOSE: Give info on calculations of beer brewing and tables for different beer
     </div>
     </div>
 <script src="scripts/calculator.js" type="text/javascript"></script>
+<script src="scripts/navbar.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 let slideshow = document.getElementById("slideshow");
 let imageContainer = document.getElementById("imageContainer");
-
+/*
 let imageFileNames = [
     {
         fileName: "1.jpg",
@@ -55,6 +55,51 @@ let imageFileNames = [
         fileName: "10.jpg",
         description: ""
     },
+];*/
+let imageFileNames = [
+    {
+        fileName: "1.png",
+        description: "Nå er Mannhullets IPA fra IPA-off på tapp! Kom og kjøp før det blir tomt!"
+    },
+    {
+        fileName: "2.png",
+        description: "Sigurd Aurvåg Sørum"
+    },
+    {
+        fileName: "3.png",
+        description: "Sigurd Aurvåg Sørum, Andreas Bro Kolstø og Even Wollebæk Førrisdal"
+    },
+    {
+        fileName: "4.png",
+        description: "Gløshaugen Bryggeforum (1) foran Nidarosdomen!"
+    },
+    {
+        fileName: "5.png",
+        description: "Er det det at Haakon og Sigrid alene har blitt satt i spotligthen som utløser frustrasjonen? " +
+        "Men Hvorfor er da Kristian så fornøyd?"
+    },
+    {
+        fileName: "6.png",
+        description: ""
+    },
+    {
+        fileName: "7.png",
+        description: ""
+    },
+    {
+        fileName: "8.png",
+        description: ""
+    },
+    {
+        fileName: "9.png",
+        description: "Maltet har kommet. \n" +
+        "Lagres på samfundet. Kan hentes når det har blitt betalt for. Ta kontakt med " +
+        "<a href='mailto:sampleEmail@domain.com'>Sigbjørn Albert</a>"
+    },
+    {
+        fileName: "10.png",
+        description: ""
+    },
 ];
 
 let i = 0;
@@ -93,7 +138,7 @@ for(let i = 0; i < imageFileNames.length; i++){
     x.setAttribute("class", "image");
     x.setAttribute("src", "images/bildegalleri/" + imageFileNames[i].fileName);
     x.setAttribute("alt", imageFileNames[i].description);
-    x.setAttribute("onclick", "imageClick('http://localhost:63343/w4e/images/bildegalleri/" + imageFileNames[i].fileName + "')");
+    x.setAttribute("onclick", "imageClick('http://localhost:63343/w4e/nettside/images/bildegalleri/" + imageFileNames[i].fileName + "')");
     y.setAttribute("class", "desc");
     y.innerHTML = imageFileNames[i].description;
     z.appendChild(x);

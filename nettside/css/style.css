@@ -70,11 +70,14 @@ table {
     margin-right: auto;
     margin-left: auto;
     width: 60%;
+    position: absolute;
+    right: 10px;
 }
 .navt {
     list-style: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
+    position: relative;
     text-align: center;
     background-image: url("../images/testbackground.png");
 
@@ -83,6 +86,7 @@ table {
     position: relative;
     top: 25px;
     display: inline;
+    left: 60px;
 }
 .navt a {
     display: inline-block;
@@ -198,4 +202,14 @@ div.desc{
 #slideshow {
     width: 200px;
     height: 200px;
+}
+#calculator {
+    margin-top: 40px;
+    position: absolute;
+    left: 0;
+}
+#calculatorContainer {
+    width: 100vw;
+
+    left: -10px;
 }
