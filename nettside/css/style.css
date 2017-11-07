@@ -8,15 +8,6 @@
     font-weight: bold;
 
 }
-
-body {
-    font-size: 17px;
-    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
-    line-height: 150%;
-    background-image: url("../images/beerpattern3.jpg");
-    background-repeat: repeat;
-}
-
 #problemsList {
     text-align: left;
     margin: auto;
@@ -42,12 +33,12 @@ p {
 }
 
 #page {
-    position:relative;
-    margin: auto;
+    position: relative;
     height: 100vh;
     text-align: center;
-    padding: 5px;
+
 }
+
 #headingOne,h2 {
     color: #c9587b;
     text-shadow: 1px 1px 1px #d0b08f;
@@ -60,7 +51,7 @@ a {
 
 a:hover {
     font-size: 102%;
-    color: #b45569;    
+    color: #b45569;
 }
 table, tr, td, th {
     border: 1px solid black;
@@ -70,17 +61,16 @@ table {
     margin-right: auto;
     margin-left: auto;
     width: 60%;
-    position: absolute;
-    right: 10px;
+    position: relative;
+    left: 200px;
+    top: -550px;
 }
 .navt {
     list-style: none;
     margin: auto;
-    padding: 0;
     position: relative;
     text-align: center;
     background-image: url("../images/testbackground.png");
-
 }
 .navt li {
     position: relative;
@@ -102,12 +92,12 @@ table {
 }
 .navt img {
     vertical-align: middle;
+
 }
 
 #logo{
     max-height:200px;
     width: 150px;
-    margin: 0 auto;
     display:inline-block;
 
 }
@@ -117,6 +107,7 @@ body {
     line-height: 150%;
     background-image: url("../images/beerpattern3.jpg");
     background-repeat: repeat;
+    margin: 0;
 }
 
 .content{
@@ -205,11 +196,17 @@ div.desc{
 }
 #calculator {
     margin-top: 40px;
-    position: absolute;
-    left: 0;
+    position: relative;
+    right: 430px;
 }
-#calculatorContainer {
-    width: 100vw;
 
-    left: -10px;
+#result {
+    visibility: hidden;
+    display: inline-block;
+    position: relative;
+    left: 150px;
+    top: -80px;
+}
+#alkoholAvsnitt {
+    width: 380px;
 }

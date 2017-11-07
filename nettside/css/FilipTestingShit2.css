@@ -76,3 +76,7 @@ button {
     top: -215px;
 
 }
+#page {
+    width: 100vw;
+    background-color: #faf5f2;
+}

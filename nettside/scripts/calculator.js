@@ -17,11 +17,13 @@ btnSubmit.onclick = function calc (evt) {
     evt.preventDefault();
     abv = (og.value - fg.value) * 131.21;
     result.innerHTML = "Abv: " + abv.toFixed(2);
+    result.style.visibility = "visible";
 };
 
 btnReset.onclick = function (evt) {
     evt.preventDefault();
     og.innerHTML = "";
     fg.innerHTML = "";
-    result.innerHTML = "";
+    result.innerHTML = "  ";
+    result.style.visibility = "hidden";
 };
