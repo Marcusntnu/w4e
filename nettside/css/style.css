@@ -15,6 +15,7 @@ body {
     line-height: 150%;
     background-image: url("../images/beerpattern3.jpg");
     background-repeat: repeat;
+    margin: 0;
 }
 
 #problemsList {
@@ -42,11 +43,10 @@ p {
 }
 
 #page {
-    position:relative;
-    margin: auto;
+    position: fixed;
     height: 100vh;
     text-align: center;
-    padding: 5px;
+
 }
 #headingOne,h2 {
     color: #c9587b;
@@ -76,7 +76,6 @@ table {
 .navt {
     list-style: none;
     margin: auto;
-    padding: 0;
     position: relative;
     text-align: center;
     background-image: url("../images/testbackground.png");
@@ -107,16 +106,8 @@ table {
 #logo{
     max-height:200px;
     width: 150px;
-    margin: 0 auto;
     display:inline-block;
 
-}
-body {
-    font-size: 17px;
-    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
-    line-height: 150%;
-    background-image: url("../images/beerpattern3.jpg");
-    background-repeat: repeat;
 }
 
 .content{
@@ -210,6 +201,5 @@ div.desc{
 }
 #calculatorContainer {
     width: 100vw;
-
     left: -10px;
 }
