@@ -106,7 +106,9 @@ table {
 
 .navt li a:hover {
     color: white;
-    background-color: pink;
+    background-color: #5b1c12;
+    opacity: 2;
+    border-radius: 10%;
 }
 
 .navt img {
