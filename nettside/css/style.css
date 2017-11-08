@@ -1,4 +1,11 @@
-#developersDiv{
+/*
+FILE NAME: style.css
+WRITTEN BY: Sander Bjerklund Lindberg, Filip Østervold Tangen, Marcus Tiedemann Økland Henriksbø, Peder Lexau
+WHEN: November 2017
+PURPOSE: Style the page
+ */
+
+#developersDiv {
     font-style: italic;
 }
 
@@ -6,8 +13,8 @@
     list-style-type: none;
     padding: 0;
     font-weight: bold;
-
 }
+
 #problemsList {
     text-align: left;
     margin: auto;
@@ -15,41 +22,36 @@
     width: 25%;
     list-style-type: none;
 }
-#logoBilde{
-    width:200px;
-    height:auto;
+
+#logoBilde {
+    width: 200px;
+    height: auto;
 }
 
-.link{
-    position:relative;
-    top:-20px;
-    font-size:16px;
-
-}
-
-p {
-    margin: auto;
-    width: 600px;
+.link {
+    position: relative;
+    top: -20px;
+    font-size: 16px;
 }
 
 ul {
-	margin: auto;
-	width: 600px;
-	
+    margin: auto;
+    width: 600px;
 }
 
 #page {
     position: relative;
     height: 100vh;
     text-align: center;
-
 }
 
-#headingOne,h2 {
+#headingOne,
+h2 {
     color: #c9587b;
     text-shadow: 1px 1px 1px #d0b08f;
     text-align: center;
 }
+
 a {
     color: #c9587b;
     text-decoration: none;
@@ -59,10 +61,15 @@ a:hover {
     font-size: 102%;
     color: #b45569;
 }
-table, tr, td, th {
+
+table,
+tr,
+td,
+th {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
 table {
     margin-right: auto;
     margin-left: auto;
@@ -71,19 +78,23 @@ table {
     left: 200px;
     top: -550px;
 }
+
 .navt {
     list-style: none;
     margin: auto;
     position: relative;
     text-align: center;
+    width: 96.8%;
     background-image: url("../images/testbackground.png");
 }
+
 .navt li {
     position: relative;
     top: 25px;
     display: inline;
     left: 60px;
 }
+
 .navt a {
     display: inline-block;
     padding: 0 12px;
@@ -92,21 +103,22 @@ table {
     height: 44px;
     line-height: 44px;
 }
+
 .navt li a:hover {
     color: white;
     background-color: pink;
 }
+
 .navt img {
     vertical-align: middle;
-
 }
 
-#logo{
-    max-height:200px;
+#logo {
+    max-height: 200px;
     width: 150px;
-    display:inline-block;
-
+    display: inline-block;
 }
+
 body {
     font-size: 17px;
     font-family: "Proxima Nova", "Times New Roman", "sans-serif";
@@ -116,16 +128,18 @@ body {
     margin: 0;
 }
 
-.content{
+.content {
     background-color: #faf5f2;
     width: 100%;
     display: inline-block;
 }
-#bildeGalleriH1{
-    padding-top :0;
+
+#bildeGalleriH1 {
+    padding-top: 0;
     margin-top: 40px;
     text-align: center;
 }
+
 .image {
     width: 150px;
     height: 150px;
@@ -135,37 +149,42 @@ body {
     background-position: 50% 50%;
 }
 
-.image:hover{
-    width:170px;
-    height:170px;
+.image:hover {
+    width: 170px;
+    height: 170px;
     margin: 0;
-    border:black solid 2px;
+    border: black solid 2px;
     cursor: pointer;
 }
-#imageContainer{
+
+#imageContainer {
     margin: auto;
     width: 100vw;
 }
-div.imageGrid{
+
+div.imageGrid {
     margin-top: 40px;
     margin-right: 30px;
     float: left;
     width: 180px;
 }
-div.imageGrid img{
+
+div.imageGrid img {
     height: 150px;
     width: 150px;
 }
-div.desc{
+
+div.desc {
     padding: 5px;
     text-align: center;
     height: 250px;
     font-size: small;
 }
-.imageView{
-    display:inline-block;
-    width:180px;
-    text-align:center;
+
+.imageView {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
 }
 
 .imageView a {
@@ -196,10 +215,12 @@ div.desc{
 .round {
     border-radius: 50%;
 }
+
 #slideshow {
     width: 200px;
     height: 200px;
 }
+
 #calculator {
     margin-top: 40px;
     position: relative;
@@ -213,6 +234,34 @@ div.desc{
     left: 150px;
     top: -80px;
 }
+
 #alkoholAvsnitt {
     width: 380px;
+    position: ;
+}
+
+#tableAvsnitt {
+    position: relative;
+    top: -500px;
+    left: 190px;
+    height: 50px;
+}
+
+#oel{
+    font-size: 120%;
+    font-family: "Arial" ,Garamond, sans-serif;
+    color: #f6f1ff;
+    text-shadow: #EEEE00 0 1px 5px, #75603a 1px 1px 5px;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: -20px;
+
+}
+
+#bildeavoel{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 20%;
+    margin-top: -20%;
 }
