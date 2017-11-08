@@ -4,7 +4,11 @@ WRITTEN BY: Sander Bjerklund Lindberg, Filip Østervold Tangen, Marcus Tiedemann
 WHEN: November 2017
 PURPOSE: Style the page
  */
-
+/*
+* {
+    outline:1px solid white;
+}
+*/
 #developersDiv {
     font-style: italic;
 }
@@ -34,15 +38,12 @@ PURPOSE: Style the page
     font-size: 16px;
 }
 
-ul {
-    margin: auto;
-    width: 600px;
-}
-
 #page {
-    position: relative;
+    position: inherit;
     height: 100vh;
     text-align: center;
+    width: 100%;
+    min-width: 99%;
 }
 
 #headingOne,
@@ -52,14 +53,9 @@ h2 {
     text-align: center;
 }
 
-a {
-    color: #c9587b;
-    text-decoration: none;
-}
 
 a:hover {
-    font-size: 102%;
-    color: #b45569;
+    color: rgba(255, 210, 126, 0.46);
 }
 
 table,
@@ -84,31 +80,35 @@ table {
     margin: auto;
     position: relative;
     text-align: center;
-    width: 96.8%;
-    background-image: url("../images/testbackground.png");
+    width: 90%;
+    bottom: 10px;
 }
 
 .navt li {
     position: relative;
-    top: 25px;
     display: inline;
-    left: 60px;
+}
+
+ul {
+    padding: 1%;
+    display: inline;
+    background: rgba(251, 249, 255, 0.8);
+    left: 3%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .navt a {
     display: inline-block;
     padding: 0 12px;
     font-weight: normal;
-    color: white;
-    height: 44px;
-    line-height: 44px;
+    color: black;
+    text-decoration: double;
+    line-height: 150%;
 }
 
 .navt li a:hover {
-    color: white;
-    background-color: #5b1c12;
-    opacity: 2;
-    border-radius: 10%;
+
 }
 
 .navt img {
@@ -118,7 +118,7 @@ table {
 #logo {
     max-height: 200px;
     width: 150px;
-    display: inline-block;
+    display: inline;
 }
 
 body {
@@ -127,13 +127,14 @@ body {
     line-height: 150%;
     background-image: url("../images/beerpattern3.jpg");
     background-repeat: repeat;
+    outline:1px solid white;
     margin: 0;
 }
 
 .content {
     background-color: #faf5f2;
-    width: 100%;
     display: inline-block;
+    margin-top: -40px;
 }
 
 #bildeGalleriH1 {
@@ -238,32 +239,26 @@ div.desc {
 }
 
 #alkoholAvsnitt {
-    width: 380px;
-    position: ;
+    width: 200px;
+    position: relative;
+    text-align: right;
 }
 
 #tableAvsnitt {
     position: relative;
-    top: -500px;
-    left: 190px;
-    height: 50px;
+    top: 10%;
+    height: 100%;
 }
 
 #oel{
     font-size: 120%;
     font-family: "Arial" ,Garamond, sans-serif;
-    color: #f6f1ff;
-    text-shadow: #EEEE00 0 1px 5px, #75603a 1px 1px 5px;
+    color: #39373c;
+    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;
     position: relative;
-    margin-top: 5%;
-    margin-bottom: -20px;
-
-}
-
-#bildeavoel{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 20%;
-    margin-top: -20%;
+    max-width: 20%;
+    background-color: white;
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
