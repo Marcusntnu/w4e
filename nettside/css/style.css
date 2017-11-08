@@ -34,11 +34,6 @@ PURPOSE: Style the page
     font-size: 16px;
 }
 
-p {
-    margin: auto;
-    width: 600px;
-}
-
 ul {
     margin: auto;
     width: 600px;
@@ -242,6 +237,7 @@ div.desc {
 
 #alkoholAvsnitt {
     width: 380px;
+    position: ;
 }
 
 #tableAvsnitt {
@@ -258,9 +254,8 @@ div.desc {
     text-shadow: #EEEE00 0 1px 5px, #75603a 1px 1px 5px;
     position: relative;
     margin-top: 5%;
-    left: 35%;
     margin-bottom: -20px;
-    
+
 }
 
 #bildeavoel{
@@ -269,10 +264,4 @@ div.desc {
     position: relative;
     left: 20%;
     margin-top: -20%;
-}
-
-.bryggelaugImg {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
 }
