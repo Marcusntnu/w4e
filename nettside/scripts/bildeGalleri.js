@@ -5,12 +5,13 @@ WHEN: November 2017
 PURPOSE: Slideshow for the gallery page
  */
 
-
+//Referanser til HTML elementer
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 let slideshow = document.getElementById("slideshow");
 let imageContainer = document.getElementById("imageContainer");
 
+//Variabel for å holde filnavn og bildebesrkivelse.
 let imageFileNames = [
     {
         fileName: "1.jpg",
@@ -57,6 +58,9 @@ let imageFileNames = [
     },
 ];
 
+/*Funksjon for å bla til neste bilde i slideshowet.
+Variablen I er en teller, som inkrementerer for hver gang brukeren trykker på knappen.
+Når I er det samme som antall filnavn, skal den hoppe tibake til start*/
 let i = 0;
 next.onclick = function (evt) {
     evt.preventDefault();
@@ -68,6 +72,7 @@ next.onclick = function (evt) {
     slideshow.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 };
 
+/*Denne funksjonen er den motsatte av den forrige, da denne går bakover i bilder*/
 prev.onclick = function (evt) {
     evt.preventDefault();
     if(i === 0){
@@ -78,12 +83,13 @@ prev.onclick = function (evt) {
     slideshow.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 };
 
+//Åpner en ny fane med bildet når en bruker klikker på et bilde.
 function imageClick(url) {
     let win = window.open(url, '_blank');
     win.focus();
 }
 
-
+//Loop for å legge til alle bildene i filnavn-arrayet i HTMLen.
 for(let i = 0; i < imageFileNames.length; i++){
     let x = document.createElement("img");
     let y = document.createElement("div");

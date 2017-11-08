@@ -1,3 +1,9 @@
+/*
+FILE NAME: style.css
+WRITTEN BY: Sander Bjerklund Lindberg, Filip Østervold Tangen, Marcus Tiedemann Økland Henriksbø, Peder Lexau
+WHEN: November 2017
+PURPOSE: Style the page
+ */
 #developersDiv{
     font-style: italic;
 }
@@ -24,7 +30,6 @@
     position:relative;
     top:-20px;
     font-size:16px;
-
 }
 
 p {
@@ -207,6 +212,14 @@ div.desc{
     left: 150px;
     top: -80px;
 }
+
 #alkoholAvsnitt {
     width: 380px;
+}
+
+#tableAvsnitt {
+    position: relative;
+    top: -500px;
+    left: 190px;
+    height: 50px;
 }
