@@ -252,7 +252,7 @@ div.desc {
 }
 
 #oel{
-    font-size: 200%;
+    font-size: 120%;
     font-family: "Arial" ,Garamond, sans-serif;
     color: #f6f1ff;
     text-shadow: #EEEE00 0 1px 5px, #75603a 1px 1px 5px;
@@ -260,6 +260,7 @@ div.desc {
     margin-top: 5%;
     left: 35%;
     margin-bottom: -20px;
+    
 }
 
 #bildeavoel{
