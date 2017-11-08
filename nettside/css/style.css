@@ -80,9 +80,10 @@ table {
 }
 
 .navt {
+    position: relative;
+    left: 0;
     list-style: none;
     margin: auto;
-    position: relative;
     text-align: center;
     width: 96.8%;
     background-image: url("../images/testbackground.png");
@@ -237,7 +238,6 @@ div.desc {
 
 #alkoholAvsnitt {
     width: 380px;
-    position: ;
 }
 
 #tableAvsnitt {
@@ -245,6 +245,7 @@ div.desc {
     top: -500px;
     left: 190px;
     height: 50px;
+    overflow: scroll;
 }
 
 #oel{
@@ -264,4 +265,12 @@ div.desc {
     position: relative;
     left: 20%;
     margin-top: -20%;
+}
+#cover {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 500px;
+    height:500px;
+    background-color: red;
 }

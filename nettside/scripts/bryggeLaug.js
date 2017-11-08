@@ -145,7 +145,25 @@ let bryggelaug = [{
             epost: "test@test.no"
         },
     },
+
+    {
+        name: "Fylkesbrygg",
+        linjeforening: "Emil",
+        styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
+        medlemmer: 4,
+        logo: "aarhønen.jpg",
+        kontaktinfo: {
+            telefon: 123456789,
+            epost: "test@test.no"
+        },
+    },
 ];
+
+
+function clickLaug(target) {
+
+}
+
 
 for (let i = 0; i < bryggelaug.length; i++) {
     let img = document.createElement("img");
