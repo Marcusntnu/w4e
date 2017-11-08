@@ -269,3 +269,9 @@ div.desc {
     left: 20%;
     margin-top: -20%;
 }
+
+.bryggelaugImg {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
