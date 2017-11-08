@@ -7,7 +7,8 @@ let bryggelaug = [{
         linjeforening: "Online",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 33,
-        logo: "ontap.jpg",
+        logo: "ontap.png",
+		leder: "Aslak Hollund",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -19,7 +20,8 @@ let bryggelaug = [{
         linjeforening: "Volvox&Alkymisten",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 5,
-        logo: "invitro.jpg",
+        logo: "invitro.png",
+		leder: "Charlie Shea",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -30,10 +32,11 @@ let bryggelaug = [{
         name: "AarhøneKroa Pikobryggeri",
         linjeforening: "Aarhønen",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
-        medlemmer: 123456,
-        logo: "aarhønen.jpg",
+        medlemmer: 6,
+        logo: "aarhonekroa.png",
+		leder: "Sondre Evjen",
         kontaktinfo: {
-            telefon: 6,
+            telefon: 12345678,
             epost: "test@test.no"
         },
     },
@@ -43,7 +46,8 @@ let bryggelaug = [{
         linjeforening: "Delta",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 15,
-        logo: "aarhønen.jpg",
+        logo: "sample.jpg",
+		leder: "Martin Madsen",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -55,7 +59,8 @@ let bryggelaug = [{
         linjeforening: "Janus",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 11,
-        logo: "aarhønen.jpg",
+        logo: "sample.jpg",
+		leder: "Marius Hofgaard",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -67,7 +72,8 @@ let bryggelaug = [{
         linjeforening: "Smørekoppen",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 123456,
-        logo: "aarhønen.jpg",
+		leder: "Ola Nordmann",
+        logo: "sample.jpg",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -79,7 +85,8 @@ let bryggelaug = [{
         linjeforening: "Omega",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 12,
-        logo: "aarhønen.jpg",
+		leder: "Nicholas Fraser Ødegård",
+        logo: "sample.jpg",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -91,7 +98,8 @@ let bryggelaug = [{
         linjeforening: "Timini",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 6,
-        logo: "aarhønen.jpg",
+        logo: "sample.jpg",
+		leder: "Leik Isdal",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -103,7 +111,8 @@ let bryggelaug = [{
         linjeforening: "Emil",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 123456,
-        logo: "aarhønen.jpg",
+        logo: "sample.jpg",
+		leder: "Ola Nordmann",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -115,7 +124,8 @@ let bryggelaug = [{
         linjeforening: "Nabla",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 39,
-        logo: "aarhønen.jpg",
+        logo: "sample.jpg",
+		leder: "Camilla Idina Elvebakken",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -127,7 +137,8 @@ let bryggelaug = [{
         linjeforening: "Abakus",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 45,
-        logo: "aarhønen.jpg",
+        logo: "sample.jpg",
+		leder: "Vemdund Santi",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -136,10 +147,24 @@ let bryggelaug = [{
 
     {
         name: "CHØLeSCAB",
+        linjeforening: "Høiskolens Chemikerforening",
+        styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
+        medlemmer: 12,
+        logo: "sample.jpg",
+		leder: "Henrik Kiær",
+        kontaktinfo: {
+            telefon: 123456789,
+            epost: "test@test.no"
+        },
+    },
+	
+	{
+        name: "Mannhullet",
         linjeforening: "Mannhullet",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 25,
-        logo: "aarhønen.jpg",
+        logo: "mannhullet.jpg",
+		leder: "Ola Nordmann",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -152,7 +177,7 @@ for (let i = 0; i < bryggelaug.length; i++) {
     let div = document.createElement("div");
     img.setAttribute("class", "bryggelaugImg");
     img.setAttribute("id", bryggelaug[i].name + "Img");
-    img.setAttribute("src", "images/bildegalleri/1.jpg");
+    img.setAttribute("src", "images/Logoer/"+bryggelaug[i].logo);
     div.setAttribute("class", "bryggelaugDiv");
     div.setAttribute("id", bryggelaug[i].name + "Div");
     div.appendChild(img);
