@@ -37,6 +37,12 @@ p {
     width: 600px;
 }
 
+ul {
+	margin: auto;
+	width: 600px;
+	
+}
+
 #page {
     position: relative;
     height: 100vh;
