@@ -17,7 +17,7 @@ let btnReset = document.getElementById("btnReset");
 let abv;
 
 //Når knappen med ID "btnSubmit", skal valuene i input elementene kjøres i en formel og skrives til siden.
-btnSubmit.onclick = function calc (evt) {
+btnSubmit.onclick = function calc(evt) {
     evt.preventDefault();
     abv = (og.value - fg.value) * 131.21;
     result.innerHTML = "Abv: " + abv.toFixed(2);

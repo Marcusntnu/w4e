@@ -1,3 +1,9 @@
+/*
+FILE NAME: scripts/olmoeler.js
+WRITTEN BY: Marcus Tiedemann Økland Henriksbø
+WHEN: November 2017
+PURPOSE: Counter for beer
+ */
 
 let start = new Date(2017, 08, 1);
 let rate = (500/30/24/60/60/1000);
@@ -10,8 +16,6 @@ function Beer_maker(){
     console.log(beers)
 }
 setInterval(Beer_maker, 100);
-
-//document.getElementById("oel").innerHTML += "images/fillingup.gif";
 
 console.log(new Date()- start);
 console.log(new Date());

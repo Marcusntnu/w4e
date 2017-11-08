@@ -12,8 +12,7 @@ let slideshow = document.getElementById("slideshow");
 let imageContainer = document.getElementById("imageContainer");
 
 //Variabel for å holde filnavn og bildebesrkivelse.
-let imageFileNames = [
-    {
+let imageFileNames = [{
         fileName: "1.jpg",
         description: "Nå er Mannhullets IPA fra IPA-off på tapp! Kom og kjøp før det blir tomt!"
     },
@@ -32,7 +31,7 @@ let imageFileNames = [
     {
         fileName: "5.jpg",
         description: "Er det det at Haakon og Sigrid alene har blitt satt i spotligthen som utløser frustrasjonen? " +
-        "Men Hvorfor er da Kristian så fornøyd?"
+            "Men Hvorfor er da Kristian så fornøyd?"
     },
     {
         fileName: "6.jpg",
@@ -49,8 +48,8 @@ let imageFileNames = [
     {
         fileName: "9.jpg",
         description: "Maltet har kommet. \n" +
-        "Lagres på samfundet. Kan hentes når det har blitt betalt for. Ta kontakt med " +
-        "<a href='mailto:sampleEmail@domain.com'>Sigbjørn Albert</a>"
+            "Lagres på samfundet. Kan hentes når det har blitt betalt for. Ta kontakt med " +
+            "<a href='mailto:sampleEmail@domain.com'>Sigbjørn Albert</a>"
     },
     {
         fileName: "10.jpg",
@@ -64,9 +63,9 @@ Når I er det samme som antall filnavn, skal den hoppe tibake til start*/
 let i = 0;
 next.onclick = function (evt) {
     evt.preventDefault();
-    if(i === imageFileNames.length-1){
+    if (i === imageFileNames.length - 1) {
         i = 0;
-    }else {
+    } else {
         i++;
     }
     slideshow.src = "images/bildegalleri/" + imageFileNames[i].fileName;
@@ -75,9 +74,9 @@ next.onclick = function (evt) {
 /*Denne funksjonen er den motsatte av den forrige, da denne går bakover i bilder*/
 prev.onclick = function (evt) {
     evt.preventDefault();
-    if(i === 0){
-        i = imageFileNames.length-1;
-    }else{
+    if (i === 0) {
+        i = imageFileNames.length - 1;
+    } else {
         i--
     }
     slideshow.src = "images/bildegalleri/" + imageFileNames[i].fileName;
@@ -90,7 +89,7 @@ function imageClick(url) {
 }
 
 //Loop for å legge til alle bildene i filnavn-arrayet i HTMLen.
-for(let i = 0; i < imageFileNames.length; i++){
+for (let i = 0; i < imageFileNames.length; i++) {
     let x = document.createElement("img");
     let y = document.createElement("div");
     let z = document.createElement("div");
