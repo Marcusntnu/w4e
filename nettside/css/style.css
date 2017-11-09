@@ -274,3 +274,43 @@ div.desc {
     height:500px;
     background-color: red;
 }
+
+.bryggelaugImg {
+    width: 150px;
+}
+
+.bryggelaugImg:hover {
+    cursor: pointer;
+}
+
+.bryggelaugDiv {
+    margin-bottom: 20px;
+}
+
+.coverImg {
+    width: 200px;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+}
+
+#cover {
+    background-color: lightgrey;
+}
+
+#ulBryggelaug{
+    position: absolute;
+    left: 180px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#infoDiv {
+    position: absolute;
+    left: 210px;
+}
+
+#contactDiv {
+    position: absolute;
+    left: -200px;
+}
