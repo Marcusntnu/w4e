@@ -1,22 +1,14 @@
-<<<<<<< HEAD
+
 (function(){
 
 
     addLoadEvent(parallex);
+    addLoadEvent(loadpage)
     window.onscroll = parallex;
 
 })();
 
 
-=======
-
-function callBoth(){
-    parallex();
-    loadNavbar();
-    loadpage();
-}
-
->>>>>>> b94d57be01c66169e2b76bf521977ba9bd1e9a4e
 
 function parallex(){
     let parallax2 = document.querySelectorAll("body"),
