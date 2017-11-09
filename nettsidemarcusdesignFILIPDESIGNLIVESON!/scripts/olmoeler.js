@@ -33,14 +33,9 @@ function install_Beer_DOM(){
 function Beer_maker(){
     elapsed = new Date();
     beers = parseFloat((elapsed - start) * rate).toFixed(3) + already_beer;
-<<<<<<< HEAD
     document.getElementById("literbrygget").innerHTML= parseFloat(beers).toFixed(3);
 }
-=======
-    document.getElementById("oel").innerHTML = "<input id=\"oelbilde\" type=\"image\" src=\"images/beer.png\" alt=\"Øl:\" oninput=\"this.drink();\"/>"
 
-        + "<b>"+parseFloat(beers).toFixed(3)+"</b>" +"  liter brygget";
->>>>>>> b94d57be01c66169e2b76bf521977ba9bd1e9a4e
 
 
 drinkingAnimationIntervalId = -1;
@@ -50,7 +45,7 @@ function drink(){
         drinkingAnimationIntervalId = setInterval(drinkingFrame,20)
 }
 
-<<<<<<< HEAD
+
 currentFrame = 0;
 toppx = 0;
 
@@ -101,15 +96,11 @@ function drinkingFrame(){
 addLoadEvent(install_Beer_DOM);
 setInterval(Beer_maker,500)
 
-=======
-function drink(){
-    console.log("IS THIS WORKING?");
-}
 
 if(window.innerWidth > 1120) {
     setInterval(Beer_maker, 100);
 }
->>>>>>> b94d57be01c66169e2b76bf521977ba9bd1e9a4e
+
 console.log(new Date()- start);
 console.log(new Date());
 

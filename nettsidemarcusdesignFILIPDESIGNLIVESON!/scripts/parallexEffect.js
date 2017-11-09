@@ -1,20 +1,15 @@
-<<<<<<< HEAD
 
-function callBoth(){
-    parallex();
-    loadNavbar();
-    loadpage();
-}
-=======
+
 (function(){
 
 
     addLoadEvent(parallex);
+    addLoadEvent(loadpage);
     window.onscroll = parallex;
 
 })();
 
->>>>>>> parent of 11e784b... Merge branch 'master' of https://github.com/skanin/w4e
+
 
 
 function parallex(){
