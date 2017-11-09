@@ -366,10 +366,10 @@ div.desc {
 @keyframes underline {
     from{
         text-decoration: none;
-        font-size: 100%;
+        transform: scale(1);
     }
     to {
         text-decoration: solid;
-        font-size: 140%;
+        transform: scale(1.3);
     }
 }
