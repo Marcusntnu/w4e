@@ -4,11 +4,11 @@ WRITTEN BY: Sander Bjerklund Lindberg, Filip Østervold Tangen, Marcus Tiedemann
 WHEN: November 2017
 PURPOSE: Style the page and make it functional
  */
-
+/*
 * {
     outline:1px solid white;
 }
-
+*/
 
 body {
     font-size: 17px;
@@ -65,26 +65,26 @@ ul {
     font-weight: normal;
     color: black;
     text-decoration: double;
-    line-height: 300%;
+    line-height: 350%;
     border-bottom: 5px solid transparent;
 }
 
 .navt a:hover {
     animation-name: underline;
-    animation-duration: 1s;
+    animation-duration: 0.1s;
     animation-fill-mode:forwards;
 }
 
 .navt a:hover::before{
     position: absolute;
     content: "";
-    height: 5px;
+    height: 12px;
     animation-name: hoverline;
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
     background-color: black;
     top: 102%;
     left: 0;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 
@@ -386,14 +386,12 @@ div.desc {
 
 @keyframes underline {
     from{
-        text-decoration: none;
         transform: scale(1);
-        color: lightgrey;
+
     }
     to {
-        text-decoration: solid;
-        transform: scale(1.1);
-        color: black;
+        transform: scale(1.05);
+
     }
 }
 
