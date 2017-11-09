@@ -136,7 +136,7 @@ body {
     display: inline-block;
     margin-top: -40px;
     font-family: "Century Gothic" ,sans-serif;
-    height: 100hv;
+    min-height: 80%;
 }
 
 #bildeGalleriH1 {
