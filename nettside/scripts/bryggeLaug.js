@@ -1,5 +1,6 @@
 let content = document.getElementById("content");
-
+let cover = document.getElementById("cover");
+let overlayBack = document.getElementById("overlay-back");
 
 //Objekt over alle bryggelaugene i Gløshaugen bryggeforum
 let bryggelaug = [{
@@ -170,16 +171,70 @@ let bryggelaug = [{
             epost: "test@test.no"
         },
     },
+
+    {
+        name: "Fylkesbrygg",
+        linjeforening: "Emil",
+        styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
+        medlemmer: 4,
+        logo: "sample.jpg",
+        leder: "Håkon Eidsvik",
+        kontaktinfo: {
+            telefon: 123456789,
+            epost: "test@test.no"
+        },
+    },
 ];
+
+function clickLaug() {
+    console.log(evt);
+    cover.style.display = overlayBack.style.display = "block";
+    cover.style.visibility = overlayBack.style.visibility = "visible";
+}
+
+function clickOverlay() {
+    cover.innerHTML = "";
+    cover.style.display = overlayBack.style.display = "none";
+    cover.style.visibility = overlayBack.style.visibility = "hidden";
+}
 
 for (let i = 0; i < bryggelaug.length; i++) {
     let img = document.createElement("img");
     let div = document.createElement("div");
     img.setAttribute("class", "bryggelaugImg");
-    img.setAttribute("id", bryggelaug[i].name + "Img");
-    img.setAttribute("src", "images/Logoer/"+bryggelaug[i].logo);
+    img.setAttribute("onclick", "clickLaug()");
+    img.setAttribute("id", i);
+    img.setAttribute("src", "images/Logoer/" + bryggelaug[i].logo);
     div.setAttribute("class", "bryggelaugDiv");
     div.setAttribute("id", bryggelaug[i].name + "Div");
+    div.innerHTML = "<h2>" + bryggelaug[i].name + "</h2>";
     div.appendChild(img);
     content.appendChild(div);
+    let x = document.getElementById(i);
+    x.onclick = function () {
+        let img = document.createElement("img");
+        console.log(this.id);
+        img.setAttribute("src", "images/Logoer/" + bryggelaug[this.id].logo);
+        img.setAttribute("id", "img" + bryggelaug[this.id]);
+        img.setAttribute("class", "coverImg");
+        console.log(bryggelaug[this.id]);
+        cover.appendChild(img);
+        let div = document.createElement("div");
+        div.setAttribute("id", "infoDiv");
+        div.innerHTML = "<b>Navn: </b>" + bryggelaug[this.id].name;
+        div.innerHTML += "<br><b>Linjeforening: </b>" + bryggelaug[this.id].linjeforening;
+        div.innerHTML += "<br><b>Styremedlemmer: </b>" + bryggelaug[this.id].styremedlemmer;
+        div.innerHTML += "<br><b>Antall medlemmer: </b>" + bryggelaug[this.id].medlemmer;
+        div.innerHTML += "<br><b>Leder: </b>" + bryggelaug[this.id].leder;
+        let divKontakt = document.createElement("div");
+        divKontakt.setAttribute("id", "contactDiv");
+        divKontakt.innerHTML += "<h3>Kontakt</h3>";
+        divKontakt.innerHTML += "<b>Telefon: </b>" + bryggelaug[this.id].kontaktinfo.telefon;
+        divKontakt.innerHTML += "<br><b>Epost: </b><a href='mailto:" + bryggelaug[i].kontaktinfo.epost
+            +"'>" + bryggelaug[this.id].kontaktinfo.epost + "</a>";
+        div.appendChild(divKontakt);
+        cover.appendChild(div);
+        cover.style.display = overlayBack.style.display = "block";
+        cover.style.visibility = overlayBack.style.visibility = "visible";
+    }
 }

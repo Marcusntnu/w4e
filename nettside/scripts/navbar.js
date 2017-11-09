@@ -9,7 +9,8 @@ window.onload = function () {
   //Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
   let navbar = document.getElementById("navbar");
 
-  navbar.innerHTML = "<p id=\"oel\"></p><ul class=\"navt\">\n" +
+  navbar.innerHTML = "<p id=\"oel\"></p>" +
+      "<ul class=\"navt\">\n" +
       "\n" +
       "\n" +
       "    <li><a href=\index.html\>Hjem</a>\n" +
