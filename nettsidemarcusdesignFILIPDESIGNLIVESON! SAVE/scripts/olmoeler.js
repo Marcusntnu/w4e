@@ -94,7 +94,7 @@ function drinkingFrame(){
 
 
 addLoadEvent(install_Beer_DOM);
-
+setInterval(Beer_maker,500)
 
 
 if(window.innerWidth > 1120) {
