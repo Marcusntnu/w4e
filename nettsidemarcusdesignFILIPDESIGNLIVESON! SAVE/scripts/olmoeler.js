@@ -50,7 +50,6 @@ currentFrame = 0;
 toppx = 0;
 
 function drinkingFrame(){
-    console.log(toppx);
     if(currentFrame > 20 && currentFrame < 40){
 
     }

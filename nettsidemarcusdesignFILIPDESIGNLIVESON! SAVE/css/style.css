@@ -168,6 +168,7 @@ h3 {/*
     text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;*/
     position: relative;
     float:left;
+    left:150px;
     margin: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -508,12 +509,6 @@ div.desc {
     z-index:0;
 
 }
-/*Prevent blue outline on the beer when clicking on it*/
-:focus {
-    outline: none !important;
-}
-
-
 
 #oelbildeclipping{
     float:left;
@@ -524,16 +519,12 @@ div.desc {
     left: 0px;
     z-index:2;
     overflow:hidden;
+
 }
 
-@keyframes drinkclipping {
-    from {top: 0;}
-    to {top: 60px;}
-}
-
-@keyframes drinkbeer {
-    from {top:0px;}
-    to {top:-60px;}
+/*Prevent blue outline on the beer when clicking on it*/
+:focus {
+    outline: none !important;
 }
 
 /*End øl css*/
