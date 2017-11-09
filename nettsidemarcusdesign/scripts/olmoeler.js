@@ -20,8 +20,10 @@ function Beer_maker(){
     console.log(beers)
 }
 
+if(window.innerWidth > 1120) {
+    setInterval(Beer_maker, 100);
+}
 
-setInterval(Beer_maker, 100);
 
 console.log(new Date()- start);
 console.log(new Date());

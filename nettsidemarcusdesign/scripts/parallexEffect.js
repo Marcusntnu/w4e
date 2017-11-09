@@ -1,6 +1,4 @@
 (function(){
-
-
     window.onload= callBoth;
     window.onscroll = parallex;
 
@@ -10,6 +8,7 @@
 function callBoth(){
     parallex();
     loadNavbar();
+    loadpage();
 }
 
 
@@ -24,4 +23,9 @@ function parallex(){
         el.style.backgroundPosition = elBackgrounPos;
 
     });
+}
+
+function loadpage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("loadpage").style.display = "none";
 }
