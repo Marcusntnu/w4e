@@ -5,8 +5,8 @@ WHEN: November 2017
 PURPOSE: Style the page and make it functional
  */
 
-* {
-    outline:1px solid white;
+* {/*
+    outline:1px solid white;*/
 }
 
 #developersDiv {
@@ -156,7 +156,6 @@ body {
     line-height: 150%;
     background-image: url("../images/beerpattern3.jpg");
     background-repeat: repeat;
-    outline:1px solid white;
     margin: 0;
     padding:0;
 
@@ -181,6 +180,8 @@ body {
     padding-bottom: 5%;
     animation-name: kuul;
     animation-duration: 1s;
+
+    border-radius: 10px;
 }
 
 #bildeGalleriH1 {
