@@ -207,7 +207,7 @@ for (let i = 0; i < bryggelaug.length; i++) {
     img.setAttribute("src", "images/Logoer/" + bryggelaug[i].logo);
     div.setAttribute("class", "bryggelaugDiv");
     div.setAttribute("id", bryggelaug[i].name + "Div");
-    div.innerHTML = "<h2>" + bryggelaug[i].name + "</h2>";
+    div.innerHTML = "<h2 id='bryggelagHeader'>" + bryggelaug[i].name + "</h2>";
     div.appendChild(img);
     content.appendChild(div);
     let x = document.getElementById(i);
