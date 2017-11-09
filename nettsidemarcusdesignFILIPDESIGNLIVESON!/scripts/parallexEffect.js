@@ -1,9 +1,20 @@
+<<<<<<< HEAD
 
 function callBoth(){
     parallex();
     loadNavbar();
     loadpage();
 }
+=======
+(function(){
+
+
+    addLoadEvent(parallex);
+    window.onscroll = parallex;
+
+})();
+
+>>>>>>> parent of 11e784b... Merge branch 'master' of https://github.com/skanin/w4e
 
 
 function parallex(){
@@ -17,20 +28,4 @@ function parallex(){
         el.style.backgroundPosition = elBackgrounPos;
 
     });
-}
-
-
-(function(){
-
-
-    window.onload= callBoth;
-    window.onscroll = parallex;
-
-})();
-
-
-// Makes the page-loader effects go away when page is loaded
-function loadpage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("loadpage").style.display = "none";
 }

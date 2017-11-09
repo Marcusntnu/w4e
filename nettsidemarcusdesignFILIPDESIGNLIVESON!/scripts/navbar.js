@@ -37,6 +37,15 @@ function loadNavbar(){
         "    </li>\n" +
         "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
         "    </li>\n" +
+<<<<<<< HEAD
         "</ul>";
     parallex();
 }
+=======
+        "</ul>"
+
+}
+
+
+addLoadEvent(loadNavbar);
+>>>>>>> parent of 11e784b... Merge branch 'master' of https://github.com/skanin/w4e
