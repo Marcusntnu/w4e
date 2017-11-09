@@ -95,18 +95,6 @@ body {
     border-radius: 10px;
 }
 
-<<<<<<< HEAD
-h2 {/*
-    color: #c9587b;*/
-    color: #d47706;
-}
-
-h3 {/*
-    color: #c9587b;*/
-    color: #f59e01;
-}
-
-=======
 #navbar {
     overflow:hidden;
     background: rgba(251, 249, 255, 1);
@@ -139,7 +127,6 @@ h3 {/*
 .navt img {
     vertical-align: middle;
 }
->>>>>>> b94d57be01c66169e2b76bf521977ba9bd1e9a4e
 
 
 .navt a:hover {
@@ -482,75 +469,19 @@ div.desc {
 
 #bryggelaugHeader {
 
-
 }
 
-
-/*Ølbildet som er øverst til venstre som man kan trykke på*/
 #oelbilde{
     position: relative;
     float:left;
     height:60px;
     width:60px;
-<<<<<<< HEAD
-    top:0px;
-    left:0px;
-    display: block;
-    z-index:1;
-}
-#oelbildeempty{
-    float:left;
-    height:60px;
-    width:60px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-    display: block;
-    z-index:0;
-
-}
-/*Prevent blue outline on the beer when clicking on it*/
-:focus {
-    outline: none !important;
-}
-
-
-
-#oelbildeclipping{
-    float:left;
-    height:60px;
-    width:60px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-
-
-
-    z-index:2;
-    overflow:hidden;
-}
-
-@keyframes drinkclipping {
-    from {top:0px;}
-    to {top:60px;}
-}
-
-@keyframes drinkbeer {
-    from {top:0px;}
-    to {top:-60px;}
-}
-
-/*End øl css*/
-
-=======
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
->>>>>>> b94d57be01c66169e2b76bf521977ba9bd1e9a4e
 
 
 @keyframes kuul {
