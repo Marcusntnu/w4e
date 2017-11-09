@@ -147,6 +147,8 @@ body {
     margin: 12px;
     background-size: cover;
     background-position: 50% 50%;
+    position: relative;
+    background-repeat:   no-repeat;
 }
 
 .image:hover {

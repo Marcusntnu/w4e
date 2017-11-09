@@ -86,7 +86,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 12,
 		leder: "Nicholas Fraser Ødegård",
-        logo: "sample.jpg",
+        logo: "omega.png",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
