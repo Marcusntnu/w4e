@@ -5,43 +5,34 @@ WHEN: November 2017
 PURPOSE: Style the page and make it functional
  */
 
-* {/*
-    outline:1px solid white;*/
+* {
+    outline:1px solid orange;
 }
 
-#developersDiv {
-    font-style: italic;
-}
 
-#liste {
-    list-style-type: none;
-    padding: 0;
-    font-weight: bold;
-}
-
-#bryggeguide {
-	width: 800px;
-	margin: auto;
+body {
+    font-size: 17px;
+    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
+    line-height: 150%;
+    background-image: url("../images/beerpattern3.jpg");
+    background-repeat: repeat;
+    outline:1px solid white;
+    margin: 0;
+    padding:0;
 
 }
 
-#problemsList {
-    text-align: left;
-    margin: auto;
-    margin-bottom: 10px;
-    width: 25%;
-    list-style-type: none;
+@font-face {
+    font-family: fancyFont;
+    src: url(../fonts/alex-brush/AlexBrush-Regular.ttf);
 }
-
-#logoBilde {
-    width: 200px;
-    height: auto;
+@font-face {
+    font-family: fancyFont2;
+    src: url(../fonts/allura/Allura-Regular.otf);
 }
-
-.link {
-    position: relative;
-    top: -20px;
-    font-size: 16px;
+@font-face {
+    font-family: kulFont;
+    src: url(../fonts/blackjack/blackjack.otf);
 }
 
 #page {
@@ -51,6 +42,20 @@ PURPOSE: Style the page and make it functional
     width: 100%;
     min-width: 99%;
 }
+
+.content {
+    font-family: "Century Gothic", sans-serif;
+    background-color: rgba(250, 245, 242, 0.89);
+    width: 80%;
+    display: inline-block;
+    margin-top:50px;
+    padding: 10px;
+    min-height: 70%;
+    padding-bottom: 5%;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
 
 #headingOne{
     color: #c9587b;
@@ -62,22 +67,89 @@ h2 {
     color: #c9587b;
 }
 
-.navt a:hover {
-    animation-name: underline;
-    animation-duration: 0.1s;
-    animation-fill-mode:forwards;
+#navbar {
+    overflow:hidden;
+    background: rgba(251, 249, 255, 1);
+
 }
 
-.navt a:hover::before{
+.navt {
+    margin: 0;
+    padding: 0;
+    float:right;
+    width:70%;
+    text-align: right;
+}
+
+.navt li {
+    margin-top: 0;
+    font-size:100%;
+    display: inline;
+}
+
+.navt a {
+    font-family: "Century Gothic", sans-serif;
+    display: inline-block;
+    padding: 0 12px;
+    color: black;
+    text-decoration: double;
+    line-height: 350%;
+    border-bottom: 5px solid transparent;
+}
+
+
+.navt img {
+    vertical-align: middle;
+}
+
+.navt a:hover {
+    animation-name: scale;
+    animation-duration: 0.1s;
+    animation-fill-mode:forwards;
+    backface-visibility: hidden;
+}
+
+.navt a:hover::after{
     position: absolute;
     content: "";
     height: 5px;
     animation-name: hoverline;
-    animation-duration: 0.3s;
-    background-color: black;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    background-color: rgb(195, 141, 26);
     top: 102%;
     left: 0;
     animation-fill-mode: forwards;
+}
+
+#logo {
+    max-height: 200px;
+    width: 150px;
+    display: inline;
+}
+
+#oel{
+    font-size: 120%;
+    font-family: "Arial" ,Garamond, sans-serif;
+    color: #39373c;/*
+    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;*/
+    position: relative;
+    float:left;
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: inline;
+    line-height:300%;
+}
+
+#oel::after{
+    position: relative;
+    content: " dette semesteret";
+    font-size: 50%;
+    text-align: center;
+    top: 20px;
+    right: 30%;
+    font-family: inherit;
 }
 
 
@@ -98,68 +170,7 @@ table {
     top: -550px;
 }
 
-#navbar {
-    overflow:hidden;
-    background: rgba(251, 249, 255, 1);
 
-}
-
-.navt {
-    margin: 0;
-    padding: 0;
-    float:right;
-    width:70%;
-    text-align: right;
-
-
-
-}
-
-.navt li {
-    margin-top:0px;
-    font-size:100%;
-    display: inline;
-
-
-}
-
-
-.navt a {
-    font-family: "Century Gothic", sans-serif;
-    display: inline-block;
-    padding: 0 12px;
-
-    color: black;
-    text-decoration: double;
-    line-height: 350%;
-    border-bottom: 5px solid transparent;
-}
-
-.navt li a:hover {
-    animation-name: underline;
-    animation-duration: 1s;
-}
-
-.navt img {
-    vertical-align: middle;
-}
-
-#logo {
-    max-height: 200px;
-    width: 150px;
-    display: inline;
-}
-
-body {
-    font-size: 17px;
-    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
-    line-height: 150%;
-    background-image: url("../images/beerpattern3.jpg");
-    background-repeat: repeat;
-    margin: 0;
-    padding:0;
-
-}
 
 .bryggeSection{
     width:80%;/*
@@ -167,21 +178,6 @@ body {
     /**/
     margin: 0 auto;
 
-}
-
-.content {
-    font-family: "Century Gothic", sans-serif;
-    background-color: #faf5f2;
-    width: 80%;
-    display: inline-block;
-    margin-top:50px;
-    padding: 10px;
-    min-height: 70%;
-    padding-bottom: 5%;
-    animation-name: kuul;
-    animation-duration: 1s;
-
-    border-radius: 10px;
 }
 
 #bildeGalleriH1 {
@@ -269,14 +265,10 @@ div.desc {
 }
 
 #slideshow {
-
     width:600px;
     height:400px;
-
-
-
-
 }
+
 #slideshowImage{
     width: auto;
     height: auto;
@@ -307,22 +299,42 @@ div.desc {
     height: 100%;
 }
 
-#oel{
-    font-size: 120%;
-    font-family: "Arial" ,Garamond, sans-serif;
-    color: #39373c;/*
-    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;*/
-    position: relative;
-    float:left;
+#developersDiv {
+    font-style: italic;
+}
 
+#liste {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+}
 
-    margin: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display:inline;
-    line-height:300%;
+#bryggeguide {
+    width: 800px;
+    margin: auto;
 
 }
+
+#problemsList {
+    text-align: left;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 25%;
+    list-style-type: none;
+}
+
+#logoBilde {
+    width: 200px;
+    height: auto;
+}
+
+.link {
+    position: relative;
+    top: -20px;
+    font-size: 16px;
+}
+
+
 #cover {
     position: fixed;
     top: 30%;
@@ -395,13 +407,10 @@ div.desc {
     float:left;
     height:60px;
     width:60px;
-
-
 }
 
 
-
-@keyframes kuul {
+@keyframes fadein {
     from {
         opacity: 0;
     }
@@ -410,14 +419,12 @@ div.desc {
     }
 }
 
-@keyframes underline {
+@keyframes scale{
     from{
         transform: scale(1);
-
     }
     to {
         transform: scale(1.05);
-
     }
 }
 

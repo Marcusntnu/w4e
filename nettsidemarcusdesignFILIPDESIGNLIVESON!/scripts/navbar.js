@@ -51,9 +51,15 @@ function loadNavbar(){
         "    </li>\n" +
         "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
         "    </li>\n" +
+<<<<<<< HEAD
         "</ul>"
 
 }
 
 
 addLoadEvent(loadNavbar);
+=======
+        "</ul>";
+    parallex();
+}
+>>>>>>> b94d57be01c66169e2b76bf521977ba9bd1e9a4e

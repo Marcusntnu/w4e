@@ -1,27 +1,20 @@
-(function(){
+function scrolle(){
 
-
-    window.onload= callBoth;
-    window.onscroll = parallex;
-
-})();
-
-
-function callBoth(){
-    parallex();
-    loadNavbar();
-}
-
-
-function parallex(){
-    let parallax2 = document.querySelectorAll("body"),
+    let parallax = document.querySelectorAll("body"),
         speed = 0.5;
-    [].slice.call(parallax2).forEach(function(el,i){
 
-        let windowYOffset = window.pageYOffset,
-            elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+    window.onscroll = function(){
+        [].slice.call(parallax).forEach(function(el,i){
 
-        el.style.backgroundPosition = elBackgrounPos;
+            var windowYOffset = window.pageYOffset,
+                elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
 
-    });
+            el.style.backgroundPosition = elBackgrounPos;
+
+        });
+    };
+
 }
+scrolle();
+
+window.onscroll = scrolle;
