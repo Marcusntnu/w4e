@@ -135,6 +135,7 @@ body {
 }
 
 .content {
+    font-family: "Century Gothic", sans-serif;
     background-color: #faf5f2;
     width: 100%;
     display: inline-block;
@@ -329,5 +330,9 @@ div.desc {
 }
 
 #bryggelaugHeader {
+    
+}
 
+@keyframes  {
+    
 }
