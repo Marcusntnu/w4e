@@ -88,7 +88,6 @@ table {
     margin: auto;
     position: relative;
     text-align: center;
-    width: 90%;
     bottom: 10px;
     left: 40px;
 }
@@ -96,6 +95,11 @@ table {
 .navt li {
     position: relative;
     display: inline;
+    width: 100%;
+}
+
+.navt ul{
+    width: 120%;
 }
 
 ul {
@@ -118,7 +122,8 @@ ul {
 }
 
 .navt li a:hover {
-
+    animation-name: underline;
+    animation-duration: 1s;
 }
 
 .navt img {
@@ -149,6 +154,8 @@ body {
     padding: 10px;
     min-height: 70%;
     padding-bottom: 5%;
+    animation-name: kuul;
+    animation-duration: 1s;
 }
 
 #bildeGalleriH1 {
@@ -341,5 +348,21 @@ div.desc {
 }
 
 @keyframes kuul {
-    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes underline {
+    from{
+        text-decoration: none;
+        font-size: 100%;
+    }
+    to {
+        text-decoration: solid;
+        font-size: 140%;
+    }
 }
