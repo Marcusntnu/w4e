@@ -4,11 +4,11 @@ WRITTEN BY: Sander Bjerklund Lindberg, Filip Østervold Tangen, Marcus Tiedemann
 WHEN: November 2017
 PURPOSE: Style the page and make it functional
  */
-/*
+
 * {
     outline:1px solid white;
 }
-*/
+
 #developersDiv {
     font-style: italic;
 }
@@ -82,6 +82,7 @@ table {
     text-align: center;
     width: 90%;
     bottom: 10px;
+    left: 40px;
 }
 
 .navt li {
@@ -132,15 +133,12 @@ body {
 }
 
 .content {
-    /*background-color: #faf5f2;
-    display: inline-block;
-    margin-top: -40px;
-    font-family: "Century Gothic" ,sans-serif;
-    width: 100vw;*/
     background-color: #faf5f2;
     width: 100%;
     display: inline-block;
     padding: 10px;
+    min-height: 70%;
+    padding-bottom: 5%;
 }
 
 #bildeGalleriH1 {
