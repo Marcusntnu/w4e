@@ -15,7 +15,6 @@ PURPOSE: Style the page and make it functional
         font-size: 100%;
         padding: 0;
         margin: 0;
-        animation-duration: 0;
     }
     .navt li{
         padding: 0;
@@ -32,20 +31,17 @@ PURPOSE: Style the page and make it functional
         display: inline-block;
         width: auto;
     }
-    #oel:{
-        display: none
-    }
     #oelbilde{
         display: none;
     }
     #oel::after{
         display: none;
     }
-    #logo{
-        display: none;
+    .align-left, .align-right{
+        display: none !important;
     }
-}
 
+}
 
 body {
     font-size: 17px;
