@@ -1,16 +1,11 @@
 (function(){
 
 
-    window.onload= callBoth;
+    addLoadEvent(parallex);
     window.onscroll = parallex;
 
 })();
 
-
-function callBoth(){
-    parallex();
-    loadNavbar();
-}
 
 
 function parallex(){
