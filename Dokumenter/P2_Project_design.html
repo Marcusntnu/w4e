@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>P2 Project Design</title>
+    <link rel="stylesheet" href="css/documents.css" type="text/css">
+</head>
+<body>
+    <div class="double-border">
+        <div id="page">
+            <div id="developersDiv">
+                <h1 id="headingOne">Project design</h1>
+                <p>Filip Østervold Tangen, Marcus Henriksbø, Sondre Sørdal, Peder Lexau og <br>Sander Lindberg (Fredag 06.10)</p>
+            </div>
+            <hr>
+
+            <div id="kunde">
+                <h2>Vår kunde</h2>
+                <p><b>Gløshaugen Bryggeforum</b></p>
+                <p>Gløshaugen bryggeforum er en paraplyorganisasjon for alle bryggelaugene på Gløshaugen campus, ledet av Trod Standnes.</p>
+                <br>
+                <img id="logoBilde" src="images/gbLogo.png" alt="Logo til GB">
+                <br>
+                Bryggeforumet sin logo
+            </div>
+
+            <div>
+                <h2>Mål, mening og publikum</h2>
+                <p>
+                    Målet med nettsiden er å vise verden at Gløshaugen Bryggeforum eksisterer og er en seriøs organisasjon.
+                    GB ønsker å bli oppdaget om eventuelle sponsorer søker etter dem. De ønsker også å være en infoside for gamle og
+                    nye medlemmer, hvor disse kan finne informasjon om kurs, møter, bryggeoppskrifter og mer.
+                </p>
+                <br>
+                <p>
+                    Publikummet til nettsiden vil hovedsaklig være medlemmene til Gløshaugen Bryggeforum, men også eventuelle sponsorer og nye medlemmer.
+                    I tilegg vil publikummet være alle som er interesserte i å lære mer om GB og vurderer et medlemskap.
+                </p>
+            </div>
+            <div id="clique">
+                <h2>Nettsidekoblinger</h2>
+                <img src="images/clique.png" width="70%">
+                <p>
+                    Alle sidene kan nåes fra hverandre, via menyen. Menyen har linker til alle sidene, og skal vises
+                    på alle sidene.
+                </p>
+            </div>
+            <div id="pageLayout">
+                <h2>Generell sidelayout</h2>
+                <p>
+                    Det universelle designet til ølbryggeforumet skal gjennspeile klubbens foretak og hensikter.
+                    Dette gjør vi med en rekke forskjellig virkemidler, blant annet et visuelt appelerende design som både
+                    holder brukeren på siden, samtidig som den vil få dem til å utforske andre deler av nettsiden.
+                    Ved å bruke en begrenset fargepalett bestående av farger som gir konotasjoner til ølbrygging og en
+                    minimalistisk utforming, vil brukeren lett kunne identifisere seg med og kunne finne og utforske
+                    ølbryggerforumet. På grunn av at mange av brukerene vil være potensielt nye medlemmer og sponsorer,
+                    vil et profesjonelt innbydende og oversiktlig design være viktig. Derfor er det viktig at kontakt, om oss
+                    og "bli medlem" siden er lett tilgjengelig fra forsiden. Vi har derfor lagt alle disse sidene på en
+                    hovedmeny på toppen av hver side. Ølbryggerforumets logo er også en del av denne menyen, slik at
+                    forumet skal bli bedre husket. De fleste brukere av denne siden vil være av den yngre målgruppen,
+                    og det er derfor viktig at nettsiden er moderne og "trendy". Dette er en av grunnene for at vi
+                    har valgt et flatt design, som utnytter skjermplassen. I tillegg til css for pc-brukere, skal vi bruke responsive
+                    design, altså bruke media queries for en bedre brukeropplevese på mindre skjermer.
+                    <br><br>
+                    Som font vil vi bruke fonten "Proxima Nova", med "Times New Roman" som fallback-font. Fargene på siden
+                    (overskrifter, borders, etc..) vil gjennspeile GBs logo.
+                </p>
+                <br>
+                <h2>Mockups</h2>
+                <h3>Mockup av layout</h3>
+                <img src="images/pageLayout.png" width="70%">
+                <h3>"Forside"</h3>
+                <img src="images/indexMockup.png" width="70%">
+                <h3>"Om"</h3>
+                <img src="images/omMockup.png" width="70%">
+                <h3>"Bryggelaug</h3>
+                <img src="images/bryggelaugMockup.png" width="70%">
+                <h3>"Beregninger"</h3>
+                <img src="images/beregningerMockup.png" width="70%">
+                <h3>"Bildegalleri"</h3>
+                <img src="images/bildegalleriMockup.png" width="70%">
+                <h3>"Bryggeguide"</h3>
+                <img src="images/bryggeGuideMockup.png" width="70%">
+                <h3>"Bli medlem"</h3>
+                <img src="images/bliMedlemMockup.png" width="70%">
+            </div>
+            <div id="pages">
+                <h2>Innhold</h2>
+                <h3>Forside</h3>
+                <p>
+                    Forsiden er siden brukeren kommer inn på ved å gå til Ølbryggerforumets nettside.
+                    Målet med nettsiden er å både virke visuelt appellerende for å holde brukeren på siden
+                    samtidig som den skal være oversiktlig for at brukeren skal kunne finne informasjonen de leter etter eller
+                    som vil være nyttig å vite. Vi tenker at denne forsiden kan dra nytte av kort info, medlemstall og
+                    kortfattet praktisk informasjon.
+                </p>
+                <h3>Om</h3>
+                <p>
+                    Forteller hva Gløshaugen Bryggeforum er. Gruppens historie og foretak.
+                    Understreker at det er et felles organ for flere organisasjoner (aka bryggelaug), og at info om disse er på en egen side (”Bryggelaugene”).
+
+                    Kan fortelle mer utfyllende om historie og ”felles brygg” (om det har vært noen) i en ”vis mer”-expandable.
+
+                    Et (gammelt) bilde eller en illustrasjon som passer, særlig om dette skal være en ”historie” -side. Dette for at siden ikke skal være for kjedelig.
+
+                    Info om styret/styremedlemmer kommer på en egen side, men lederens navn kan godt nevnes her også.
+
+                </p>
+                <h3>Bildegalleri</h3>
+                <p>
+                    Bildegallerie skal være en side med relevante bilder av bryggelaugene.
+                    Dette kan være bilder av arrangementer, fester, brygging og annet.
+                    Denne siden er nyttig, fordi det viser nykommere hva som foregår innenfor bryggelaugene.
+                    Det gir et innblikk i bryggelivet. Dette kan skape mer interesse for nykommere.
+                    Siden viser også at bryggelaugene er aktive og det er mye gøy som man kan bli med på.
+
+                    Unikt med siden skal det være et stort bilde, vedsiden av bilde skal det stå en tittel og informasjon om bilde.
+                    På begge sidene av bilde skal det være piler slik at man kan bla seg igjennom de andre bildene i bildegalleriet.
+                    Under det store bilde skal det være en grid med mindre bilder. Det bilde du er på nå skal være outlinet.
+                    Man skal kunne trykke på bildene på griddet for å bla seg over til det bilde og informasjon på bildet.
+
+                    Det krever et javascript for å gjøre det mulig å vise alle bildene og gjøre det mulig å bla og selekte bildene.
+                </p>
+                <h3>Beregninger</h3>
+                <p>
+                    Beregninger og tabeller siden skal være en side hvor brukere kan finne en tabell over hvor mye sukker for hvor høy alkoholprosent osv.
+                    Dette skal rett og slett være en beregningsside for å finne ut av hvor mye ingredienser du trenger. I tillegg skal denne siden
+                    ha en "kalkulator" hvor brukeren kan legge inn f.eks hvor høy abv han vil ha, og bli vist hvor mye ingredienser han trenger.
+                </p>
+                <h3>Bryggelaugene</h3>
+                <p>
+                    Denne siden skal inneholde en liste over alle bryggelaugene på Gløshaugen campus. Brukeren skal kunne trykke på
+                    hvert enkelt bryggelaug, slik at et "pop-up" vindu i form av en div popper opp. Her vil info om hvert bryggelaug
+                    vises, hvem som er i styret, kontakt info, antall medlemmer, link til deres facebook-gruppe, deres logo mm.
+                </p>
+                <h3>Bryggeguide</h3>
+                <p>
+                    Bryggeguide siden skal inneholde en detaljert guide over hvordan en brygger forskjellige typer øl.
+                    Dette vil virke appellerene til sidens brukere og skaffe større nettrtrafikk, så siden muligens blir høyere listet i
+                    søkemotorer, så evt sponsorer finner siden lettere. Ellers det det fin måte for potensielt nye medlemmer å se hva
+                    ølbrygging går ut på.
+                </p>
+                <h3>Bli medlem</h3>
+                <p>
+                    Nettsiden ha en "Bli medlem" side, hvor nye brukere kan finn informasjon om hvor en registrerer seg i GB.
+                </p>
+            </div>
+            <br>
+            <div id="structure">
+                <h2>Struktur over siten</h2>
+                <p>Vi kommer til å følge den følgende organiserte mappe -og filstrukturen for siden. Alle disse filene vil legges i en mappe kalt "w4e".</p>
+                <img id="imgStructure" src="images/struktur.png" width="400">
+            </div>
+            <div id="tableContent">
+                <h2>HTML filer</h2>
+                <table>
+                    <tr>
+                        <th>Side</th><th>Ansvarlig</th><th>Deadline</th>
+                    </tr>
+                    <tr><td>index.html</td><td>Marcus</td><td>05-11-17</td></tr>
+                    <tr><td>om.html</td><td>Sondre</td><td>05-11-17</td></tr>
+                    <tr><td>bryggelaug.html</td><td>Sondre</td><td>05-11-17</td></tr>
+                    <tr><td>bryggeGuide.html</td><td>Peder</td><td>05-11-17</td></tr>
+                    <tr><td>bliMedlem.html</td><td>Peder</td><td>05-11-17</td></tr>
+                    <tr><td>bildeGalleri.html</td><td>Filip</td><td>05-11-17</td></tr>
+                    <tr><td>beregninger.html</td><td>Sander</td><td>05-11-17</td></tr>
+                </table>
+                <h2>JavaScript</h2>
+                <table>
+                    <tr>
+                        <th>Navn på script</th><th>Ansvarlig</th><th>Beskrivelse</th><th>Deadline</th>
+                    </tr>
+                    <tr><td>slideshow.js</td><td>Filip</td><td>Dette skriptet utfører en slideshow funksjon i bildegalleriet.</td><td>09-11-17</td></tr>
+                    <tr><td>expandLaug.js</td><td>Sondre</td><td>Funksjonen til dette skriptet er å ekspandere de forskjellige bryggelaugene
+                    på bryggelaug-siden når brukeren holder over de.</td><td>09-11-17</td></tr>
+                    <tr><td>calculator.js</td><td>Sander</td><td>På siden som inneholder beregninger og tabeller, skal brukeren også finne en kalkulator
+                    for beregninger av ølbrygging. Dette skriptet skal sørge for at denne funksjonen fungerer.</td><td>09-11-17</td></tr>
+                    <tr><td>olMaaler.js</td><td>Marcus</td><td>Javascriptet kalt Øl måler skal vise en dynamisk representasjon av hvor mye øl som er
+                    brygget til sammen av alle bryggelaugene.</td><td>09-11-17</td></tr>
+                </table>
+                <p>Vi har dedikert korresponderende HTML filer og javacript filer til samme person. Det bli denne personens oppgave å få dette ferdig innen tidsfristen.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
