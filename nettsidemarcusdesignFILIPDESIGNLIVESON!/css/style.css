@@ -9,6 +9,44 @@ PURPOSE: Style the page and make it functional
     outline:1px solid orange;
 }
 
+
+@media only screen and (max-width: 1200px){
+    *{
+        font-size: 100%;
+        padding: 0;
+        margin: 0;
+        animation-duration: 0;
+    }
+    .navt li{
+        padding: 0;
+        margin: 0;
+        display: inline;
+
+    }
+    .navt a{
+        display: block;
+        text-decoration: none;
+        width: 50%;
+    }
+    .navt {
+        display: inline-block;
+        width: auto;
+    }
+    #oel:{
+        display: none
+    }
+    #oelbilde{
+        display: none;
+    }
+    #oel::after{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+}
+
+
 body {
     font-size: 17px;
     font-family: "Proxima Nova", "Times New Roman", "sans-serif";
@@ -131,7 +169,7 @@ body {
 
 #oel::after{
     position: relative;
-    content: " dette semesteret";
+    content: "dette semesteret";
     font-size: 50%;
     text-align: center;
     top: 20px;

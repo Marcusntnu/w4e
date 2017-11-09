@@ -13,7 +13,7 @@ let already_beer = 500.00;
 function Beer_maker(){
     elapsed = new Date();
     beers = parseFloat((elapsed - start) * rate).toFixed(3) + already_beer;
-    document.getElementById("oel").innerHTML = "<input id=\"oelbilde\" type=\"image\"  src=\"images/beer.png\" alt=\"Øl:\" oninput=\"this.drink();\"/>"
+    document.getElementById("oel").innerHTML = "<input id=\"oelbilde\" type=\"image\" src=\"images/beer.png\" alt=\"Øl:\" oninput=\"this.drink();\"/>"
 
         + "<b>"+parseFloat(beers).toFixed(3)+"</b>" +"  liter brygget";
 
@@ -22,15 +22,13 @@ function Beer_maker(){
 
 }
 
-
-
 function drink(){
     console.log("IS THIS WORKING?");
 }
 
-
-setInterval(Beer_maker, 100);
-
+if(window.innerWidth > 1120) {
+    setInterval(Beer_maker, 100);
+}
 console.log(new Date()- start);
 console.log(new Date());
 
