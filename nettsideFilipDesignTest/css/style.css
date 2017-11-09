@@ -348,6 +348,23 @@ div.desc {
 
 }
 
-@keyframes kuul {
 
+@keyframes kuul {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes underline {
+    from{
+        text-decoration: none;
+        font-size: 100%;
+    }
+    to {
+        text-decoration: solid;
+        font-size: 140%;
+    }
 }
