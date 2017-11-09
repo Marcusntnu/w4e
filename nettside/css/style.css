@@ -264,3 +264,64 @@ div.desc {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+#cover {
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+    display: none;
+}
+#overlay-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    z-index: 5;
+    display: none;
+}
+
+.bryggelaugImg {
+    width: 150px;
+}
+
+.bryggelaugImg:hover {
+    cursor: pointer;
+}
+
+.bryggelaugDiv {
+    margin-bottom: 20px;
+}
+
+.coverImg {
+    width: 200px;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+}
+
+#cover {
+    background-color: lightgrey;
+}
+
+#ulBryggelaug{
+    position: absolute;
+    left: 180px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#infoDiv {
+    position: absolute;
+    left: 210px;
+}
+
+#contactDiv {
+    position: absolute;
+    left: -200px;
+}
