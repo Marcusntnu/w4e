@@ -6,21 +6,7 @@ PURPOSE: store the navbar for use on all pages
  */
 
 
-
-function addLoadEvent(func) {
-    var oldonload = window.onload;
-    if (typeof window.onload != 'function') {
-        window.onload = func;
-    } else {
-        window.onload = function() {
-            if (oldonload) {
-                oldonload();
-            }
-            func();
-        }
-    }
-}
-
+  //Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
 
 
 function loadNavbar(){
@@ -54,8 +40,11 @@ function loadNavbar(){
 
         "</ul>";
 
+        "</ul>";
+
 }
 
 
 addLoadEvent(loadNavbar);
+
 

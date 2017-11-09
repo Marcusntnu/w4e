@@ -504,7 +504,6 @@ div.desc {
     position: absolute;
     top: 0px;
     left: 0px;
-
     display: block;
     z-index:0;
 
@@ -523,16 +522,13 @@ div.desc {
     position: relative;
     top: 0px;
     left: 0px;
-
-
-
     z-index:2;
     overflow:hidden;
 }
 
 @keyframes drinkclipping {
-    from {top:0px;}
-    to {top:60px;}
+    from {top: 0;}
+    to {top: 60px;}
 }
 
 @keyframes drinkbeer {
@@ -541,8 +537,6 @@ div.desc {
 }
 
 /*End øl css*/
-
-
 
 
 @keyframes spin {
