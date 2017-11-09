@@ -9,30 +9,39 @@ PURPOSE: Style the page and make it functional
     outline:1px solid orange;
 }
 
+#developersDiv {
+    font-style: italic;
+}
 
-body {
-    font-size: 17px;
-    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
-    line-height: 150%;
-    background-image: url("../images/beerpattern3.jpg");
-    background-repeat: repeat;
-    outline:1px solid white;
-    margin: 0;
-    padding:0;
+#liste {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+#bryggeguide {
+	width: 800px;
+	margin: auto;
 
 }
 
-@font-face {
-    font-family: fancyFont;
-    src: url(../fonts/alex-brush/AlexBrush-Regular.ttf);
+#problemsList {
+    text-align: left;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 25%;
+    list-style-type: none;
 }
-@font-face {
-    font-family: fancyFont2;
-    src: url(../fonts/allura/Allura-Regular.otf);
+
+#logoBilde {
+    width: 200px;
+    height: auto;
 }
-@font-face {
-    font-family: kulFont;
-    src: url(../fonts/blackjack/blackjack.otf);
+
+.link {
+    position: relative;
+    top: -20px;
+    font-size: 16px;
 }
 
 #page {
@@ -43,20 +52,6 @@ body {
     min-width: 99%;
 }
 
-.content {
-    font-family: "Century Gothic", sans-serif;
-    background-color: rgba(250, 245, 242, 0.89);
-    width: 80%;
-    display: inline-block;
-    margin-top:50px;
-    padding: 10px;
-    min-height: 70%;
-    padding-bottom: 5%;
-    animation-name: fadein;
-    animation-duration: 1s;
-}
-
-
 #headingOne{
     color: #c9587b;
     text-shadow: 1px 1px 1px #d0b08f;
@@ -65,6 +60,44 @@ body {
 
 h2 {
     color: #c9587b;
+}
+
+.navt a:hover {
+    animation-name: scale;
+    animation-duration: 0.1s;
+    animation-fill-mode:forwards;
+    backface-visibility: hidden;
+}
+
+.navt a:hover::after{
+    position: absolute;
+    content: "";
+    height: 5px;
+    animation-name: hoverline;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    background-color: rgb(195, 141, 26);
+    top: 102%;
+    left: 0;
+    animation-fill-mode: forwards;
+}
+
+
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    position: relative;
+    left: 200px;
+    top: -550px;
 }
 
 #navbar {
@@ -97,80 +130,20 @@ h2 {
     border-bottom: 5px solid transparent;
 }
 
-
 .navt img {
     vertical-align: middle;
 }
 
-.navt a:hover {
-    animation-name: scale;
-    animation-duration: 0.1s;
-    animation-fill-mode:forwards;
-    backface-visibility: hidden;
-}
-
-.navt a:hover::after{
-    position: absolute;
-    content: "";
-    height: 5px;
-    animation-name: hoverline;
-    animation-duration: 0.2s;
-    animation-timing-function: ease-out;
-    background-color: rgb(195, 141, 26);
-    top: 102%;
-    left: 0;
-    animation-fill-mode: forwards;
-}
-
-#logo {
-    max-height: 200px;
-    width: 150px;
-    display: inline;
-}
-
-#oel{
-    font-size: 120%;
-    font-family: "Arial" ,Garamond, sans-serif;
-    color: #39373c;/*
-    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;*/
-    position: relative;
-    float:left;
+body {
+    font-size: 17px;
+    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
+    line-height: 150%;
+    background-image: url("../images/beerpattern3.jpg");
+    background-repeat: repeat;
     margin: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: inline;
-    line-height:300%;
+    padding:0;
+
 }
-
-#oel::after{
-    position: relative;
-    content: " dette semesteret";
-    font-size: 50%;
-    text-align: center;
-    top: 20px;
-    right: 30%;
-    font-family: inherit;
-}
-
-
-table,
-tr,
-td,
-th {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-table {
-    margin-right: auto;
-    margin-left: auto;
-    width: 60%;
-    position: relative;
-    left: 200px;
-    top: -550px;
-}
-
-
 
 .bryggeSection{
     width:80%;/*
@@ -180,11 +153,64 @@ table {
 
 }
 
+.content {
+    font-family: "Century Gothic", sans-serif;
+    background-color: rgba(250, 245, 242, 0.89);
+    width: 80%;
+    display: inline-block;
+    margin-top:50px;
+    padding: 10px;
+    min-height: 70%;
+    padding-bottom: 5%;
+    animation-name: fadein;
+    animation-duration: 1s;
+    border-radius: 10px;
+}
+
 #bildeGalleriH1 {
     padding-top: 0;
     margin-top: 40px;
     text-align: center;
 }
+
+@font-face {
+    font-family: fancyFont;
+    src: url(../fonts/alex-brush/AlexBrush-Regular.ttf);
+}
+@font-face {
+    font-family: fancyFont2;
+    src: url(../fonts/allura/Allura-Regular.otf);
+}
+@font-face {
+    font-family: kulFont;
+    src: url(../fonts/blackjack/blackjack.otf);
+}
+
+h1{
+    line-height:50px;
+    font-family: kulFont;
+    font-size:300%;
+    display:inline;
+}
+
+#tittel{
+    margin-bottom:50px;
+    margin-top:30px;
+}
+
+
+.logo {
+
+    width: 100px;
+    display: inline;
+}
+.align-left{
+    float:left;
+}
+.align-right{
+    float:right;
+}
+
 
 .image {
     width: 150px;
@@ -265,10 +291,14 @@ div.desc {
 }
 
 #slideshow {
+
     width:600px;
     height:400px;
-}
 
+
+
+
+}
 #slideshowImage{
     width: auto;
     height: auto;
@@ -299,40 +329,33 @@ div.desc {
     height: 100%;
 }
 
-#developersDiv {
-    font-style: italic;
-}
-
-#liste {
-    list-style-type: none;
-    padding: 0;
-    font-weight: bold;
-}
-
-#bryggeguide {
-    width: 800px;
-    margin: auto;
-
-}
-
-#problemsList {
-    text-align: left;
-    margin: auto;
-    margin-bottom: 10px;
-    width: 25%;
-    list-style-type: none;
-}
-
-#logoBilde {
-    width: 200px;
-    height: auto;
-}
-
-.link {
+#oel{
+    font-size: 120%;
+    font-family: "Arial" ,Garamond, sans-serif;
+    color: #39373c;/*
+    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;*/
     position: relative;
-    top: -20px;
-    font-size: 16px;
+    float:left;
+
+
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display:inline;
+    line-height:300%;
+
 }
+
+#oel::after{
+    position: relative;
+    content: " dette semesteret";
+    font-size: 50%;
+    text-align: center;
+    top: 20px;
+    right: 32%;
+    font-family: inherit;
+}
+
 
 
 #cover {
@@ -407,10 +430,12 @@ div.desc {
     float:left;
     height:60px;
     width:60px;
+
+
 }
 
 
-@keyframes fadein {
+@keyframes kuul {
     from {
         opacity: 0;
     }
@@ -419,12 +444,14 @@ div.desc {
     }
 }
 
-@keyframes scale{
+@keyframes scale {
     from{
         transform: scale(1);
+
     }
     to {
         transform: scale(1.05);
+
     }
 }
 

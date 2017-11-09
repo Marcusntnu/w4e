@@ -6,33 +6,42 @@ PURPOSE: Style the page and make it functional
  */
 
 * {
-    outline:1px solid orange;
-}
-
-
-body {
-    font-size: 17px;
-    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
-    line-height: 150%;
-    background-image: url("../images/beerpattern3.jpg");
-    background-repeat: repeat;
     outline:1px solid white;
-    margin: 0;
-    padding:0;
+}
+
+#developersDiv {
+    font-style: italic;
+}
+
+#liste {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+#bryggeguide {
+    width: 800px;
+    margin: auto;
 
 }
 
-@font-face {
-    font-family: fancyFont;
-    src: url(../fonts/alex-brush/AlexBrush-Regular.ttf);
+#problemsList {
+    text-align: left;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 25%;
+    list-style-type: none;
 }
-@font-face {
-    font-family: fancyFont2;
-    src: url(../fonts/allura/Allura-Regular.otf);
+
+#logoBilde {
+    width: 200px;
+    height: auto;
 }
-@font-face {
-    font-family: kulFont;
-    src: url(../fonts/blackjack/blackjack.otf);
+
+.link {
+    position: relative;
+    top: -20px;
+    font-size: 16px;
 }
 
 #page {
@@ -42,20 +51,6 @@ body {
     width: 100%;
     min-width: 99%;
 }
-
-.content {
-    font-family: "Century Gothic", sans-serif;
-    background-color: rgba(250, 245, 242, 0.89);
-    width: 80%;
-    display: inline-block;
-    margin-top:50px;
-    padding: 10px;
-    min-height: 70%;
-    padding-bottom: 5%;
-    animation-name: fadein;
-    animation-duration: 1s;
-}
-
 
 #headingOne{
     color: #c9587b;
@@ -67,91 +62,9 @@ h2 {
     color: #c9587b;
 }
 
-#navbar {
-    overflow:hidden;
-    background: rgba(251, 249, 255, 1);
-
+a:hover {
+    color: rgba(255, 210, 126, 0.46);
 }
-
-.navt {
-    margin: 0;
-    padding: 0;
-    float:right;
-    width:70%;
-    text-align: right;
-}
-
-.navt li {
-    margin-top: 0;
-    font-size:100%;
-    display: inline;
-}
-
-.navt a {
-    font-family: "Century Gothic", sans-serif;
-    display: inline-block;
-    padding: 0 12px;
-    color: black;
-    text-decoration: double;
-    line-height: 350%;
-    border-bottom: 5px solid transparent;
-}
-
-
-.navt img {
-    vertical-align: middle;
-}
-
-.navt a:hover {
-    animation-name: scale;
-    animation-duration: 0.1s;
-    animation-fill-mode:forwards;
-    backface-visibility: hidden;
-}
-
-.navt a:hover::after{
-    position: absolute;
-    content: "";
-    height: 5px;
-    animation-name: hoverline;
-    animation-duration: 0.2s;
-    animation-timing-function: ease-out;
-    background-color: rgb(195, 141, 26);
-    top: 102%;
-    left: 0;
-    animation-fill-mode: forwards;
-}
-
-#logo {
-    max-height: 200px;
-    width: 150px;
-    display: inline;
-}
-
-#oel{
-    font-size: 120%;
-    font-family: "Arial" ,Garamond, sans-serif;
-    color: #39373c;/*
-    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;*/
-    position: relative;
-    float:left;
-    margin: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: inline;
-    line-height:300%;
-}
-
-#oel::after{
-    position: relative;
-    content: " dette semesteret";
-    font-size: 50%;
-    text-align: center;
-    top: 20px;
-    right: 30%;
-    font-family: inherit;
-}
-
 
 table,
 tr,
@@ -170,7 +83,66 @@ table {
     top: -550px;
 }
 
+.navt {
+    width:100%;
+    margin: 0;
+    padding: 0;
 
+}
+
+.navt li {
+    position: relative;
+    display: inline;
+
+}
+
+ul {
+    padding: 1%;/*
+    display: inline;*/
+    width:100%;
+    background: rgba(251, 249, 255, 0.8);
+    left: 3%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.navt a {
+    font-family: "Century Gothic", sans-serif;
+    display: inline-block;
+    padding: 0 12px;
+    font-weight: normal;
+    color: black;
+    text-decoration: double;
+    line-height: 150%;
+}
+
+.navt li a:hover {
+    animation-name: underline;
+    animation-duration: 1s;
+}
+
+.navt img {
+    vertical-align: middle;
+}
+
+#logo {
+    max-height: 200px;
+    width: 150px;
+    display: inline;
+}
+
+body {
+    font-size: 17px;
+    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
+    line-height: 150%;
+    background-image: url("../images/beerpattern3.jpg");
+    background-repeat: repeat;
+    outline:1px solid white;
+    margin: 0;
+    padding:0;
+
+}
 
 .bryggeSection{
     width:80%;/*
@@ -178,6 +150,18 @@ table {
     /**/
     margin: 0 auto;
 
+}
+
+.content {
+    font-family: "Century Gothic", sans-serif;
+    background-color: #faf5f2;
+    width: 70%;
+    display: inline-block;
+    padding: 10px;
+    min-height: 70%;
+    padding-bottom: 5%;
+    animation-name: kuul;
+    animation-duration: 1s;
 }
 
 #bildeGalleriH1 {
@@ -249,15 +233,13 @@ div.desc {
     position: relative;
     right: 140px;
     top: 225px;
-    display:inline;
 }
 
-#next {
+.next {
     background-color: #4CAF50;
     color: white;
     position: relative;
     left: 150px;
-    display:inline;
 }
 
 .round {
@@ -265,15 +247,8 @@ div.desc {
 }
 
 #slideshow {
-    width:600px;
-    height:400px;
-}
-
-#slideshowImage{
-    width: auto;
-    height: auto;
-    max-width: 100%; height: auto
-    max-height:400px;
+    width: 200px;
+    height: 200px;
 }
 
 #calculator {
@@ -299,42 +274,20 @@ div.desc {
     height: 100%;
 }
 
-#developersDiv {
-    font-style: italic;
-}
-
-#liste {
-    list-style-type: none;
-    padding: 0;
-    font-weight: bold;
-}
-
-#bryggeguide {
-    width: 800px;
-    margin: auto;
-
-}
-
-#problemsList {
-    text-align: left;
-    margin: auto;
-    margin-bottom: 10px;
-    width: 25%;
-    list-style-type: none;
-}
-
-#logoBilde {
-    width: 200px;
-    height: auto;
-}
-
-.link {
+#oel{
+    font-size: 120%;
+    font-family: "Arial" ,Garamond, sans-serif;
+    color: #39373c;
+    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;
     position: relative;
-    top: -20px;
-    font-size: 16px;
+    max-width: 20%;
+    background-color: white;
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-
-
 #cover {
     position: fixed;
     top: 30%;
@@ -402,15 +355,8 @@ div.desc {
 
 }
 
-#oelbilde{
-    position: relative;
-    float:left;
-    height:60px;
-    width:60px;
-}
 
-
-@keyframes fadein {
+@keyframes kuul {
     from {
         opacity: 0;
     }
@@ -419,24 +365,13 @@ div.desc {
     }
 }
 
-@keyframes scale{
+@keyframes underline {
     from{
+        text-decoration: none;
         transform: scale(1);
     }
     to {
-        transform: scale(1.05);
+        text-decoration: solid;
+        transform: scale(1.3);
     }
 }
-
-@keyframes hoverline {
-    from{
-        width: 0;
-        margin-left: 50%;
-
-    }
-    to{
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
