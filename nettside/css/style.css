@@ -19,6 +19,12 @@ PURPOSE: Style the page and make it functional
     font-weight: bold;
 }
 
+#bryggeguide {
+	width: 800px;
+	margin: auto;
+	
+}
+
 #problemsList {
     text-align: left;
     margin: auto;
@@ -133,6 +139,7 @@ body {
 
 .content {
     background-color: #faf5f2;
+	min-width: 100%;
     display: inline-block;
     margin-top: -40px;
     font-family: "Century Gothic" ,sans-serif;
