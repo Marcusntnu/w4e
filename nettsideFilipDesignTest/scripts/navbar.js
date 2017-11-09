@@ -9,7 +9,7 @@ window.onload = function () {
   //Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
   let navbar = document.getElementById("navbar");
 
-  navbar.innerHTML = "<p id=\"oel\"></p>" +
+  navbar.innerHTML =
       "<ul class=\"navt\">\n" +
       "\n" +
       "\n" +
@@ -22,7 +22,7 @@ window.onload = function () {
       "    </li>\n" +
       "    <li>\n" +
       "\n" +
-      "        <img id=\"logo\" src=\"images/gjennomsiktiglogoOutlineWithShadow.png\">\n" +
+
       "\n" +
       "    </li>\n" +
       "\n" +

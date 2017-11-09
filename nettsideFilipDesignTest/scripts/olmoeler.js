@@ -15,6 +15,8 @@ function Beer_maker(){
     document.getElementById("oel").innerHTML = "Øl: " + parseFloat(beers).toFixed(3) + " liter brygget";
     console.log(beers)
 }
+
+
 setInterval(Beer_maker, 100);
 
 console.log(new Date()- start);
