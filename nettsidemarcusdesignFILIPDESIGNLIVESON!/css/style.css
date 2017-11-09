@@ -19,6 +19,26 @@ body {
     padding:0;
 }
 
+#loadpage{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#loader{
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    border: 10px solid #b9b7b6;
+    border-top: 10px solid #39373c;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 0.8s linear infinite;
+
+}
+
 #page {
     position: inherit;
     height: 100vh;
@@ -423,6 +443,12 @@ div.desc {
     height:60px;
     width:60px;
 }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 @keyframes kuul {
     from { opacity: 0; }

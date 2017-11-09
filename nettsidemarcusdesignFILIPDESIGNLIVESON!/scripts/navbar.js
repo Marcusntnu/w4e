@@ -37,7 +37,6 @@ function loadNavbar(){
         "    </li>\n" +
         "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
         "    </li>\n" +
-        "</ul>"
-    parallex()
-
+        "</ul>";
+    parallex();
 }
