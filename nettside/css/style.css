@@ -46,13 +46,15 @@ PURPOSE: Style the page and make it functional
     min-width: 99%;
 }
 
-#headingOne,
-h2 {
+#headingOne{
     color: #c9587b;
     text-shadow: 1px 1px 1px #d0b08f;
     text-align: center;
 }
 
+h2 {
+    color: #c9587b;
+}
 
 a:hover {
     color: rgba(255, 210, 126, 0.46);
@@ -229,7 +231,7 @@ div.desc {
 }
 
 #calculator {
-
+    text-align: left;
 }
 
 #result {
@@ -241,9 +243,8 @@ div.desc {
 }
 
 #alkoholAvsnitt {
-    width: 200px;
+    width: 400px;
     position: relative;
-    text-align: right;
 }
 
 #tableAvsnitt {
@@ -296,6 +297,7 @@ div.desc {
 
 .bryggelaugDiv {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .coverImg {
@@ -324,4 +326,8 @@ div.desc {
 #contactDiv {
     position: absolute;
     left: -200px;
+}
+
+#bryggelaugHeader {
+
 }
