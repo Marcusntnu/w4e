@@ -44,7 +44,6 @@ body {
     margin: 0;
     padding: 0;
     float: right;
-
 }
 
 .navt li {
@@ -67,12 +66,25 @@ ul {
     color: black;
     text-decoration: double;
     line-height: 300%;
-
+    border-bottom: 5px solid transparent;
 }
 
-.navt li a:hover {
+.navt a:hover {
     animation-name: underline;
     animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+.navt a:hover::before{
+    position: absolute;
+    content: "";
+    height: 5px;
+    animation-name: hoverline;
+    animation-duration: 0.4s;
+    background-color: black;
+    top: 102%;
+    left: 0;
+    animation-fill-mode:forwards;
 }
 
 
@@ -380,8 +392,20 @@ div.desc {
     }
     to {
         text-decoration: solid;
-        transform: scale(1.3);
+        transform: scale(1.1);
         color: black;
-
     }
 }
+
+@keyframes hoverline {
+    from{
+        width: 0;
+        margin-left: 50%;
+
+    }
+    to{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
