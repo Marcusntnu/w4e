@@ -132,11 +132,15 @@ body {
 }
 
 .content {
-    background-color: #faf5f2;
+    /*background-color: #faf5f2;
     display: inline-block;
     margin-top: -40px;
     font-family: "Century Gothic" ,sans-serif;
-    height: 100hv;
+    width: 100vw;*/
+    background-color: #faf5f2;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
 }
 
 #bildeGalleriH1 {
@@ -227,9 +231,7 @@ div.desc {
 }
 
 #calculator {
-    margin-top: 40px;
-    position: relative;
-    right: 430px;
+
 }
 
 #result {

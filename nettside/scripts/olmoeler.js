@@ -5,7 +5,7 @@ WHEN: November 2017
 PURPOSE: Counter for beer
  */
 
-let start = new Date(2017, 0.8, 1);
+let start = new Date(2017, 8, 1);
 let rate = (500/30/24/60/60/1000);
 let already_beer = 500.00;
 
