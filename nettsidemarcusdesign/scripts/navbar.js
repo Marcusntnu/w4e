@@ -5,7 +5,7 @@ WHEN: November 2017
 PURPOSE: store the navbar for use on all pages
  */
 
-window.onload = function () {
+function navBar() {
   //Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
   let navbar = document.getElementById("navbar");
 
@@ -35,4 +35,7 @@ window.onload = function () {
       "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
       "    </li>\n" +
       "</ul>"
-};
+}
+
+navBar();
+

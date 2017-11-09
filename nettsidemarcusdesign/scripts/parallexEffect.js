@@ -1,6 +1,6 @@
-(function(){
+function scrolle(){
 
-    var parallax = document.querySelectorAll("body"),
+    let parallax = document.querySelectorAll("body"),
         speed = 0.5;
 
     window.onscroll = function(){
@@ -14,4 +14,7 @@
         });
     };
 
-})();
+}
+scrolle();
+
+window.onscroll = scrolle;
