@@ -58,8 +58,9 @@ body {
     height: 100%;
     width: 100%;
     background-color: white;
+    z-index: 999;
 }
-
+/*
 #loader{
     position: fixed;
     top: 45%;
@@ -72,7 +73,7 @@ body {
     animation: spin 0.8s linear infinite;
 
 }
-
+*/
 #page {
     position: inherit;
     height: 100vh;
@@ -307,7 +308,7 @@ h1{
     margin-bottom:50px;
     margin-top:30px;
 }
-
+/* Bildegalleriside start */
 .image {
     width: 150px;
     height: 150px;
@@ -324,17 +325,18 @@ h1{
     border: black solid 2px;
     cursor: pointer;
 }
-
-#imageContainer {
-    margin: auto;
-    width: 100vw;
+#wrapperGalleri {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-gap: 50px;
+    /*margin: auto;*/
+    width: 100%;
 }
 
 div.imageGrid {
-    margin-top: 40px;
+    margin-bottom: 100px;
     margin-right: 30px;
     float: left;
-    width: 180px;
 }
 
 div.imageGrid img {
@@ -351,7 +353,7 @@ div.desc {
 
 .imageView {
     display: inline-block;
-    width: 180px;
+    width: 400px;
     text-align: center;
 }
 
@@ -369,8 +371,8 @@ div.desc {
     background-color: #f1f1f1;
     color: black;
     position: relative;
-    right: 140px;
-    top: 225px;
+    right: 230px;
+    top: 400px;
     display:inline;
 }
 
@@ -378,7 +380,8 @@ div.desc {
     background-color: #4CAF50;
     color: white;
     position: relative;
-    left: 150px;
+    left: 230px;
+    top: -30px;
     display:inline;
 }
 
@@ -387,16 +390,45 @@ div.desc {
 }
 
 #slideshow {
-    width:600px;
-    height:400px;
+    margin: auto;
+    width: 100%;
+    height: 400px;
 }
+<<<<<<< HEAD
 #slideshowImage{
     width: auto;
     height: auto;
     max-width: 100%; height: auto
+=======
+#slideshowImg{
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+>>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
     max-height:400px;
 }
 
+#coverGalleri {
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+    display: none;
+}
+
+.coverImgGalleri {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 18%;
+    bottom: 10%;
+    opacity: 100;
+}
+/* Bildegalleriside slutt */
+
+/* Beregningerside start */
 #calculator {
     text-align: left;
 }
@@ -419,7 +451,21 @@ div.desc {
     top: 10%;
     height: 100%;
 }
+/* Beregningerside slutt */
 
+<<<<<<< HEAD
+=======
+/* Bryggelaugside start*/
+
+#wrapperLaug {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 50px;
+    margin: auto;
+    width: 60%;
+}
+
+>>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
 #cover {
     position: fixed;
     top: 30%;
@@ -473,6 +519,10 @@ div.desc {
     list-style: none;
     overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
 
 #infoDiv {
     position: absolute;
@@ -483,6 +533,7 @@ div.desc {
     position: absolute;
     left: -200px;
 }
+/*Bryggelaugside slutt*/
 
 #bryggelaugHeader {
 
@@ -562,3 +613,95 @@ div.desc {
     }
 }
 
+<<<<<<< HEAD
+=======
+@font-face {
+    font-family: kulFont;
+    src: url(../fonts/blackjack/blackjack.otf);
+}
+
+
+
+/* Credits of loader, was found free of use on internet*/
+#loader {
+    z-index: 1000;
+    color: #fff75a;
+    font-size: 50px;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin-top: 20%;
+    left: 47%;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+@keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+@-webkit-keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+>>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
