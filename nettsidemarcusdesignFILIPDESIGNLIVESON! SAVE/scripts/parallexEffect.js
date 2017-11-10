@@ -2,13 +2,12 @@
 
 (function(){
 
-
+    addLoadEvent(load_page);
     addLoadEvent(parallex);
     addLoadEvent(loadpage);
     window.onscroll = parallex;
 
 })();
-
 
 
 
@@ -23,4 +22,9 @@ function parallex(){
         el.style.backgroundPosition = elBackgrounPos;
 
     });
+}
+
+function load_page() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("loadpage").style.display = "none";
 }
