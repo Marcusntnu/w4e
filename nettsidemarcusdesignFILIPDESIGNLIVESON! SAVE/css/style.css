@@ -57,6 +57,7 @@ body {
     width: 100%;
     background-color: white;
     z-index: 999;
+
 }
 /*
 #loader{
@@ -90,7 +91,7 @@ body {
     min-height: 70%;
     padding-bottom: 5%;
     animation-name: fadein;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     border-radius: 10px;
 }
 
