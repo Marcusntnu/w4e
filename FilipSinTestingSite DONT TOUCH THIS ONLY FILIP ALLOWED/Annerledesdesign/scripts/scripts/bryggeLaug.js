@@ -1,6 +1,5 @@
 let content = document.getElementById("content");
 let cover = document.getElementById("cover");
-let wrapperLaug = document.getElementById("wrapperLaug");
 let overlayBack = document.getElementById("overlay-back");
 
 //Objekt over alle bryggelaugene i Gløshaugen bryggeforum
@@ -10,7 +9,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 33,
         logo: "ontap.png",
-        leder: "Aslak Hollund",
+		leder: "Aslak Hollund",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -23,7 +22,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 5,
         logo: "invitro.png",
-        leder: "Charlie Shea",
+		leder: "Charlie Shea",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -36,7 +35,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 6,
         logo: "aarhonekroa.png",
-        leder: "Sondre Evjen",
+		leder: "Sondre Evjen",
         kontaktinfo: {
             telefon: 12345678,
             epost: "test@test.no"
@@ -49,7 +48,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 15,
         logo: "sample.jpg",
-        leder: "Martin Madsen",
+		leder: "Martin Madsen",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -62,7 +61,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 11,
         logo: "sample.jpg",
-        leder: "Marius Hofgaard",
+		leder: "Marius Hofgaard",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -74,7 +73,7 @@ let bryggelaug = [{
         linjeforening: "Smørekoppen",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 123456,
-        leder: "Ola Nordmann",
+		leder: "Ola Nordmann",
         logo: "sample.jpg",
         kontaktinfo: {
             telefon: 123456789,
@@ -87,7 +86,7 @@ let bryggelaug = [{
         linjeforening: "Omega",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 12,
-        leder: "Nicholas Fraser Ødegård",
+		leder: "Nicholas Fraser Ødegård",
         logo: "omega.png",
         kontaktinfo: {
             telefon: 123456789,
@@ -101,7 +100,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 6,
         logo: "sample.jpg",
-        leder: "Leik Isdal",
+		leder: "Leik Isdal",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -114,7 +113,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 123456,
         logo: "sample.jpg",
-        leder: "Ola Nordmann",
+		leder: "Ola Nordmann",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -127,7 +126,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 39,
         logo: "sample.jpg",
-        leder: "Camilla Idina Elvebakken",
+		leder: "Camilla Idina Elvebakken",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -140,7 +139,7 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 45,
         logo: "sample.jpg",
-        leder: "Vemdund Santi",
+		leder: "Vemdund Santi",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -153,20 +152,20 @@ let bryggelaug = [{
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 12,
         logo: "sample.jpg",
-        leder: "Henrik Kiær",
+		leder: "Henrik Kiær",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
         },
     },
-
-    {
+	
+	{
         name: "Mannhullet",
         linjeforening: "Mannhullet",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
         medlemmer: 25,
         logo: "mannhullet.jpg",
-        leder: "Ola Nordmann",
+		leder: "Ola Nordmann",
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
@@ -187,6 +186,12 @@ let bryggelaug = [{
     },
 ];
 
+function clickLaug() {
+    console.log(evt);
+    cover.style.display = overlayBack.style.display = "block";
+    cover.style.visibility = overlayBack.style.visibility = "visible";
+}
+
 function clickOverlay() {
     cover.innerHTML = "";
     cover.style.display = overlayBack.style.display = "none";
@@ -196,53 +201,39 @@ function clickOverlay() {
 for (let i = 0; i < bryggelaug.length; i++) {
     let img = document.createElement("img");
     let div = document.createElement("div");
-    let div2 = document.createElement("div");
-
-    div2.setAttribute("class", "imageGrid");
-
     img.setAttribute("class", "bryggelaugImg");
     img.setAttribute("onclick", "clickLaug()");
     img.setAttribute("id", i);
-    img.setAttribute("alt", bryggelaug[i].logo);
     img.setAttribute("src", "images/Logoer/" + bryggelaug[i].logo);
-
     div.setAttribute("class", "bryggelaugDiv");
-
-    div.innerHTML = "<h2 class='bryggeluagHeader'>" + bryggelaug[i].name + "</h2>";
-
+    div.setAttribute("id", bryggelaug[i].name + "Div");
+    div.innerHTML = "<h2 id='bryggelagHeader'>" + bryggelaug[i].name + "</h2>";
     div.appendChild(img);
-    wrapperLaug.appendChild(div);
-    content.appendChild(wrapperLaug);
-
+    content.appendChild(div);
     let x = document.getElementById(i);
     x.onclick = function () {
         let img = document.createElement("img");
-        let div = document.createElement("div");
-        let divKontakt = document.createElement("div");
-
+        console.log(this.id);
         img.setAttribute("src", "images/Logoer/" + bryggelaug[this.id].logo);
-        img.setAttribute("id", i);
+        img.setAttribute("id", "img" + bryggelaug[this.id]);
         img.setAttribute("class", "coverImg");
-        img.setAttribute("alt", bryggelaug[i].logo);
-
+        console.log(bryggelaug[this.id]);
         cover.appendChild(img);
-
+        let div = document.createElement("div");
         div.setAttribute("id", "infoDiv");
         div.innerHTML = "<b>Navn: </b>" + bryggelaug[this.id].name;
         div.innerHTML += "<br><b>Linjeforening: </b>" + bryggelaug[this.id].linjeforening;
         div.innerHTML += "<br><b>Styremedlemmer: </b>" + bryggelaug[this.id].styremedlemmer;
         div.innerHTML += "<br><b>Antall medlemmer: </b>" + bryggelaug[this.id].medlemmer;
         div.innerHTML += "<br><b>Leder: </b>" + bryggelaug[this.id].leder;
-
+        let divKontakt = document.createElement("div");
         divKontakt.setAttribute("id", "contactDiv");
         divKontakt.innerHTML += "<h3>Kontakt</h3>";
         divKontakt.innerHTML += "<b>Telefon: </b>" + bryggelaug[this.id].kontaktinfo.telefon;
-        divKontakt.innerHTML += "<br><b>Epost: </b><a href='mailto:" + bryggelaug[i].kontaktinfo.epost +
-            "'>" + bryggelaug[this.id].kontaktinfo.epost + "</a>";
-
+        divKontakt.innerHTML += "<br><b>Epost: </b><a href='mailto:" + bryggelaug[i].kontaktinfo.epost
+            +"'>" + bryggelaug[this.id].kontaktinfo.epost + "</a>";
         div.appendChild(divKontakt);
         cover.appendChild(div);
-
         cover.style.display = overlayBack.style.display = "block";
         cover.style.visibility = overlayBack.style.visibility = "visible";
     }

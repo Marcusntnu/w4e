@@ -58,10 +58,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: white;
-    z-index: 999;
-
 }
-/*
+
 #loader{
     position: fixed;
     top: 45%;
@@ -74,7 +72,7 @@ body {
     animation: spin 0.8s linear infinite;
 
 }
-*/
+
 #page {
     position: inherit;
     height: 100vh;
@@ -85,22 +83,65 @@ body {
 
 .content {
     font-family: "Century Gothic", sans-serif;
-    background-color: rgba(250, 245, 242, 0.89);
+    background-color: rgba(250, 245, 242, 1);
     width: 80%;
     display: inline-block;
-    margin-top:50px;
-    padding: 10px;
+    margin:50px;
+    padding: 20px;
+    padding-bottom:50px;
     min-height: 70%;
-    padding-bottom: 5%;
+
     animation-name: fadein;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     border-radius: 10px;
+
 }
 
+.shortcutLinks{
+    margin: 0 auto;
+    padding-bottom:20px;
+    padding-top:0px;
+    position:relative;
+    top:-40px;
+
+
+}
+.shortcutLinks a{
+    display:inline;
+    margin:10px;
+    color: #f59e01;
+    text-decoration: none;
+    padding-top:0px;
+
+}
+
+.shortcutLinks a:visited{
+    display:inline;
+    margin:10px;
+    color: #d47706;
+}
 
 h2 {/*
     color: #c9587b;*/
     color: #d47706;
+    padding-bottom:20px;
+
+}
+h2:after {
+    width: 75px;
+    display:block;
+    margin:0 auto;
+    content:' ';
+
+    border:1px solid black;
+    position:relative;
+    top:5px;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 1);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0,1);
 }
 
 h3 {/*
@@ -167,30 +208,7 @@ h3 {/*
     animation-fill-mode: forwards;
 }
 
-#oel{
-    font-size: 120%;
-    font-family: "Arial" ,Garamond, sans-serif;
-    color: #39373c;/*
-    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;*/
-    position: relative;
-    float:left;
-    left:150px;
-    margin: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display:inline;
-    line-height:300%;
-}
 
-#oel::after{
-    position: relative;
-    content: "(dette semesteret)";
-    font-size: 60%;
-    text-align: center;
-    top: 17px;
-    right: 33%;
-    font-family: inherit;
-}
 
 .logo {
     width: 100px;
@@ -247,10 +265,6 @@ h3 {/*
     text-align: center;
 }
 
-h2 {
-    color: #c9587b;
-}
-
 
 table,
 tr,
@@ -261,22 +275,97 @@ th {
 }
 
 table {
+    margin:0 auto;
+    /*
     margin-right: auto;
     margin-left: auto;
     width: 60%;
     position: relative;
     left: 200px;
-    top: -550px;
+    top: -550px;*/
 }
 
 
-.bryggeSection{
+/*From this guy: https://catalin.red/css3-ordered-list-styles/*/
+
+/*Start rounded list*/
+.rounded-list{
+    width:80%;
+    margin: 0 auto;
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rounded-list ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+
+.rounded-list li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #eee;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+}
+
+.rounded-list li:hover{
+    background: #f59e01;
+}
+
+.rounded-list li:hover:before{
+    transform: rotate(360deg);
+}
+
+.rounded-list li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+/*End rounded list*/
+
+/*Start section design*/
+
+.sectionDesign{
     width:80%;/*
+    outline: gray solid 1px;*/
+    background-color:white;
+  /*
     text-align:center;*/
     /**/
     margin: 0 auto;
+    padding:20px;
+
+    box-shadow: 2px 2px 5px #888888;
 
 }
+.sectionDesign p{
+    line-height:40px;
+}
+
+
+
+/*End section design*/
 
 
 #bildeGalleriH1 {
@@ -309,7 +398,7 @@ h1{
     margin-bottom:50px;
     margin-top:30px;
 }
-/* Bildegalleriside start */
+
 .image {
     width: 150px;
     height: 150px;
@@ -326,18 +415,17 @@ h1{
     border: black solid 2px;
     cursor: pointer;
 }
-#wrapperGalleri {
-    display: grid;
-    grid-template-columns: 150px 150px 150px 150px 150px;
-    grid-gap: 50px;
-    /*margin: auto;*/
-    width: 100%;
+
+#imageContainer {
+    margin: auto;
+    width: 100vw;
 }
 
 div.imageGrid {
-    margin-bottom: 100px;
+    margin-top: 40px;
     margin-right: 30px;
     float: left;
+    width: 180px;
 }
 
 div.imageGrid img {
@@ -354,7 +442,7 @@ div.desc {
 
 .imageView {
     display: inline-block;
-    width: 400px;
+    width: 180px;
     text-align: center;
 }
 
@@ -372,8 +460,8 @@ div.desc {
     background-color: #f1f1f1;
     color: black;
     position: relative;
-    right: 230px;
-    top: 400px;
+    right: 140px;
+    top: 225px;
     display:inline;
 }
 
@@ -381,8 +469,7 @@ div.desc {
     background-color: #4CAF50;
     color: white;
     position: relative;
-    left: 230px;
-    top: -30px;
+    left: 150px;
     display:inline;
 }
 
@@ -391,48 +478,17 @@ div.desc {
 }
 
 #slideshow {
-    margin: auto;
-    width: 100%;
-    height: 400px;
+    width:600px;
+    height:400px;
 }
-<<<<<<< HEAD
 #slideshowImage{
     width: auto;
     height: auto;
-    max-width: 100%; height: auto
-=======
-#slideshowImg{
-    width: 400px;
-    height: 400px;
     max-width: 100%;
->>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
     max-height:400px;
 }
 
-#coverGalleri {
-    position: fixed;
-    top: 30%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    z-index: 10;
-    display: none;
-}
 
-.coverImgGalleri {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 18%;
-    bottom: 10%;
-    opacity: 100;
-}
-/* Bildegalleriside slutt */
-
-/* Beregningerside start */
-#calculator {
-    text-align: left;
-}
 
 #result {
     visibility: hidden;
@@ -443,8 +499,9 @@ div.desc {
 }
 
 #alkoholAvsnitt {
-    width: 400px;
+
     position: relative;
+    margin:0 auto;
 }
 
 #tableAvsnitt {
@@ -452,21 +509,7 @@ div.desc {
     top: 10%;
     height: 100%;
 }
-/* Beregningerside slutt */
 
-<<<<<<< HEAD
-=======
-/* Bryggelaugside start*/
-
-#wrapperLaug {
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-gap: 50px;
-    margin: auto;
-    width: 60%;
-}
-
->>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
 #cover {
     position: fixed;
     top: 30%;
@@ -492,6 +535,7 @@ div.desc {
 
 .bryggelaugImg {
     width: 150px;
+
 }
 
 .bryggelaugImg:hover {
@@ -501,6 +545,7 @@ div.desc {
 .bryggelaugDiv {
     margin-bottom: 20px;
     text-align: left;
+
 }
 
 .coverImg {
@@ -520,10 +565,6 @@ div.desc {
     list-style: none;
     overflow: hidden;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
 
 #infoDiv {
     position: absolute;
@@ -534,7 +575,6 @@ div.desc {
     position: absolute;
     left: -200px;
 }
-/*Bryggelaugside slutt*/
 
 #bryggelaugHeader {
 
@@ -543,6 +583,32 @@ div.desc {
 
 
 /*Ølbildet som er øverst til venstre som man kan trykke på*/
+/*Start Øl teller */
+#oel{
+    font-size: 120%;
+    font-family: "Arial" ,Garamond, sans-serif;
+    color: #39373c;/*
+    text-shadow: rgba(238, 238, 0, 0.39) 0 1px 5px, #75603a 1px 1px 5px;*/
+    position: relative;
+    float:left;
+    left:150px;
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display:inline;
+    line-height:300%;
+}
+
+#oel::after{
+    position: relative;
+    content: "(dette semesteret)";
+    font-size: 60%;
+    text-align: center;
+    top: 17px;
+    right: 33%;
+    font-family: inherit;
+}
+
 #oelbilde{
     position: relative;
     float:left;
@@ -578,6 +644,7 @@ div.desc {
 
 }
 
+
 /*Prevent blue outline on the beer when clicking on it*/
 :focus {
     outline: none !important;
@@ -585,15 +652,29 @@ div.desc {
 
 /*End øl css*/
 
+#footer{
+    margin-top:50px;
+    height: 100px;
+
+    clear: both;
+
+    display:block;
+
+    position: relative;
+    background-color: #f59e01;
+
+}
+
+    /* .push must be the same height as .footer */
+
+
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-
-
-@keyframes kuul {
+@keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
 }
@@ -614,95 +695,3 @@ div.desc {
     }
 }
 
-<<<<<<< HEAD
-=======
-@font-face {
-    font-family: kulFont;
-    src: url(../fonts/blackjack/blackjack.otf);
-}
-
-
-
-/* Credits of loader, was found free of use on internet*/
-#loader {
-    z-index: 1000;
-    color: #fff75a;
-    font-size: 50px;
-    overflow: hidden;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    margin-top: 20%;
-    left: 47%;
-    position: relative;
-    -webkit-transform: translateZ(0);
-    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
-    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
-}
-@-webkit-keyframes load6 {
-    0% {
-        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-    }
-    5%,
-    95% {
-        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-    }
-    10%,
-    59% {
-        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
-    }
-    20% {
-        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
-    }
-    38% {
-        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
-    }
-    100% {
-        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-    }
-}
-@keyframes load6 {
-    0% {
-        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-    }
-    5%,
-    95% {
-        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-    }
-    10%,
-    59% {
-        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
-    }
-    20% {
-        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
-    }
-    38% {
-        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
-    }
-    100% {
-        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-    }
-}
-@-webkit-keyframes round {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@keyframes round {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-
->>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
