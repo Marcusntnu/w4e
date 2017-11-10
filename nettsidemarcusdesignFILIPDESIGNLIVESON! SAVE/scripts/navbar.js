@@ -1,6 +1,6 @@
 /*
 FILE NAME: scripts/navbar.js
-WRITTEN BY: Sander Bjerklund Lindberg
+WRITTEN BY: Filip Østervold Tangen
 WHEN: November 2017
 PURPOSE: store the navbar for use on all pages
  */
