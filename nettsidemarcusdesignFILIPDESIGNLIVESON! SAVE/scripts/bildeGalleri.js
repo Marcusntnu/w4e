@@ -8,8 +8,8 @@ PURPOSE: Slideshow for the gallery page
 //Referanser til HTML elementer
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
-let slideshow = document.getElementById("slideshowImage");
-let imageContainer = document.getElementById("imageContainer");
+let slideshowImg = document.getElementById("slideshowImg");
+let imageContainer = document.getElementById("wrapperGalleri");
 
 //Variabel for å holde filnavn og bildebesrkivelse.
 let imageFileNames = [{
@@ -68,18 +68,20 @@ next.onclick = function (evt) {
     } else {
         i++;
     }
-    slideshow.src = "images/bildegalleri/" + imageFileNames[i].fileName;
+    slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 };
 
 /*Denne funksjonen er den motsatte av den forrige, da denne går bakover i bilder*/
 prev.onclick = function (evt) {
     evt.preventDefault();
+    console.log(slideshowImg);
     if (i === 0) {
         i = imageFileNames.length - 1;
     } else {
         i--
     }
-    slideshow.src = "images/bildegalleri/" + imageFileNames[i].fileName;
+
+    slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 };
 
 //Åpner en ny fane med bildet når en bruker klikker på et bilde.

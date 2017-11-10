@@ -302,7 +302,7 @@ h1{
     margin-bottom:50px;
     margin-top:30px;
 }
-
+/* Bildegalleriside start */
 .image {
     width: 150px;
     height: 150px;
@@ -319,26 +319,24 @@ h1{
     border: black solid 2px;
     cursor: pointer;
 }
-
-#imageContainer {
-    margin: auto;
-    width: 100vw;
+#wrapperGalleri {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-gap: 50px;
+    /*margin: auto;*/
+    width: 100%;
 }
 
-
 div.imageGrid {
-    margin-top: 40px;
+    margin-bottom: 100px;
     margin-right: 30px;
     float: left;
-    width: 180px;
 }
 
 div.imageGrid img {
     height: 150px;
     width: 150px;
 }
-
-
 
 div.desc {
     padding: 5px;
@@ -349,7 +347,7 @@ div.desc {
 
 .imageView {
     display: inline-block;
-    width: 180px;
+    width: 400px;
     text-align: center;
 }
 
@@ -367,8 +365,8 @@ div.desc {
     background-color: #f1f1f1;
     color: black;
     position: relative;
-    right: 140px;
-    top: 225px;
+    right: 230px;
+    top: 400px;
     display:inline;
 }
 
@@ -376,7 +374,8 @@ div.desc {
     background-color: #4CAF50;
     color: white;
     position: relative;
-    left: 150px;
+    left: 230px;
+    top: -30px;
     display:inline;
 }
 
@@ -385,16 +384,19 @@ div.desc {
 }
 
 #slideshow {
-    width:600px;
-    height:400px;
+    margin: auto;
+    width: 100%;
+    height: 400px;
 }
-#slideshowImage{
-    width: auto;
-    height: auto;
+#slideshowImg{
+    width: 400px;
+    height: 400px;
     max-width: 100%;
     max-height:400px;
 }
+/* Bildegalleriside slutt */
 
+/* Beregningerside start */
 #calculator {
     text-align: left;
 }
@@ -417,10 +419,11 @@ div.desc {
     top: 10%;
     height: 100%;
 }
+/* Beregningerside slutt */
 
-/* Bryggelaug side start*/
+/* Bryggelaugside start*/
 
-#laugContainer {
+#wrapperLaug {
     display: grid;
     grid-template-columns: 150px 150px 150px;
     grid-gap: 50px;
@@ -493,7 +496,7 @@ div.desc {
     list-style: none;
     overflow: hidden;
 }
-/*Bryggelaug side slutt*/
+
 
 #infoDiv {
     position: absolute;
@@ -504,6 +507,7 @@ div.desc {
     position: absolute;
     left: -200px;
 }
+/*Bryggelaugside slutt*/
 
 /*Ølbildet som er øverst til venstre som man kan trykke på*/
 #oelbilde{

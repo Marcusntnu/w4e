@@ -1,6 +1,6 @@
 let content = document.getElementById("content");
 let cover = document.getElementById("cover");
-let laugContainer = document.getElementById("laugContainer");
+let wrapperLaug = document.getElementById("wrapperLaug");
 let overlayBack = document.getElementById("overlay-back");
 
 //Objekt over alle bryggelaugene i Gløshaugen bryggeforum
@@ -217,8 +217,8 @@ for (let i = 0; i < bryggelaug.length; i++) {
     div.innerHTML = "<h2 class='bryggeluagHeader'>" + bryggelaug[i].name + "</h2>";
 
     div.appendChild(img);
-    laugContainer.appendChild(div);
-    content.appendChild(laugContainer);
+    wrapperLaug.appendChild(div);
+    content.appendChild(wrapperLaug);
 
     let x = document.getElementById(i);
     x.onclick = function () {
