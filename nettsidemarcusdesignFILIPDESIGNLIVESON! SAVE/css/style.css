@@ -5,8 +5,8 @@ WHEN: November 2017
 PURPOSE: Style the page and make it functional
  */
 
-* {
-    outline:1px solid orange;
+* {/*
+    outline:1px solid orange;*/
 }
 
 
@@ -205,11 +205,6 @@ h3 {/*
     height: auto;
 }
 
-
-#developersDiv {
-    font-style: italic;
-}
-
 #liste {
     list-style-type: none;
     padding: 0;
@@ -326,13 +321,6 @@ table {
     width: 100vw;
 }
 
-#laugContainer {
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-gap: 50px;
-    margin: auto;
-    width: 60%;
-}
 
 div.imageGrid {
     margin-top: 40px;
@@ -426,6 +414,16 @@ div.desc {
     height: 100%;
 }
 
+/* Bryggelaug side start*/
+
+#laugContainer {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 50px;
+    margin: auto;
+    width: 60%;
+}
+
 #cover {
     position: fixed;
     top: 30%;
@@ -452,6 +450,7 @@ div.desc {
 .bryggelaugImg {
     width: 150px;
     height: 150px;
+    top: 10px;
     margin-top: 30px;
 
 }
@@ -466,7 +465,10 @@ div.desc {
     width: 80%;
 }
 .bryggeluagHeader {
-    text-align: center;
+    text-align: left;
+    word-break: keep-all;
+    height: 20px;
+    font-size: 90%;
 
 }
 
@@ -487,6 +489,7 @@ div.desc {
     list-style: none;
     overflow: hidden;
 }
+/*Bryggelaug side slutt*/
 
 #infoDiv {
     position: absolute;
