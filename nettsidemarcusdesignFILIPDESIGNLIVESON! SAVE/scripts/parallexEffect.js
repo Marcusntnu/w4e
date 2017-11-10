@@ -1,15 +1,11 @@
 
 
 (function(){
-
     addLoadEvent(load_page);
     addLoadEvent(parallex);
-    addLoadEvent(loadpage);
     window.onscroll = parallex;
 
 })();
-
-
 
 function parallex(){
     let parallax2 = document.querySelectorAll("body"),

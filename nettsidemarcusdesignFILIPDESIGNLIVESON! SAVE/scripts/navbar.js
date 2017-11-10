@@ -55,7 +55,9 @@ function loadNavbar(){
 
 }
 
-
+console.log("loadNavbar");
 addLoadEvent(loadNavbar);
+console.log("end");
+
 
 
