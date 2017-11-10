@@ -25,7 +25,7 @@ function install_Beer_DOM(){
     +"<audio src=\"sounds/drinkingSound2.wav\" id=\"drinkingSound2\" autostart=\"false\"></audio>"
     +"<audio src=\"sounds/burping.wav\" id=\"burping\" autostart=\"false\"></audio>"
     ;
-
+    Beer_maker();
 }
 
 
@@ -41,7 +41,7 @@ function Beer_maker(){
 drinkingAnimationIntervalId = -1;
 
 function drink(){
-    if(currentFrame == 0)
+    if(currentFrame === 0)
         drinkingAnimationIntervalId = setInterval(drinkingFrame,20)
 }
 
@@ -61,44 +61,36 @@ function drinkingFrame(){
         toppx += 1;
     }
 
-    if(currentFrame == 0){
+    if(currentFrame === 0){
 
         document.getElementById('drinkingSound1').play();
     }
 
-    if(currentFrame == 40){
+    if(currentFrame === 40){
         document.getElementById('drinkingSound1').currentTime=0;
         document.getElementById('drinkingSound1').play();
     }
 
-    if(currentFrame == 70){
+    if(currentFrame === 70){
         document.getElementById('drinkingSound2').play();
     }
-
-
 
     document.getElementById('oelbildeclipping').style.top = toppx.toString() + "px";
     document.getElementById('oelbilde').style.top = (-toppx).toString() + "px";
     currentFrame ++;
 
-    if(currentFrame == 100){
+    if(currentFrame === 100){
         clearInterval(drinkingAnimationIntervalId);
         currentFrame = 0;
         toppx = 0;
-
         document.getElementById('burping').play();
     }
-
+    console.log("FILIP")
 }
-
 
 addLoadEvent(install_Beer_DOM);
-setInterval(Beer_maker,500)
 
 
-if(window.innerWidth > 1120) {
-    setInterval(Beer_maker, 100);
-}
 
 console.log(new Date()- start);
 console.log(new Date());
