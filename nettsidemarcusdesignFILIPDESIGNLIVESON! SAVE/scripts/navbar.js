@@ -6,13 +6,13 @@ PURPOSE: store the navbar for use on all pages
  */
 
 
-  //Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
+//Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
 function addLoadEvent(func) {
     let oldonload = window.onload;
     if (typeof window.onload != 'function') {
         window.onload = func;
     } else {
-        window.onload = function() {
+        window.onload = function () {
             if (oldonload) {
                 oldonload();
             }
@@ -21,7 +21,7 @@ function addLoadEvent(func) {
     }
 }
 
-function loadNavbar(){
+function loadNavbar() {
     let navbar = document.getElementById("navbar");
 
     navbar.innerHTML =
@@ -64,7 +64,3 @@ footer.id = "footer";
 footer_text = document.createTextNode("Dette er vår footer");
 footer.appendChild(footer_text);
 document.body.appendChild(footer);
-
-
-
-

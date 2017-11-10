@@ -94,17 +94,17 @@ function clickOverlay() {
 
 //Loop for å legge til alle bildene i filnavn-arrayet i HTMLen.
 for (let i = 0; i < imageFileNames.length; i++) {
-    let x = document.createElement("img");
+    let img = document.createElement("img");
     let y = document.createElement("div");
     let z = document.createElement("div");
     z.setAttribute("class", "imageGrid");
-    x.setAttribute("id", i);
-    x.setAttribute("class", "image");
-    x.setAttribute("src", "images/bildegalleri/" + imageFileNames[i].fileName);
-    x.setAttribute("alt", imageFileNames[i].description);
+    img.setAttribute("id", i);
+    img.setAttribute("class", "image");
+    img.setAttribute("src", "images/bildegalleri/" + imageFileNames[i].fileName);
+    img.setAttribute("alt", imageFileNames[i].description);
     y.setAttribute("class", "desc");
     y.innerHTML = imageFileNames[i].description;
-    z.appendChild(x);
+    z.appendChild(img);
     z.appendChild(y);
     imageContainer.appendChild(z);
 
