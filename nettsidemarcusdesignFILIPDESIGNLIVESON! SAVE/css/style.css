@@ -390,6 +390,25 @@ div.desc {
     max-width: 100%;
     max-height:400px;
 }
+
+#coverGalleri {
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+    display: none;
+}
+
+.coverImgGalleri {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 18%;
+    bottom: 10%;
+    opacity: 100;
+}
 /* Bildegalleriside slutt */
 
 /* Beregningerside start */

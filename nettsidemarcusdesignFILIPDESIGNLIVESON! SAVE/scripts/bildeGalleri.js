@@ -10,6 +10,8 @@ let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 let slideshowImg = document.getElementById("slideshowImg");
 let imageContainer = document.getElementById("wrapperGalleri");
+let overlayBack = document.getElementById("overlay-back");
+let cover = document.getElementById("coverGalleri");
 
 //Variabel for å holde filnavn og bildebesrkivelse.
 let imageFileNames = [{
@@ -84,10 +86,10 @@ prev.onclick = function (evt) {
     slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 };
 
-//Åpner en ny fane med bildet når en bruker klikker på et bilde.
-function imageClick(url) {
-    let win = window.open(url, '_blank');
-    win.focus();
+function clickOverlay() {
+    cover.innerHTML = "";
+    cover.style.display = overlayBack.style.display = "none";
+    cover.style.visibility = overlayBack.style.visibility = "hidden";
 }
 
 //Loop for å legge til alle bildene i filnavn-arrayet i HTMLen.
@@ -100,10 +102,24 @@ for (let i = 0; i < imageFileNames.length; i++) {
     x.setAttribute("class", "image");
     x.setAttribute("src", "images/bildegalleri/" + imageFileNames[i].fileName);
     x.setAttribute("alt", imageFileNames[i].description);
-    x.setAttribute("onclick", "imageClick('http://localhost:63343/w4e/nettside/images/bildegalleri/" + imageFileNames[i].fileName + "')");
     y.setAttribute("class", "desc");
     y.innerHTML = imageFileNames[i].description;
     z.appendChild(x);
     z.appendChild(y);
     imageContainer.appendChild(z);
+
+    let elem = document.getElementById(i.toString());
+    elem.onclick = function () {
+        let img = document.createElement("img");
+
+        img.setAttribute("src", "images/bildegalleri/" + imageFileNames[this.id].fileName);
+        img.setAttribute("id", "img" + imageFileNames[this.id]);
+        img.setAttribute("onclick", "clickOverlay()");
+        img.setAttribute("class", "coverImgGalleri");
+
+        cover.appendChild(img);
+
+        cover.style.display = overlayBack.style.display = "block";
+        cover.style.visibility = overlayBack.style.visibility = "visible";
+    }
 }

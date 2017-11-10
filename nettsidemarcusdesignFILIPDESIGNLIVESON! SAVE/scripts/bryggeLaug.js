@@ -187,11 +187,11 @@ let bryggelaug = [{
     },
 ];
 
-function clickLaug() {
+/*function clickLaug() {
     console.log(evt);
     cover.style.display = overlayBack.style.display = "block";
     cover.style.visibility = overlayBack.style.visibility = "visible";
-}
+}*/
 
 function clickOverlay() {
     cover.innerHTML = "";
