@@ -33,7 +33,7 @@ function install_Beer_DOM(){
 function Beer_maker(){
     elapsed = new Date();
     beers = parseFloat((elapsed - start) * rate).toFixed(3) + already_beer;
-    document.getElementById("literbrygget").innerHTML= parseFloat(beers).toFixed(3);
+    document.getElementById("literbrygget").innerHTML= parseFloat(beers).toFixed(0);
 }
 
 
@@ -50,7 +50,6 @@ currentFrame = 0;
 toppx = 0;
 
 function drinkingFrame(){
-    console.log(toppx);
     if(currentFrame > 20 && currentFrame < 40){
 
     }
