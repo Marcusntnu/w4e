@@ -187,12 +187,6 @@ let bryggelaug = [{
     },
 ];
 
-/*function clickLaug() {
-    console.log(evt);
-    cover.style.display = overlayBack.style.display = "block";
-    cover.style.visibility = overlayBack.style.visibility = "visible";
-}*/
-
 function clickOverlay() {
     cover.innerHTML = "";
     cover.style.display = overlayBack.style.display = "none";
@@ -213,7 +207,6 @@ for (let i = 0; i < bryggelaug.length; i++) {
     img.setAttribute("src", "images/Logoer/" + bryggelaug[i].logo);
 
     div.setAttribute("class", "bryggelaugDiv");
-    //div.setAttribute("id", bryggelaug[i].name + "Div");
 
     div.innerHTML = "<h2 class='bryggeluagHeader'>" + bryggelaug[i].name + "</h2>";
 
