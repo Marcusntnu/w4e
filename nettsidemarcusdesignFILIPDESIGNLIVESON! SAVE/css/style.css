@@ -83,7 +83,7 @@ body {
 
 .content {
     font-family: "Century Gothic", sans-serif;
-    background-color: rgba(250, 245, 242, 0.89);
+    background-color: rgba(250, 245, 242, 1);
     width: 80%;
     display: inline-block;
     margin-top:50px;
@@ -91,7 +91,7 @@ body {
     min-height: 70%;
     padding-bottom: 5%;
     animation-name: fadein;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     border-radius: 10px;
 }
 
@@ -541,9 +541,7 @@ div.desc {
     100% { transform: rotate(360deg); }
 }
 
-
-
-@keyframes kuul {
+@keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
 }
