@@ -393,7 +393,7 @@ div.desc {
 #slideshowImage{
     width: auto;
     height: auto;
-    max-width: 100%; height: auto
+    max-width: 100%;
     max-height:400px;
 }
 
@@ -445,6 +445,7 @@ div.desc {
 
 .bryggelaugImg {
     width: 150px;
+
 }
 
 .bryggelaugImg:hover {
@@ -454,6 +455,7 @@ div.desc {
 .bryggelaugDiv {
     margin-bottom: 20px;
     text-align: left;
+
 }
 
 .coverImg {
