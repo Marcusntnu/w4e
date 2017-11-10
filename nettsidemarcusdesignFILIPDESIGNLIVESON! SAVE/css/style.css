@@ -31,11 +31,9 @@ PURPOSE: Style the page and make it functional
         display: inline-block;
         width: auto;
     }
-    #oelbilde{
-        display: none;
-    }
-    #oel::after{
-        display: none;
+    #oel{
+        display: none !important;
+
     }
     .align-left, .align-right{
         display: none !important;
@@ -219,7 +217,7 @@ h3 {/*
 }
 
 #bryggeguide {
-	width: 800px;
+	width: 80%;
 	margin: auto;
 
 }
@@ -245,6 +243,14 @@ h3 {/*
     text-align: center;
 }
 
+
+h1{
+    line-height:50px;
+    font-family: "kulFont";
+    font-size:300%;
+    display:inline;
+}
+
 h2 {
     color: #c9587b;
 }
@@ -267,13 +273,21 @@ table {
     top: -550px;
 }
 
+#footer{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100px;
+    background-color: #ddc82d;
+
+}
+
 
 .bryggeSection{
     width:80%;/*
     text-align:center;*/
     /**/
     margin: 0 auto;
-
 }
 
 
@@ -283,25 +297,7 @@ table {
     text-align: center;
 }
 
-@font-face {
-    font-family: fancyFont;
-    src: url(../fonts/alex-brush/AlexBrush-Regular.ttf);
-}
-@font-face {
-    font-family: fancyFont2;
-    src: url(../fonts/allura/Allura-Regular.otf);
-}
-@font-face {
-    font-family: kulFont;
-    src: url(../fonts/blackjack/blackjack.otf);
-}
 
-h1{
-    line-height:50px;
-    font-family: "kulFont";
-    font-size:300%;
-    display:inline;
-}
 
 #tittel{
     margin-bottom:50px;
@@ -571,3 +567,7 @@ div.desc {
     }
 }
 
+@font-face {
+    font-family: kulFont;
+    src: url(../fonts/blackjack/blackjack.otf);
+}

@@ -59,5 +59,12 @@ console.log("loadNavbar");
 addLoadEvent(loadNavbar);
 console.log("end");
 
+footer = document.createElement("footer");
+footer.id = "footer";
+footer_text = document.createTextNode("Dette er vår footer");
+footer.appendChild(footer_text);
+document.body.appendChild(footer);
+
+
 
 
