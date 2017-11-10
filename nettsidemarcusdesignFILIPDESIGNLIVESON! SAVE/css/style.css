@@ -115,14 +115,17 @@ h3 {/*
     margin: 0;
     padding: 0;
     float:right;
+
     width:70%;
     text-align: right;
+
 }
 
 .navt li {
     margin-top: 0;
     font-size:100%;
     display: inline;
+
 }
 
 .navt a {
@@ -133,6 +136,7 @@ h3 {/*
     text-decoration: double;
     line-height: 350%;
     border-bottom: 5px solid transparent;
+
 }
 
 .navt img {
@@ -178,11 +182,11 @@ h3 {/*
 
 #oel::after{
     position: relative;
-    content: "dette semesteret";
-    font-size: 50%;
+    content: "(dette semesteret)";
+    font-size: 60%;
     text-align: center;
-    top: 20px;
-    right: 32%;
+    top: 17px;
+    right: 33%;
     font-family: inherit;
 }
 

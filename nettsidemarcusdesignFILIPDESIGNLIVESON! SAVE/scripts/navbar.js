@@ -52,7 +52,6 @@ function loadNavbar(){
 
         "</ul>";
 
-        "</ul>";
 
 }
 
