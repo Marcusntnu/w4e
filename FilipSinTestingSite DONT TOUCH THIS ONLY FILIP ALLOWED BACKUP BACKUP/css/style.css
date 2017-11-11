@@ -380,7 +380,7 @@ table {
 
 #wrapperGalleri {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
 
     grid-gap: 50px;
     width: 100%;
@@ -400,7 +400,7 @@ div.imageGrid {/*
     justify-self: center;
     display:inline-block;
 
-    width:300px;
+    width:175px;
 
 
     box-shadow: 2px 2px 5px #888888;
@@ -410,8 +410,8 @@ div.imageGrid {/*
 
 
 div.imageGrid img {
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
 
     position:relative;
 
@@ -522,6 +522,80 @@ div.desc {
 
 }
 /* Bildegalleriside slutt */
+
+/*Shapes for scroll*/
+
+.oval {
+    width: 200px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
+}
+
+.tv {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 20px 0;
+    background: red;
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    text-indent: .1em;
+}
+.tv:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+}
+
+.chevron {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 200px;
+}
+
+.chevron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    background: red;
+    -webkit-transform: skew(0deg, 6deg);
+    -moz-transform: skew(0deg, 6deg);
+    -ms-transform: skew(0deg, 6deg);
+    -o-transform: skew(0deg, 6deg);
+    transform: skew(0deg, 6deg);
+}
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: red;
+    -webkit-transform: skew(0deg, -6deg);
+    -moz-transform: skew(0deg, -6deg);
+    -ms-transform: skew(0deg, -6deg);
+    -o-transform: skew(0deg, -6deg);
+    transform: skew(0deg, -6deg);
+}​
+
+
+/*End shapes*/
 
 
 #bildeGalleriH1 {

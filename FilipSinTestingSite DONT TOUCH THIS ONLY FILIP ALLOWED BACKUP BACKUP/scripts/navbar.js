@@ -25,6 +25,9 @@ function loadNavbar(){
     let navbar = document.getElementById("navbar");
 
     navbar.innerHTML =
+        "<div id = \"scroll\">"+
+        "</div>"+
+
         "<p id=\"oel\"></p>" +
         "<ul class=\"navt\">\n" +
         "\n" +
