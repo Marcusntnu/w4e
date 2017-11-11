@@ -53,8 +53,9 @@ function loadNavbar(){
         "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
         "    </li>\n" +
         "</ul>" +
-    "   <div class=\"navNarrow\" >\n" +
-    "                <i class=\"fi fo-bars fum\"></i>\n" +
+
+    "   <div class=\"navNarrow\">\n" +
+    "                <i class=\"fi fo-bars fum\" onclick='fjernmeny()'><p id=\"menytekst\">Meny</p></i>\n" +
     "                <div class=\"narrowLinks hidden\" >\n" +
     "                    <a href=index.html>Hjem</a>\n" +
     "                    <a href=\"om.html\">Om oss</a>\n" +
@@ -72,10 +73,21 @@ function loadNavbar(){
         narrowLinks.classList.toggle('hidden');
 
     }
-
+    document.getElementById("menytekst").style.display = "block";
 }
 
 console.log("loadNavbar");
 addLoadEvent(loadNavbar);
 console.log("end");
 
+
+function fjernmeny() {
+    let menytekst = document.getElementById("menytekst");
+    console.log(menytekst.style.display);
+    if(menytekst.style.display === "block"){
+        menytekst.style.display = "none";
+    }
+    else{
+        menytekst.style.display = "block";
+    }
+}

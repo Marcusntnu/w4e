@@ -50,8 +50,8 @@ PURPOSE: Style the page and make it functional
     .navt{
         display: none;
     }
-    .fi:after:visited{
-        display: none;
+    .fi:after{
+        content: "";
     }
 }
 
@@ -71,11 +71,11 @@ PURPOSE: Style the page and make it functional
     -moz-osx-font-smoothing: grayscale;
 }
 
-.fi:after{
-    content: 'Meny';
+#menytekst{
+    margin-top: 1%;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20%;
     display: block;
-    width: 1%;
-    font-size: 30%;
 }
 
 
