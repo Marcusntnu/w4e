@@ -36,7 +36,7 @@ PURPOSE: Style the page and make it functional
     .align-left, .align-right {
         display: none !important;
     }
-    
+
     .sectionDesign{
         zoom: 200%;
     }
@@ -251,35 +251,10 @@ body {
     padding: 20px;
     padding-bottom:50px;
     min-height: 70%;
-
     animation-name: fadein;
     animation-duration: 0.5s;
     border-radius: 10px;
 
-}
-
-.shortcutLinks{
-    margin: 0 auto;
-    padding-bottom:20px;
-    padding-top:0px;
-    position:relative;
-    top:-40px;
-
-
-}
-.shortcutLinks a{
-    display:inline;
-    margin:10px;
-    color: #f59e01;
-    text-decoration: none;
-    padding-top:0px;
-
-}
-
-.shortcutLinks a:visited{
-    display:inline;
-    margin:10px;
-    color: #d47706;
 }
 
 h2 {/*
@@ -288,6 +263,7 @@ h2 {/*
     padding-bottom:20px;
 
 }
+
 h2:after {
     width: 75px;
     display:block;

@@ -1,18 +1,18 @@
 /*
 FILE NAME: scripts/navbar.js
-WRITTEN BY: Sander Bjerklund Lindberg
+WRITTEN BY: Filip Østervold Tangen
 WHEN: November 2017
 PURPOSE: store the navbar for use on all pages
  */
 
 
-  //Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
+//Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
 function addLoadEvent(func) {
     let oldonload = window.onload;
     if (typeof window.onload != 'function') {
         window.onload = func;
     } else {
-        window.onload = function() {
+        window.onload = function () {
             if (oldonload) {
                 oldonload();
             }
@@ -21,10 +21,11 @@ function addLoadEvent(func) {
     }
 }
 
-function loadNavbar(){
+
+function loadNavbar() {
     let navbar = document.getElementById("navbar");
 
-    navbar.innerHTML =
+   /* navbar.innerHTML =
         "<p id=\"oel\"></p>" +
         "<ul class=\"navt\">\n" +
         "\n" +
@@ -50,14 +51,41 @@ function loadNavbar(){
         "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
         "    </li>\n" +
 
-        "</ul>";
+        "</ul>";*/
 
+    navbar.innerHTML = "<p id=\"oel\"></p>\n" +
+        "            <div class=\"navWide\">\n" +
+        "                <div class=\"wideDiv\">\n" +
+        "                    <a href=index.html>Hjem</a>\n" +
+        "                    <a href=\"om.html\">Om oss</a>\n" +
+        "                    <a href=\"bryggeguide.html\">Bryggeguide</a>\n" +
+        "                    <a href=\"beregninger.html\">Beregninger og tabeller</a>\n" +
+        "                    <a href=\"bildegalleri.html\">Bildegalleri</a>\n" +
+        "                    <a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
+        "                </div>\n" +
+        "            </div>\n" +
+        "            <div class=\"navNarrow\" >\n" +
+        "                <i class=\"fa fa-bars fa-2x\"></i>\n" +
+        "                <div class=\"narrowLinks hidden\" >\n" +
+        "                    <a href=index.html>Hjem</a>\n" +
+        "                    <a href=\"om.html\">Om oss</a>\n" +
+        "                    <a href=\"bryggeguide.html\">Bryggeguide</a>\n" +
+        "                    <a href=\"beregninger.html\">Beregninger og tabeller</a>\n" +
+        "                    <a href=\"bildegalleri.html\">Bildegalleri</a>\n" +
+        "                    <a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
+        "                </div>\n" +
+        "            </div>";
+
+    let navLinks = document.querySelector('.navNarrow');
+    let narrowLinks = document.querySelector('.narrowLinks');
+    navLinks.addEventListener('click', toggle);
+
+    function toggle() {
+        narrowLinks.classList.toggle('hidden');
+    }
 
 }
 
 console.log("loadNavbar");
 addLoadEvent(loadNavbar);
 console.log("end");
-
-
-
