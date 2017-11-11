@@ -9,133 +9,35 @@ PURPOSE: Style the page and make it functional
     outline:1px solid orange;*/
 }
 
-.fa-2x {
-    font-size: 2em;
-}
-.fa-bars:before {
-    content: "\f0c9";
-}
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: 400%;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-@media only screen and (max-width: 1200px){
-    *{
-        font-size: 100%;
-        padding: 0;
-        margin: 0;
+@media only screen and (max-width: 1200px) {
+    .navNarrow {
+        display: inline-block !important;
     }
-    /*.navt li{
-        padding: 0;
-        margin: 0;
-        display: inline;
+
+    .navNarrow:hover ~ .fi:after{
 
     }
-    .navt a{
-        display: block;
+
+    .navNarrow a{
         text-decoration: none;
-        width: 50%;
-    }
-    .navt {
-        display: inline-block;
-        width: auto;
-    }*/
-    #oelbilde{
-        display: none;
-    }
-    #oel::after{
-        display: none;
-    }
-    .align-left, .align-right{
-        display: none !important;
-    }
-    nav {
-        overflow: hidden;
-        background: rgba(251, 249, 255, 1);
-    }
-
-    nav a {
+        display: block;
+        clear: left;
+        padding: 0.5em 0;
         font-family: "Century Gothic", sans-serif;
-        display: inline-block;
-        padding: 0 12px;
         color: black;
         text-decoration: double;
         line-height: 350%;
         border-bottom: 5px solid transparent;
     }
-
-    nav a:visited {
-        color: #000;
-    }
-
-    nav .navWide {
-        margin: 0;
-        padding: 0;
-        float: right;
-        width: 70%;
-        text-align: right;
-    }
-
-    nav .navWide .wideDiv {
-        text-align: right;
-    }
-
-    nav .navWide .wideDiv a {
-        text-decoration: none;
-        display: inline-block;
-        /*Adjust padding to increase/decrease the space between links.*/
-        margin-right: 2%;
-    }
-
-    /*Navbar is set to default with the "hamburger" and links on the left
-    side of the screen. To move to the right of the screen, simply
-    change the three "float: Left;" references to read "float: right;".*/
-    /*nav	.navNarrow i {
-        float: left;
-        cursor: pointer;
-        color: #000;
-    }*/
-    nav .navNarrow .narrowLinks a {
-        text-decoration: none;
-        display: block;
-        float: center;
-        clear: left;
-        padding: 0.5em 0;
-    }
-
-    .hidden {
-        display: none;
-    }
-}
-
-
-
-@media only screen and (max-width: 1200px) {
-    nav .navWide {
-        display: none;
-    }
-
     #oel {
         display: none !important;
 
     }
-
     .align-left, .align-right {
         display: none !important;
     }
-
     .sectionDesign{
         zoom: 200%;
-    }
-
-    nav .navNarrow {
-        display: block;
-        width: 100%;
     }
     .content {
         position: relative;
@@ -145,65 +47,40 @@ PURPOSE: Style the page and make it functional
     #footer{
         display: none !important;
     }
+    .navt{
+        display: none;
+    }
+    .fi:after:visited{
+        display: none;
+    }
+}
+
+
+.fum {
+    font-size: 2em;
+}
+.fo-bars:before {
+    content: "\f0c9";
+}
+.fi {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 400%;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fi:after{
+    content: 'Meny';
+    display: block;
+    width: 1%;
+    font-size: 30%;
 }
 
 
 .navNarrow {
     display: none;
-}
-
-nav {
-    overflow: hidden;
-    background: rgba(251, 249, 255, 1);
-}
-
-nav a {
-    font-family: "Century Gothic", sans-serif;
-    display: inline-block;
-    padding: 0 12px;
-    color: black;
-    text-decoration: double;
-    line-height: 350%;
-    border-bottom: 5px solid transparent;
-}
-
-nav a:visited {
-    color: #000;
-}
-
-nav .navWide {
-    margin: 0;
-    padding: 0;
-    float: right;
-    width: 70%;
-    text-align: right;
-}
-
-nav .navWide .wideDiv {
-    text-align: right;
-}
-
-nav .navWide .wideDiv a {
-    text-decoration: none;
-    display: inline-block;
-    /*Adjust padding to increase/decrease the space between links.*/
-    margin-right: 2%;
-}
-
-/*Navbar is set to default with the "hamburger" and links on the left
-side of the screen. To move to the right of the screen, simply
-change the three "float: Left;" references to read "float: right;".*/
-/*nav	.navNarrow i {
-    float: left;
-    cursor: pointer;
-    color: #000;
-}*/
-nav .navNarrow .narrowLinks a {
-    text-decoration: none;
-    display: block;
-    float: center;
-    clear: left;
-    padding: 0.5em 0;
 }
 
 .hidden {
@@ -294,6 +171,7 @@ h2 {/*
     padding-bottom:20px;
 
 }
+/*
 h2:after {
     width: 75px;
     display:block;
@@ -310,7 +188,7 @@ h2:after {
     -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 1);
     -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0,1);
 }
-
+*/
 h3 {/*
     color: #c9587b;*/
     color: #f59e01;
@@ -582,8 +460,8 @@ div.imageGrid img {
 
     position:relative;
 
-    padding-bottom:0px;
-    margin-bottom:0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 
     object-fit: cover;
     border: white solid 2px;
@@ -1087,9 +965,7 @@ div.desc {
     background-color: #f59e01;
 
 }
-
     /* .push must be the same height as .footer */
-
 
 
 @keyframes spin {

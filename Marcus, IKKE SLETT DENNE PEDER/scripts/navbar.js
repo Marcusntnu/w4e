@@ -52,15 +52,30 @@ function loadNavbar(){
         "    </li>\n" +
         "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
         "    </li>\n" +
+        "</ul>" +
+    "   <div class=\"navNarrow\" >\n" +
+    "                <i class=\"fi fo-bars fum\"></i>\n" +
+    "                <div class=\"narrowLinks hidden\" >\n" +
+    "                    <a href=index.html>Hjem</a>\n" +
+    "                    <a href=\"om.html\">Om oss</a>\n" +
+    "                    <a href=\"bryggeguide.html\">Bryggeguide</a>\n" +
+    "                    <a href=\"beregninger.html\">Beregninger og tabeller</a>\n" +
+    "                    <a href=\"bildegalleri.html\">Bildegalleri</a>\n" +
+    "                    <a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
+    "                </div>\n" +
+    "            </div>";
+    let navLinks = document.querySelector('.navNarrow');
+    let narrowLinks = document.querySelector('.narrowLinks');
 
-        "</ul>";
+    navLinks.addEventListener('click', toggler);
+    function toggler() {
+        narrowLinks.classList.toggle('hidden');
 
+    }
 
 }
 
 console.log("loadNavbar");
 addLoadEvent(loadNavbar);
 console.log("end");
-
-
 

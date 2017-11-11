@@ -257,36 +257,13 @@ body {
 
 }
 
-.shortcutLinks{
-    margin: 0 auto;
-    padding-bottom:20px;
-    padding-top:0;
-    position:relative;
-    top:-40px;
-
-
-}
-.shortcutLinks a{
-    display:inline;
-    margin:10px;
-    color: #f59e01;
-    text-decoration: none;
-    padding-top:0;
-
-}
-
-.shortcutLinks a:visited{
-    display:inline;
-    margin:10px;
-    color: #d47706;
-}
-
 h2 {/*
     color: #c9587b;*/
     color: #d47706;
     padding-bottom:20px;
 
 }
+
 h2:after {
     width: 75px;
     display:block;
