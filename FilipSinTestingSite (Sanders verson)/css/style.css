@@ -5,8 +5,8 @@ WHEN: November 2017
 PURPOSE: Style the page and make it functional
  */
 
-* {/*
-    outline:1px solid orange;*/
+* {
+    outline:1px solid orange;
 }
 .fa-2x {
     font-size: 2em;
@@ -36,11 +36,23 @@ PURPOSE: Style the page and make it functional
     .align-left, .align-right {
         display: none !important;
     }
+    
+    .sectionDesign{
+        zoom: 200%;
+    }
 
     nav .navNarrow {
         display: block;
+        width: 100%;
     }
-
+    .content {
+        position: relative;
+        font-size: 170%;
+        zoom: 0.5;
+    }
+    #footer{
+        display: none !important;
+    }
 }
 .navNarrow {
     display: none;
