@@ -367,6 +367,119 @@ table {
 
 /*End section design*/
 
+/* Bildegalleriside start */
+.image {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 12px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.image:hover {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+    border: black solid 2px;
+    cursor: pointer;
+}
+#wrapperGalleri {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-gap: 50px;
+    /*margin: auto;*/
+    width: 100%;
+}
+
+div.imageGrid {
+    margin-bottom: 100px;
+    margin-right: 30px;
+    float: left;
+}
+
+div.imageGrid img {
+    height: 150px;
+    width: 150px;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+    height: 250px;
+    font-size: small;
+}
+
+.imageView {
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+}
+
+.imageView a {
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.imageView a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#prev {
+    background-color: #f1f1f1;
+    color: black;
+    position: relative;
+    right: 230px;
+    top: 400px;
+    display:inline;
+}
+
+#next {
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    left: 230px;
+    top: -30px;
+    display:inline;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+#slideshow {
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+#slideshowImg{
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    max-height:400px;
+}
+
+#coverGalleri {
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+    display: none;
+}
+
+.coverImgGalleri {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 18%;
+    bottom: 10%;
+    opacity: 100;
+}
+/* Bildegalleriside slutt */
+
 
 #bildeGalleriH1 {
     padding-top: 0;
@@ -398,7 +511,7 @@ h1{
     margin-bottom:50px;
     margin-top:30px;
 }
-
+/*
 .image {
     width: 150px;
     height: 150px;
@@ -486,7 +599,7 @@ div.desc {
     height: auto;
     max-width: 100%;
     max-height:400px;
-}
+}*/
 
 
 
