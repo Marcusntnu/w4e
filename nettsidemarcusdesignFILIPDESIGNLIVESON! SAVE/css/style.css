@@ -5,8 +5,8 @@ WHEN: November 2017
 PURPOSE: Style the page and make it functional
  */
 
-* {/*
-    outline:1px solid orange;*/
+* {
+    outline:1px solid orange;
 }
 
 
@@ -38,7 +38,15 @@ PURPOSE: Style the page and make it functional
     .align-left, .align-right{
         display: none !important;
     }
-
+    #cover{
+        padding: 5%;
+    }
+    #footer{
+        display: none;
+    }
+    #content{
+        width: 97%;
+    }
 }
 
 body {
@@ -78,7 +86,6 @@ body {
     height: 100vh;
     text-align: center;
     width: 100%;
-    min-width: 99%;
 }
 
 .content {
@@ -86,7 +93,7 @@ body {
     background-color: rgba(250, 245, 242, 1);
     width: 80%;
     display: inline-block;
-    margin-top:50px;
+    margin-top: 3%;
     padding: 10px;
     min-height: 70%;
     padding-bottom: 5%;
@@ -269,7 +276,7 @@ table {
     left: 200px;
     top: -550px;
 }
-
+/*
 #footer{
     text-align: center;
     width: 80%;
@@ -278,7 +285,7 @@ table {
     background-color: #ddc82d;
 
 }
-
+*/
 
 .bryggeSection{
     width:80%;/*
@@ -417,6 +424,9 @@ div.desc {
 #calculator {
     text-align: left;
 }
+#calculatorFrm{
+    max-width: 70%;
+}
 
 #result {
     visibility: hidden;
@@ -442,10 +452,11 @@ div.desc {
 
 #wrapperLaug {
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 5em;
     margin: auto;
     width: 60%;
+    word-break: break-all;
 }
 
 #cover {
@@ -456,6 +467,9 @@ div.desc {
     height: 50%;
     z-index: 10;
     display: none;
+    border-radius: 2%;
+    background-color: white;
+    min-height: 60%;
 }
 
 #overlay-back {
@@ -497,15 +511,13 @@ div.desc {
 }
 
 .coverImg {
-    width: 200px;
+    max-width: 300px;
+    width: 40%;
     position: absolute;
     left: 3px;
     top: 4px;
 }
 
-#cover {
-    background-color: lightgrey;
-}
 
 #ulBryggelaug{
     position: absolute;
@@ -516,13 +528,17 @@ div.desc {
 
 
 #infoDiv {
-    position: absolute;
-    left: 210px;
+    position: relative;
+    margin-left: 40%;
+    margin-top: 10%;
+
 }
 
 #contactDiv {
     position: absolute;
-    left: -200px;
+    margin: 0 auto;
+    left: -45%;
+    margin-top: 10%;
 }
 /*Bryggelaugside slutt*/
 
