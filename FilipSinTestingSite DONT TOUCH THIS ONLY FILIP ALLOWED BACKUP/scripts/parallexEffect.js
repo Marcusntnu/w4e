@@ -23,4 +23,5 @@ function parallex(){
 function load_page() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("loadpage").style.display = "none";
+
 }
