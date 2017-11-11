@@ -1,0 +1,307 @@
+@keyframes scale {
+    from{ transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+@keyframes hoverline {
+    from{
+        width: 0;
+        margin-left: 50%;
+    }
+    to{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+/*
+body {
+    background-image: url("../images/beerpattern3.jpg");
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.content{
+    background-color:#faf5f2;
+}
+
+.navt {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+
+    background-image: url("../images/testbackground.png");
+
+}
+
+h1{
+    margin-top:0;
+    text-align:center;
+    color:orange;
+}
+.navt li {
+
+    display: inline;
+    text-decoration: none;
+
+}
+.navt a {
+
+    display: inline-block;
+    padding: 0 12px;
+    font-weight: normal;
+    font-size: 1.5vw;
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    padding: 14px 16px;
+    padding: 14px 0.5vw;
+    font-family:Apple Chancery, sans-serif;
+}
+nav {
+    top: 60px;
+    position: absolute;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: #b4501a
+}
+nav>ul {
+    margin: 0 auto;
+    width: 40%;
+}
+#logo {
+    display: block;
+    align-self: left;
+}
+.navt li a:hover {
+    color: white;
+    background-color: pink;
+}
+.navt img {
+    vertical-align: middle;
+}
+
+#logo{
+
+    max-height:200px;
+    width: auto;
+}
+
+p{
+
+    text-align:center;
+}*/
+/*nav {
+    background-color: #CCC;
+    overflow: hidden;
+}
+
+nav	a {
+    color: #000;
+}
+*/
+/*nav	a:visited {
+    color: #000;
+}*/
+
+/*nav .navWide {
+    display: none;
+    margin: 0 auto;
+}*/
+
+/*nav .navWide .wideDiv {
+    text-align: center;
+}*/
+
+/*nav .navWide .wideDiv a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2%;
+}*/
+
+/*Navbar is set to default with the "hamburger" and links on the left
+side of the screen. To move to the right of the screen, simply
+change the three "float: Left;" references to read "float: right;".*/
+/*nav	.navNarrow i {*/
+    /*float: left;*/
+    /* cursor: pointer;
+    color: #000;
+}*/
+/*nav .navNarrow .narrowLinks a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    clear: left;
+    padding: 0.5em 0;
+}*/
+
+/*.hidden {
+    display: none;
+}
+*/
+/*Adjust breakpoint as desired to select when the "hamburger" menu is
+replaced by just the links.*/
+/*@media (min-width: 1200px) {
+
+    nav .navWide {
+        display: block;
+    }
+
+    nav .navNarrow {
+        display: none;
+    }
+}
+nav {
+    position: relative;
+    margin-top: 0;
+    top: 0;
+    overflow:hidden;
+    background: rgba(251, 249, 255, 1);
+}
+
+.navWide {
+    margin: 0;
+    padding: 0;
+    float:right;
+    width:70%;
+    text-align: right;
+
+}
+
+.navWide .wideDiv {
+    margin-top: 0;
+    font-size:100%;
+    display: inline;
+
+}
+
+.navWide a {
+    font-family: "Century Gothic", sans-serif;
+    display: inline-block;
+    padding: 0 12px;
+    color: black;
+    text-decoration: double;
+    line-height: 350%;
+    border-bottom: 5px solid transparent;
+
+}
+
+.navt img {
+    vertical-align: middle;
+}
+
+
+
+.navWide a:hover {
+    animation-name: scale;
+    animation-duration: 0.1s;
+    animation-fill-mode:forwards;
+    backface-visibility: hidden;
+}
+
+.navWide a:hover::after{
+    position: absolute;
+    content: "";
+    height: 5px;
+    animation-name: hoverline;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    background-color: rgb(195, 141, 26);
+    top: 102%;
+    left: 0;
+    animation-fill-mode: forwards;
+}*/
+nav {
+    overflow:hidden;
+    background: rgba(251, 249, 255, 1);
+}
+
+nav	a {
+    font-family: "Century Gothic", sans-serif;
+    display: inline-block;
+    padding: 0 12px;
+    color: black;
+    text-decoration: double;
+    line-height: 350%;
+    border-bottom: 5px solid transparent;
+}
+
+nav	a:visited {
+    color: #000;
+}
+
+nav .navWide {
+    margin: 0;
+    padding: 0;
+    float:right;
+    display: none;
+    width:70%;
+    text-align: right;
+}
+
+nav .navWide .wideDiv {
+    text-align: right;
+}
+
+nav .navWide .wideDiv a {
+    text-decoration: none;
+    display: inline-block;
+    /*Adjust padding to increase/decrease the space between links.*/
+    margin-right: 2%;
+}
+
+/*Navbar is set to default with the "hamburger" and links on the left
+side of the screen. To move to the right of the screen, simply
+change the three "float: Left;" references to read "float: right;".*/
+/*nav	.navNarrow i {
+    float: left;
+    cursor: pointer;
+    color: #000;
+}*/
+nav .navNarrow .narrowLinks a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    clear: left;
+    padding: 0.5em 0;
+}
+.hidden {
+    display: none;
+}
+
+/*Adjust breakpoint as desired to select when the "hamburger" menu is
+replaced by just the links.*/
+@media (min-width: 1200px) {
+
+    nav .navWide {
+        display: block;
+    }
+
+    nav .navNarrow {
+        display: none;
+    }
+}
+.navWide a:hover {
+    animation-name: scale;
+    animation-duration: 0.1s;
+    animation-fill-mode:forwards;
+    backface-visibility: hidden;
+}
+
+.navWide a:hover::after{
+    position: absolute;
+    content: "";
+    height: 5px;
+    animation-name: hoverline;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    background-color: rgb(195, 141, 26);
+    top: 102%;
+    left: 0;
+    animation-fill-mode: forwards;
+}
