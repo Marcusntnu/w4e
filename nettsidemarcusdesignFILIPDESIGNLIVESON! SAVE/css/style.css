@@ -31,11 +31,9 @@ PURPOSE: Style the page and make it functional
         display: inline-block;
         width: auto;
     }
-    #oelbilde{
-        display: none;
-    }
-    #oel::after{
-        display: none;
+    #oel{
+        display: none !important;
+
     }
     .align-left, .align-right{
         display: none !important;
@@ -59,6 +57,7 @@ body {
     width: 100%;
     background-color: white;
     z-index: 999;
+
 }
 /*
 #loader{
@@ -84,7 +83,7 @@ body {
 
 .content {
     font-family: "Century Gothic", sans-serif;
-    background-color: rgba(250, 245, 242, 0.89);
+    background-color: rgba(250, 245, 242, 1);
     width: 80%;
     display: inline-block;
     margin-top:50px;
@@ -208,11 +207,6 @@ h3 {/*
     height: auto;
 }
 
-
-#developersDiv {
-    font-style: italic;
-}
-
 #liste {
     list-style-type: none;
     padding: 0;
@@ -220,7 +214,7 @@ h3 {/*
 }
 
 #bryggeguide {
-	width: 800px;
+	width: 80%;
 	margin: auto;
 
 }
@@ -246,6 +240,14 @@ h3 {/*
     text-align: center;
 }
 
+
+h1{
+    line-height:50px;
+    font-family: "kulFont";
+    font-size:300%;
+    display:inline;
+}
+
 h2 {
     color: #c9587b;
 }
@@ -268,13 +270,21 @@ table {
     top: -550px;
 }
 
+#footer{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100px;
+    background-color: #ddc82d;
+
+}
+
 
 .bryggeSection{
     width:80%;/*
     text-align:center;*/
     /**/
     margin: 0 auto;
-
 }
 
 
@@ -284,25 +294,7 @@ table {
     text-align: center;
 }
 
-@font-face {
-    font-family: fancyFont;
-    src: url(../fonts/alex-brush/AlexBrush-Regular.ttf);
-}
-@font-face {
-    font-family: fancyFont2;
-    src: url(../fonts/allura/Allura-Regular.otf);
-}
-@font-face {
-    font-family: kulFont;
-    src: url(../fonts/blackjack/blackjack.otf);
-}
 
-h1{
-    line-height:50px;
-    font-family: "kulFont";
-    font-size:300%;
-    display:inline;
-}
 
 #tittel{
     margin-bottom:50px;
@@ -394,17 +386,10 @@ div.desc {
     width: 100%;
     height: 400px;
 }
-<<<<<<< HEAD
-#slideshowImage{
-    width: auto;
-    height: auto;
-    max-width: 100%; height: auto
-=======
 #slideshowImg{
     width: 400px;
     height: 400px;
     max-width: 100%;
->>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
     max-height:400px;
 }
 
@@ -453,8 +438,6 @@ div.desc {
 }
 /* Beregningerside slutt */
 
-<<<<<<< HEAD
-=======
 /* Bryggelaugside start*/
 
 #wrapperLaug {
@@ -465,7 +448,6 @@ div.desc {
     width: 60%;
 }
 
->>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
 #cover {
     position: fixed;
     top: 30%;
@@ -491,6 +473,10 @@ div.desc {
 
 .bryggelaugImg {
     width: 150px;
+    height: 150px;
+    top: 10px;
+    margin-top: 30px;
+
 }
 
 .bryggelaugImg:hover {
@@ -498,8 +484,16 @@ div.desc {
 }
 
 .bryggelaugDiv {
-    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+.bryggeluagHeader {
     text-align: left;
+    word-break: keep-all;
+    height: 20px;
+    font-size: 90%;
+
 }
 
 .coverImg {
@@ -519,10 +513,7 @@ div.desc {
     list-style: none;
     overflow: hidden;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
 
 #infoDiv {
     position: absolute;
@@ -535,19 +526,12 @@ div.desc {
 }
 /*Bryggelaugside slutt*/
 
-#bryggelaugHeader {
-
-
-}
-
-
 /*Ølbildet som er øverst til venstre som man kan trykke på*/
 #oelbilde{
     position: relative;
     float:left;
     height:60px;
     width:60px;
-
     top:0px;
     left:0px;
     display: block;
@@ -590,9 +574,7 @@ div.desc {
     100% { transform: rotate(360deg); }
 }
 
-
-
-@keyframes kuul {
+@keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
 }
@@ -613,8 +595,6 @@ div.desc {
     }
 }
 
-<<<<<<< HEAD
-=======
 @font-face {
     font-family: kulFont;
     src: url(../fonts/blackjack/blackjack.otf);
@@ -704,4 +684,3 @@ div.desc {
 }
 
 
->>>>>>> aa45bc62857a5724c69f5667c66960613cea69b1
