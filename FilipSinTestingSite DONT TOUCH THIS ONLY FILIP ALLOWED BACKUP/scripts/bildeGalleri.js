@@ -6,9 +6,9 @@ PURPOSE: Slideshow for the gallery page
  */
 
 //Referanser til HTML elementer
-let prev = document.getElementById("prev");
-let next = document.getElementById("next");
-let slideshowImg = document.getElementById("slideshowImg");
+//let prev = document.getElementById("prev");
+//let next = document.getElementById("next");
+//let slideshowImg = document.getElementById("slideshowImg");
 let imageContainer = document.getElementById("wrapperGalleri");
 let overlayBack = document.getElementById("overlay-back");
 let cover = document.getElementById("coverGalleri");
@@ -63,7 +63,7 @@ let imageFileNames = [{
 Variablen I er en teller, som inkrementerer for hver gang brukeren trykker på knappen.
 Når I er det samme som antall filnavn, skal den hoppe tibake til start*/
 let i = 0;
-next.onclick = function (evt) {
+/*next.onclick = function (evt) {
     evt.preventDefault();
     if (i === imageFileNames.length - 1) {
         i = 0;
@@ -72,8 +72,10 @@ next.onclick = function (evt) {
     }
     slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 };
-
+*/
 /*Denne funksjonen er den motsatte av den forrige, da denne går bakover i bilder*/
+
+/*
 prev.onclick = function (evt) {
     evt.preventDefault();
     console.log(slideshowImg);
@@ -84,7 +86,7 @@ prev.onclick = function (evt) {
     }
 
     slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
-};
+};*/
 
 function clickOverlay() {
     cover.innerHTML = "";
@@ -116,6 +118,10 @@ for (let i = 0; i < imageFileNames.length; i++) {
         img.setAttribute("id", "img" + imageFileNames[this.id]);
         img.setAttribute("onclick", "clickOverlay()");
         img.setAttribute("class", "coverImgGalleri");
+
+
+        img.innerHTML = "<a id=\"prev\" href=\"#\" class=\"previous round\">&#8249;</a>\n" +
+            "    <a id=\"next\" href=\"#\" class=\"next round\">&#8250;</a>";
 
         cover.appendChild(img);
 

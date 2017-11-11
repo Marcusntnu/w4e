@@ -386,21 +386,31 @@ table {
 }
 #wrapperGalleri {
     display: grid;
-    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+
     grid-gap: 50px;
-    /*margin: auto;*/
     width: 100%;
 }
 
-div.imageGrid {
+#centerlizeGalleri{
+    display: table;
+    margin: 0 auto;
+}
+
+div.imageGrid {/*
     margin-bottom: 100px;
-    margin-right: 30px;
-    float: left;
+    margin-right: 30px;*/
+    margin: 0 auto;
+    justify-self: center;
+    display:inline-block;
+
 }
 
 div.imageGrid img {
     height: 150px;
     width: 150px;
+
+    object-fit: cover;
 }
 
 div.desc {
@@ -427,21 +437,24 @@ div.desc {
 }
 
 #prev {
-    background-color: #f1f1f1;
-    color: black;
-    position: relative;
-    right: 230px;
+    background-color: #4CAF50;
+    color: white;/*
+    position: relative;*/
+    /*right: 230px;
     top: 400px;
-    display:inline;
+    display:inline;*/
+    z-index:100;
 }
 
 #next {
     background-color: #4CAF50;
-    color: white;
-    position: relative;
+    color: white;/*
+    position: relative;*/
+    /*
     left: 230px;
     top: -30px;
-    display:inline;
+    display:inline;*/
+    z-index:100;
 }
 
 .round {
@@ -461,22 +474,21 @@ div.desc {
 }
 
 #coverGalleri {
+
     position: fixed;
-    top: 30%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
+    top: 50%;
+    left: 50%;
     z-index: 10;
-    display: none;
 }
 
 .coverImgGalleri {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 18%;
-    bottom: 10%;
-    opacity: 100;
+    width: auto;
+    height: calc(90vw / 2/* 200px*/);
+
+    transform: translate(-50%, -50%);
+
+
+
 }
 /* Bildegalleriside slutt */
 
@@ -646,6 +658,51 @@ div.desc {
     display: none;
 }
 
+#wrapperLaug {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 5em;
+    margin: auto;
+    width: 60%;
+    word-break: break-all;
+}
+
+#cover {
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+    display: none;
+    border-radius: 2%;
+    background-color: white;
+    min-height: 60%;
+}
+
+
+.coverImg {
+    max-width: 300px;
+    width: 40%;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+}
+
+#infoDiv {
+    position: relative;
+    margin-left: 40%;
+    margin-top: 10%;
+
+}
+
+#contactDiv {
+    position: absolute;
+    margin: 0 auto;
+    left: -45%;
+    margin-top: 10%;
+}
+
 .bryggelaugImg {
     width: 150px;
 
@@ -661,17 +718,6 @@ div.desc {
 
 }
 
-.coverImg {
-    width: 200px;
-    position: absolute;
-    left: 3px;
-    top: 4px;
-}
-
-#cover {
-    background-color: lightgrey;
-}
-
 #ulBryggelaug{
     position: absolute;
     left: 180px;
@@ -679,15 +725,7 @@ div.desc {
     overflow: hidden;
 }
 
-#infoDiv {
-    position: absolute;
-    left: 210px;
-}
 
-#contactDiv {
-    position: absolute;
-    left: -200px;
-}
 
 #bryggelaugHeader {
 
