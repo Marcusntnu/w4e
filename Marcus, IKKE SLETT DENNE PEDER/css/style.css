@@ -38,7 +38,7 @@ PURPOSE: Style the page and make it functional
     }
     .content {
         position: relative;
-        font-size: 170%;
+        font-size: 140%;
         zoom: 0.5;
         width: 100% !important;
         margin-top: 0 !important;
@@ -59,11 +59,19 @@ PURPOSE: Style the page and make it functional
         margin-right: 0;
     }
     .coverImg{
-        display:none;
+        display:none !important;
     }
-
+    #infoDiv{
+        left: 20px !important;
+        width: 80% !important;
+        position: relative;
+        margin-bottom: 90px !important;
+        margin-top: 0;
+    }
+    #infoDiv, #contactDiv{
+        font-size: 70%;
+    }
 }
-
 
 .fum {
     font-size: 2em;
@@ -84,8 +92,6 @@ PURPOSE: Style the page and make it functional
     display: block;
 
 }
-
-
 
 .navNarrow {
     display: none;
@@ -888,9 +894,10 @@ div.desc {
 
 }
 
+
+
 #contactDiv {
     position: relative;
-    left:50%;
     top:10%;
     text-align:left;
     /*
@@ -1003,16 +1010,19 @@ h2.bryggeluagHeader{
 /*End øl css*/
 
 #footer{
-    margin-top:50px;
+    margin-top: 50px;
     height: 100px;
-
+    font-family: "Century Gothic", sans-serif;
     clear: both;
-
     display:block;
-
     position: relative;
     background-color: #f59e01;
+}
 
+#footer p{
+    padding: 20px;
+    text-align: left;
+    margin-left: 30%;
 }
 /* .push must be the same height as .footer */
 

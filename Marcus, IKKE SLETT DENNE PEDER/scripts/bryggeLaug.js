@@ -247,6 +247,6 @@ for (let i = 0; i < bryggelaug.length; i++) {
         cover.style.display = overlayBack.style.display = "block";
         cover.style.visibility = overlayBack.style.visibility = "visible";
 
-        unScroll();
+
     }
 }
