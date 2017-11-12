@@ -1,0 +1,146 @@
+<!--<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bildegalleri</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+<div id='loadpage'></div>
+<div id='loader'></div>
+    <div id="page">
+
+
+        <div id="navbar"></div>
+        <script src="scripts/navbar.js" type="text/javascript"></script>
+
+
+        <div class="content" id="content">
+
+            <div id="tittel">
+                <img class="logo align-left" src="images/gjennomsiktiglogoOutlineWithShadow.png">
+                <h1>Bildegalleri</h1>
+                <img class="logo align-right" src="images/gjennomsiktiglogoOutlineWithShadow.png">
+                <hr>
+            </div>
+
+
+
+            <div class="imageView">
+
+                <div id="slideshow">
+                    <img id="slideshowImage" src="images/bildegalleri/0.jpg">
+                </div>
+
+            </div>
+
+            <br>
+            <div id="imageContainer" class="imageContainer"></div>
+
+        </div>
+
+
+    </div>
+    <script src="scripts/bildeGalleri.js"></script>
+    <script src="scripts/olmoeler.js"></script>
+    <script src="scripts/parallexEffect.js" type="text/javascript"></script>
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bildegalleri</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+<div id='loadpage'><div id='loader'></div></div>
+
+<div id="page">
+
+    <!-- Begin Navbar -->
+    <div id="navbar"></div>
+    <script src="scripts/navbar.js" type="text/javascript"></script>
+    <!-- End Navbar -->
+
+
+    <!-- Begin scroll -->
+    <div id="scroll1">
+        <img src="images/part1.png" class="part1"/>
+        <img src="images/part2.png" class="part2"/>
+        <img src="images/part2.png" class="part3"/>
+    </div>
+
+    <!-- End scroll -->
+
+    <div class="content" id="content">
+
+        <div id="tittel">
+            <a href="index.html">
+                <img alt="logo" class="logo align-left" src="images/gjennomsiktiglogoOutlineWithShadow.png">
+            </a>
+            <h1>Bildegalleri</h1>
+            <a href="index.html">
+                <img alt="logo" class="logo align-right" src="images/gjennomsiktiglogoOutlineWithShadow.png">
+            </a>
+            <hr>
+        </div>
+        <!--
+                <div class="imageView">
+
+
+                        <div id="slideshow">
+
+                            <a id="prev" href="#" class="previous round">&#8249;</a>
+                            <img alt="slideshow" id="slideshowImg" src="images/bildegalleri/0.jpg">
+                            <a id="next" href="#" class="next round">&#8250;</a>
+
+                </div>
+
+            </div>
+            <br>
+-->
+
+        <section class = sectionDesign>
+        <div id="centerlizeGalleri">
+        <div id="wrapperGalleri" class="imageContainer"></div>
+        </div>
+        </section>
+
+    </div>
+    <!-- scroll begin-->
+    <div id="scroll2">
+        <img src="images/part1.png" class="part1"/>
+        <img src="images/part2.png" class="part2"/>
+        <img src="images/part2.png" class="part3"/>
+    </div>
+
+    <!--scroll end-->
+    <!-- Footer
+    <div id='footer'></div>
+    <script src="scripts/footer.js"></script>
+-->
+    <!-- End Footer-->
+
+
+</div>
+<div id="overlay-back" onclick="clickOverlay()">
+
+</div>
+<div id="coverGalleri" onclick="clickOverlay()">
+
+
+</div>
+<script src="scripts/bildeGalleri.js" type="text/javascript"></script>
+<script src="scripts/olmoeler.js"></script>
+<script src="scripts/parallexEffect.js" type="text/javascript"></script>
+<script src="scripts/scroll.js" type="text/javascript"></script>
+</body>
+
+</html>

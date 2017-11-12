@@ -9,6 +9,20 @@ PURPOSE: Style the page and make it functional
     outline:1px solid orange;*/
 }
 
+.fa-2x {
+    font-size: 2em;
+}
+.fa-bars:before {
+    content: "\f0c9";
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 400%;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 @media only screen and (max-width: 1200px){
     *{
@@ -16,7 +30,7 @@ PURPOSE: Style the page and make it functional
         padding: 0;
         margin: 0;
     }
-    .navt li{
+    /*.navt li{
         padding: 0;
         margin: 0;
         display: inline;
@@ -30,7 +44,7 @@ PURPOSE: Style the page and make it functional
     .navt {
         display: inline-block;
         width: auto;
-    }
+    }*/
     #oelbilde{
         display: none;
     }
@@ -40,8 +54,160 @@ PURPOSE: Style the page and make it functional
     .align-left, .align-right{
         display: none !important;
     }
+    nav {
+        overflow: hidden;
+        background: rgba(251, 249, 255, 1);
+    }
 
+    nav a {
+        font-family: "Century Gothic", sans-serif;
+        display: inline-block;
+        padding: 0 12px;
+        color: black;
+        text-decoration: double;
+        line-height: 350%;
+        border-bottom: 5px solid transparent;
+    }
+
+    nav a:visited {
+        color: #000;
+    }
+
+    nav .navWide {
+        margin: 0;
+        padding: 0;
+        float: right;
+        width: 70%;
+        text-align: right;
+    }
+
+    nav .navWide .wideDiv {
+        text-align: right;
+    }
+
+    nav .navWide .wideDiv a {
+        text-decoration: none;
+        display: inline-block;
+        /*Adjust padding to increase/decrease the space between links.*/
+        margin-right: 2%;
+    }
+
+    /*Navbar is set to default with the "hamburger" and links on the left
+    side of the screen. To move to the right of the screen, simply
+    change the three "float: Left;" references to read "float: right;".*/
+    /*nav	.navNarrow i {
+        float: left;
+        cursor: pointer;
+        color: #000;
+    }*/
+    nav .navNarrow .narrowLinks a {
+        text-decoration: none;
+        display: block;
+        float: center;
+        clear: left;
+        padding: 0.5em 0;
+    }
+
+    .hidden {
+        display: none;
+    }
 }
+
+
+@media only screen and (max-width: 1200px) {
+    nav .navWide {
+        display: none;
+    }
+
+    #oel {
+        display: none !important;
+
+    }
+
+    .align-left, .align-right {
+        display: none !important;
+    }
+
+    .sectionDesign{
+        zoom: 200%;
+    }
+
+    nav .navNarrow {
+        display: block;
+        width: 100%;
+    }
+    .content {
+        position: relative;
+        font-size: 170%;
+        zoom: 0.5;
+    }
+    #footer{
+        display: none !important;
+    }
+}
+.navNarrow {
+    display: none;
+}
+
+nav {
+    overflow: hidden;
+    background: rgba(251, 249, 255, 1);
+}
+
+nav a {
+    font-family: "Century Gothic", sans-serif;
+    display: inline-block;
+    padding: 0 12px;
+    color: black;
+    text-decoration: double;
+    line-height: 350%;
+    border-bottom: 5px solid transparent;
+}
+
+nav a:visited {
+    color: #000;
+}
+
+nav .navWide {
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+nav .navWide .wideDiv {
+    text-align: right;
+}
+
+nav .navWide .wideDiv a {
+    text-decoration: none;
+    display: inline-block;
+    /*Adjust padding to increase/decrease the space between links.*/
+    margin-right: 2%;
+}
+
+/*Navbar is set to default with the "hamburger" and links on the left
+side of the screen. To move to the right of the screen, simply
+change the three "float: Left;" references to read "float: right;".*/
+/*nav	.navNarrow i {
+    float: left;
+    cursor: pointer;
+    color: #000;
+}*/
+nav .navNarrow .narrowLinks a {
+    text-decoration: none;
+    display: block;
+    float: center;
+    clear: left;
+    padding: 0.5em 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
 
 body {
     font-size: 17px;
@@ -90,17 +256,16 @@ body {
     padding: 20px;
     padding-bottom:50px;
     min-height: 70%;
-
     animation-name: fadein;
     animation-duration: 0.5s;
     border-radius: 10px;
 
-}
+}}
 
 .shortcutLinks{
     margin: 0 auto;
     padding-bottom:20px;
-    padding-top:0px;
+    padding-top: 0px;
     position:relative;
     top:-40px;
 
@@ -111,7 +276,7 @@ body {
     margin:10px;
     color: #f59e01;
     text-decoration: none;
-    padding-top:0px;
+    padding-top: 0px;
 
 }
 
@@ -158,7 +323,6 @@ h3 {/*
     margin: 0;
     padding: 0;
     float:right;
-
     width:70%;
     text-align: right;
 
@@ -368,25 +532,19 @@ table {
 /*End section design*/
 
 /* Bildegalleriside start */
-.image {
+/*.image {
     width: 150px;
     height: 150px;
     float: left;
     margin: 12px;
     background-size: cover;
     background-position: 50% 50%;
-}
+}*/
 
-.image:hover {
-    width: 170px;
-    height: 170px;
-    margin: 0;
-    border: black solid 2px;
-    cursor: pointer;
-}
+
 #wrapperGalleri {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
 
     grid-gap: 50px;
     width: 100%;
@@ -395,29 +553,66 @@ table {
 #centerlizeGalleri{
     display: table;
     margin: 0 auto;
+    width:90%;
 }
 
 div.imageGrid {/*
     margin-bottom: 100px;
     margin-right: 30px;*/
+
     margin: 0 auto;
     justify-self: center;
     display:inline-block;
 
+    width:300px;
+
+
+    box-shadow: 2px 2px 5px #888888;
+
+    /*border: 1px solid black;*/
 }
 
+
 div.imageGrid img {
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
+
+    position:relative;
+
+    padding-bottom:0px;
+    margin-bottom:0px;
 
     object-fit: cover;
+    border: white solid 2px;
+    /*#d47706*/
+}
+
+
+.image:hover {
+    /*
+    width: 250px;
+    height: 250px;*/
+    /*margin: 0;*/
+    border: black solid 2px;
+    cursor: pointer;
+}
+
+div.imageGrid hr {
+    display:inline-block;
+    width:80%;
+    margin:2px;
+    padding:1px;
+    background-color:black;
+
 }
 
 div.desc {
     padding: 5px;
     text-align: center;
-    height: 250px;
+    height: auto;
     font-size: small;
+    width:80%;
+    margin:0 auto;
 }
 
 .imageView {
