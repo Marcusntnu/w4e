@@ -7,12 +7,19 @@ PURPOSE: Style the page and make it functional
 
 * {/*
     outline:1px solid orange;*/
-}
 
+}
 
 @media only screen and (max-width: 1200px) {
     .navNarrow {
         display: inline-block !important;
+    }
+    .narrowLinks .navNarrow nav .hidden{
+        z-index: 999;
+    }
+
+    .navNarrow:hover ~ .fi:after{
+
     }
 
     .navNarrow a{
@@ -40,19 +47,12 @@ PURPOSE: Style the page and make it functional
         position: relative;
         font-size: 170%;
         zoom: 0.5;
-        width: 100% !important;
-        margin-top: 0 !important;
-        opacity: 0.9 !important;
     }
     #footer{
         display: none !important;
     }
     .navt{
         display: none;
-    }
-    tbody{
-        zoom: 0.5;
-        text-align: center;
     }
 
 }
@@ -64,20 +64,21 @@ PURPOSE: Style the page and make it functional
 .fo-bars:before {
     content: "\f0c9";
 }
-
-#menyLogo {
-    height: 40px;
-    width: 40px;
+.fi {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 400%;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 #menytekst{
-    margin: 0;
+    margin-top: 1%;
     font-family: "Century Gothic", sans-serif;
-    font-size: 80%;
+    font-size: 100%;
     display: block;
-
 }
-
 
 
 .navNarrow {
@@ -130,9 +131,10 @@ body {
 .content {
     font-family: "Century Gothic", sans-serif;
     background-color: rgba(250, 245, 242, 1);
-    width: 90%;
+    width: 80%;
     display: inline-block;
-    margin-top: 40px;
+    margin:50px;
+    padding: 20px;
     padding-bottom:50px;
     min-height: 70%;
     animation-name: fadein;
@@ -169,7 +171,6 @@ h2 {/*
     color: #c9587b;*/
     color: #d47706;
     padding-bottom:20px;
-    text-align: center;
 
 }
 /*
@@ -285,8 +286,8 @@ h3 {/*
 }
 
 #bryggeguide {
-    width: 800px;
-    margin: auto;
+	width: 800px;
+	margin: auto;
 
 }
 
@@ -310,9 +311,6 @@ h3 {/*
     text-shadow: 1px 1px 1px #d0b08f;
     text-align: center;
 }
-
-
-
 
 
 table,
@@ -399,12 +397,12 @@ table {
     width:80%;/*
     outline: gray solid 1px;*/
     background-color:white;
-    /*
-      text-align:center;*/
+  /*
+    text-align:center;*/
     /**/
     margin: 0 auto;
     padding:20px;
-    text-align: left;
+
     box-shadow: 2px 2px 5px #888888;
 
 }
@@ -441,16 +439,17 @@ table {
     width:90%;
 }
 
-
-
 div.imageGrid {/*
     margin-bottom: 100px;
     margin-right: 30px;*/
+
     margin: 0 auto;
     justify-self: center;
     display:inline-block;
-    width: 210px;
-    text-align: center;
+
+    width:175px;
+
+
     box-shadow: 2px 2px 5px #888888;
 
     /*border: 1px solid black;*/
@@ -460,9 +459,12 @@ div.imageGrid {/*
 div.imageGrid img {
     height: 150px;
     width: 150px;
+
     position:relative;
-    margin: 0 auto;
+
     padding-bottom: 0;
+    margin-bottom: 0;
+
     object-fit: cover;
     border: white solid 2px;
     /*#d47706*/
@@ -479,18 +481,17 @@ div.imageGrid img {
 }
 
 div.imageGrid hr {
-    display: inherit;
-    width: 80%;
-    margin: 0 auto;
+    display:inline-block;
+    width:80%;
+    margin:2px;
     padding:1px;
     background-color:black;
-
 
 }
 
 div.desc {
     padding: 5px;
-    text-align: left;
+    text-align: center;
     height: auto;
     font-size: small;
     width:80%;
@@ -514,7 +515,7 @@ div.desc {
 }
 
 #prev {
-    background-color: rgba(175, 159, 172, 0.67);
+    background-color: #4CAF50;
     color: white;/*
     position: relative;*/
     /*right: 230px;
@@ -522,9 +523,9 @@ div.desc {
     display:inline;*/
     z-index:100;
     width: 10%;
-    height: 60%;
     text-align: center;
-
+    font-size: 150%;
+    height: 50%;
     display: inline-block;
     position: relative;
     right: 60%;
@@ -534,12 +535,12 @@ div.desc {
 
 #next {
     width: 10%;
-    height: 60%;
+    height: 50%;
     text-align: center;
     display: inline-block;
     position: relative;
     left: 39%;
-    background-color: rgba(175, 159, 172, 0.5);
+    background-color: #4CAF50;
     color: white;/*
     position: relative;*/
     /*
@@ -549,8 +550,15 @@ div.desc {
     z-index:100;
 }
 
+#menyLogo {
+    height: 30px;
+    width: 30px;
+}
+
 .round {
     border-radius: 50%;
+    width: 300px;
+    height: 300px;
 }
 
 #slideshow {
@@ -656,14 +664,14 @@ div.desc {
 }​
 
 
-     /*End shapes*/
+/*End shapes*/
 
 
- #bildeGalleriH1 {
-     padding-top: 0;
-     margin-top: 40px;
-     text-align: center;
- }
+#bildeGalleriH1 {
+    padding-top: 0;
+    margin-top: 40px;
+    text-align: center;
+}
 
 @font-face {
     font-family: fancyFont;
@@ -780,23 +788,14 @@ div.desc {
 }*/
 
 
+
 #result {
     visibility: hidden;
     display: inline-block;
     position: relative;
-    left: 45%;
-
+    left: 150px;
+    top: -80px;
 }
-
-#og, #fg{
-    margin: 15px;
-}
-
-#calculatorFrm{
-    text-align: center;
-}
-
-
 
 #alkoholAvsnitt {
 
@@ -835,10 +834,11 @@ div.desc {
 
 #wrapperLaug {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-gap: 5em;
     margin: auto;
-    width: 60%;
+    width: 90%;
+    word-break: break-all;
 }
 
 #cover {
@@ -894,7 +894,8 @@ div.desc {
 }
 
 .bryggelaugImg {
-    width: 150px;
+    width: 250px;
+
 
 }
 
@@ -910,9 +911,16 @@ div.desc {
 }
 
 .bryggelaugDiv {
-    margin-bottom: 20px;
     text-align: left;
-    word-break: keep-all;
+    width:250px;
+
+
+    box-shadow: 2px 2px 5px #888888;
+    padding: 10px;
+
+
+
+
 }
 
 #ulBryggelaug{
@@ -920,14 +928,15 @@ div.desc {
     left: 180px;
     list-style: none;
     overflow: hidden;
-}
-h2.bryggeluagHeader{
-    word-break: keep-all !important;
-    display: flex;
-    text-align: left;
+
 }
 
 
+
+.bryggeluagHeader {
+    word-break:keep-all;
+    text-align:center;
+}
 
 
 /*Ølbildet som er øverst til venstre som man kan trykke på*/
@@ -963,8 +972,8 @@ h2.bryggeluagHeader{
     height:60px;
     width:60px;
 
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     display: block;
     z-index:1;
 }
@@ -973,8 +982,8 @@ h2.bryggeluagHeader{
     height:60px;
     width:60px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     display: block;
     z-index:0;
 
@@ -985,8 +994,8 @@ h2.bryggeluagHeader{
     height:60px;
     width:60px;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index:2;
     overflow:hidden;
 
@@ -1012,7 +1021,7 @@ h2.bryggeluagHeader{
     background-color: #f59e01;
 
 }
-/* .push must be the same height as .footer */
+    /* .push must be the same height as .footer */
 
 
 @keyframes spin {
