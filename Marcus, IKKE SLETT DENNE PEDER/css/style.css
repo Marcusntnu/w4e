@@ -855,32 +855,55 @@ div.desc {
 }
 
 
-.coverImg {
-    max-width: 300px;
-    width: 40%;
+.coverImg {/*
+    max-width: 300px;*/
+   /* width: 40%;*/
+
+    width:auto;
+    height:200px;
     position: absolute;
-    left: 3px;
-    top: 4px;
+    top:50%;
+    left:20px;
+    transform: translate(0%, -50%);
+    margin:auto;
+    display:inline-block;
 }
 
 #infoDiv {
     position: relative;
+
+    left:50%;
+    top:10%;
+    /*
     margin-left: 40%;
-    margin-top: 10%;
+    margin-top: 10%;*/
+    text-align:left;
 
 }
 
 #contactDiv {
+    position: relative;
+    left:50%;
+    top:10%;
+    text-align:left;
+    /*
     position: absolute;
     margin: 0 auto;
-    left: -45%;
-    margin-top: 10%;
+    left: 45%;
+    margin-top: 10%;*/
 }
 
 .bryggelaugImg {
     width: 250px;
 
 
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .coverImg{
+        display:none;
+    }
 }
 
 .bryggelaugImg:hover {
