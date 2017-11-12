@@ -810,10 +810,10 @@ div.desc {
 
 #wrapperLaug {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-gap: 5em;
     margin: auto;
-    width: 60%;
+    width: 90%;
     word-break: break-all;
 }
 
@@ -854,7 +854,8 @@ div.desc {
 }
 
 .bryggelaugImg {
-    width: 150px;
+    width: 250px;
+
 
 }
 
@@ -863,8 +864,15 @@ div.desc {
 }
 
 .bryggelaugDiv {
-    margin-bottom: 20px;
     text-align: left;
+    width:250px;
+
+
+    box-shadow: 2px 2px 5px #888888;
+    padding: 10px;
+
+
+
 
 }
 
@@ -873,13 +881,14 @@ div.desc {
     left: 180px;
     list-style: none;
     overflow: hidden;
+
 }
 
 
 
-#bryggelaugHeader {
-
-
+.bryggeluagHeader {
+    word-break:keep-all;
+    text-align:center;
 }
 
 
