@@ -208,11 +208,11 @@ for (let i = 0; i < bryggelaug.length; i++) {
 
     div.setAttribute("class", "bryggelaugDiv");
 
-    div.innerHTML = "<h2 class='bryggeluagHeader'>" + bryggelaug[i].name + "</h2>";
+    div.innerHTML = "<h2 class='bryggeluagHeader'>"  + bryggelaug[i].name +  "</h2>";
 
     div.appendChild(img);
-    wrapperLaug.appendChild(div);
-    content.appendChild(wrapperLaug);
+    wrapperLaug.appendChild(div);/*
+    content.appendChild(wrapperLaug);*/
 
     let x = document.getElementById(i);
     x.onclick = function () {

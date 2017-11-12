@@ -12,6 +12,8 @@ PURPOSE: Slideshow for the gallery page
 let imageContainer = document.getElementById("wrapperGalleri");
 let overlayBack = document.getElementById("overlay-back");
 let cover = document.getElementById("coverGalleri");
+let next = document.getElementById("next");
+let prev = document.getElementById("prev");
 
 //Variabel for å holde filnavn og bildebesrkivelse.
 let imageFileNames = [{
@@ -63,21 +65,22 @@ let imageFileNames = [{
 Variablen I er en teller, som inkrementerer for hver gang brukeren trykker på knappen.
 Når I er det samme som antall filnavn, skal den hoppe tibake til start*/
 let i = 0;
-/*next.onclick = function (evt) {
-    evt.preventDefault();
+
+function nextFun () {
+    //evt.preventDefault();
     if (i === imageFileNames.length - 1) {
         i = 0;
     } else {
         i++;
     }
     slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
-};
-*/
+}
+
 /*Denne funksjonen er den motsatte av den forrige, da denne går bakover i bilder*/
 
-/*
-prev.onclick = function (evt) {
-    evt.preventDefault();
+
+function prevFun () {
+    //evt.preventDefault();
     console.log(slideshowImg);
     if (i === 0) {
         i = imageFileNames.length - 1;
@@ -86,7 +89,7 @@ prev.onclick = function (evt) {
     }
 
     slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
-};*/
+}
 
 function clickOverlay() {
     cover.innerHTML = "";
@@ -118,14 +121,16 @@ for (let i = 0; i < imageFileNames.length; i++) {
         let img = document.createElement("img");
 
         img.setAttribute("src", "images/bildegalleri/" + imageFileNames[this.id].fileName);
-        img.setAttribute("id", "img" + imageFileNames[this.id]);
-        img.setAttribute("onclick", "clickOverlay()");
+        //img.setAttribute("id", "img" + imageFileNames[this.id]);
+        img.setAttribute("id", "slideshowImg");
         img.setAttribute("class", "coverImgGalleri");
 
 
-        img.innerHTML = "<a id=\"prev\" href=\"#\" class=\"previous round\">&#8249;</a>\n" +
-            "    <a id=\"next\" href=\"#\" class=\"next round\">&#8250;</a>";
+        cover.innerHTML += "<a id=\"prev\" onclick='prevFun()' href=\"#\" class=\"previous round\">&#8249;</a>\n" +
+            "    <a id=\"next\" onclick='nextFun()' href=\"#\" class=\"next round\">&#8250;</a>";
 
+        /*next.addEventListener("click", "nextFun()");
+        prev.addEventListener("click", "prevFun()");*/
         cover.appendChild(img);
 
         cover.style.display = overlayBack.style.display = "block";

@@ -55,7 +55,7 @@ function loadNavbar(){
         "</ul>" +
 
     "   <div class=\"navNarrow\">\n" +
-    "                <i class=\"fi fo-bars fum\" onclick='fjernmeny()'><p id=\"menytekst\">Meny</p></i>\n" +
+    "                <img src='images/hamburger_icon.png' id='menyLogo' onclick='fjernmeny()'><p id=\"menytekst\">Meny</p></img>\n" +
     "                <div class=\"narrowLinks hidden\" >\n" +
     "                    <a href=index.html>Hjem</a>\n" +
     "                    <a href=\"om.html\">Om oss</a>\n" +
