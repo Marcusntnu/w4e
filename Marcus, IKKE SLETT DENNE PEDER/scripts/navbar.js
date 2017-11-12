@@ -35,7 +35,7 @@ function loadNavbar(){
 
         "    <li><a href=\index.html\>Hjem</a>\n" +
         "    </li>\n" +
-        "    <li><a href=\"bliMedlem.html\">Om oss</a>\n" +
+        "    <li><a href=\"bliMedlem.html\">Bli medlem</a>\n" +
         "    </li>\n" +
         "\n" +
         "    <li><a href=\"bryggeguide.html\">Bryggeguide</a>\n" +
@@ -58,7 +58,7 @@ function loadNavbar(){
     "                <img src='images/hamburger_icon.png' id='menyLogo' onclick='fjernmeny()'><p id=\"menytekst\">Meny</p></img>\n" +
     "                <div class=\"narrowLinks hidden\" >\n" +
     "                    <a href=index.html>Hjem</a>\n" +
-    "                    <a href=\"bliMedlem.html\">Om oss</a>\n" +
+    "                    <a href=\"bliMedlem.html\">Bli medlem</a>\n" +
     "                    <a href=\"bryggeguide.html\">Bryggeguide</a>\n" +
     "                    <a href=\"beregninger.html\">Beregninger og tabeller</a>\n" +
     "                    <a href=\"bildegalleri.html\">Bildegalleri</a>\n" +
