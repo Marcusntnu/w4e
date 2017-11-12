@@ -54,6 +54,13 @@ PURPOSE: Style the page and make it functional
         zoom: 0.5;
         text-align: center;
     }
+    #page{
+        width: 100%;
+        margin-right: 0;
+    }
+    .coverImg{
+        display:none;
+    }
 
 }
 
@@ -899,12 +906,6 @@ div.desc {
 }
 
 
-@media only screen and (max-width: 1200px) {
-    .coverImg{
-        display:none;
-    }
-}
-
 .bryggelaugImg:hover {
     cursor: pointer;
 }
@@ -922,9 +923,10 @@ div.desc {
     overflow: hidden;
 }
 h2.bryggeluagHeader{
-    word-break: keep-all !important;
-    display: flex;
+    word-break: break-all !important;
+    display: inline-block;
     text-align: left;
+    line-height: 140%;
 }
 
 
