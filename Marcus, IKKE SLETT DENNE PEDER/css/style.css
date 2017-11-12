@@ -527,6 +527,7 @@ div.desc {
 }
 
 #prev {
+    right: 70%;
     background-color: rgba(175, 159, 172, 0.67);
     color: white;/*
     position: relative;*/
@@ -534,24 +535,18 @@ div.desc {
     top: 400px;
     display:inline;*/
     z-index:100;
-    width: 10%;
-    height: 60%;
+    display: block;
+}
+#prev, #next{
+    height: 80px;
     text-align: center;
-
-    display: inline-block;
     position: relative;
-    right: 60%;
-    top: 70%;
-
 }
 
 #next {
-    width: 10%;
-    height: 60%;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    left: 39%;
+    display: block;
+    left: 60%;
+    bottom: 70px;
     background-color: rgba(175, 159, 172, 0.5);
     color: white;/*
     position: relative;*/
@@ -587,11 +582,11 @@ div.desc {
 }
 
 .coverImgGalleri {
+    position: relative;
     width: auto;
     height: calc(90vw / 2/* 200px*/);
-
     transform: translate(-50%, -50%);
-
+    top: -150px;
 
 
 }

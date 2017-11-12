@@ -131,8 +131,8 @@ for (let i = 0; i < imageFileNames.length; i++) {
         img.setAttribute("class", "coverImgGalleri");
 
 
-        cover.innerHTML += "<a id=\"prev\" onclick='prevFun()' href=\"#\" class=\"previous round\">&#8249;</a>\n" +
-            "    <a id=\"next\" onclick='nextFun()' href=\"#\" class=\"next round\">&#8250;</a>";
+        cover.innerHTML += "<img id=\"prev\" onclick='prevFun()' src=\"images/arrow2.png\" class=\"previous round\">\n" +
+            "    <img id=\"next\" onclick='nextFun()' src=\"images/arrow.png\" class=\"next round\">";
 
         /*next.addEventListener("click", "nextFun()");
         prev.addEventListener("click", "prevFun()");*/
