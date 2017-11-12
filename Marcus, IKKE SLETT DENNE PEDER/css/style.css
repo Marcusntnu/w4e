@@ -42,7 +42,7 @@ PURPOSE: Style the page and make it functional
         zoom: 0.5;
         width: 100% !important;
         margin-top: 0 !important;
-        opacity: 0.96 !important;
+        opacity: 0.9 !important;
     }
     #footer{
         display: none !important;
