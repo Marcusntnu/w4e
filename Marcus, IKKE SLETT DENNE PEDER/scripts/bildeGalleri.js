@@ -67,28 +67,33 @@ Når I er det samme som antall filnavn, skal den hoppe tibake til start*/
 let i = 0;
 
 function nextFun () {
+    let x = document.querySelector(".coverImgGalleri");
+    i = Number(x.id);
     //evt.preventDefault();
     if (i === imageFileNames.length - 1) {
         i = 0;
     } else {
         i++;
     }
-    slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
+    x.id = i;
+    x.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 }
 
 /*Denne funksjonen er den motsatte av den forrige, da denne går bakover i bilder*/
 
 
 function prevFun () {
+    let x = document.querySelector(".coverImgGalleri");
+    i = Number(x.id);
+    console.log("X: " + x + ", I: " + i);
     //evt.preventDefault();
-    console.log(slideshowImg);
     if (i === 0) {
         i = imageFileNames.length - 1;
     } else {
         i--
     }
-
-    slideshowImg.src = "images/bildegalleri/" + imageFileNames[i].fileName;
+    x.id = i;
+    x.src = "images/bildegalleri/" + imageFileNames[i].fileName;
 }
 
 function clickOverlay() {
@@ -122,7 +127,7 @@ for (let i = 0; i < imageFileNames.length; i++) {
 
         img.setAttribute("src", "images/bildegalleri/" + imageFileNames[this.id].fileName);
         //img.setAttribute("id", "img" + imageFileNames[this.id]);
-        img.setAttribute("id", "slideshowImg");
+        img.setAttribute("id", this.id);
         img.setAttribute("class", "coverImgGalleri");
 
 
