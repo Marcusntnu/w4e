@@ -5,6 +5,8 @@ WHEN: November 2017
 PURPOSE: Style the page and make it functional
  */
 
+
+/* Media queries for små skjermer, bytter menyen og fjerner logoer og ølmåleren. Samt større skjerm-andel til innholdet */
 @media only screen and (max-width: 1200px) {
     .navNarrow {
         display: inline-block !important;
@@ -90,6 +92,8 @@ PURPOSE: Style the page and make it functional
     width: 40px;
 }
 
+
+/* Dette er for mobil-menyen*/
 #menytekst {
     margin: 0;
     font-family: "Century Gothic", sans-serif;
@@ -105,6 +109,8 @@ PURPOSE: Style the page and make it functional
     display: none;
 }
 
+
+
 body {
     font-size: 17px;
     font-family: "Proxima Nova", "Times New Roman", "sans-serif";
@@ -114,6 +120,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Her css-en for loading-skjermen */
 
 #loadpage {
     position: fixed;
@@ -135,6 +143,9 @@ body {
     animation: spin 0.8s linear infinite;
     z-index: 1001;
 }
+/* Slutt loading. */
+
+/* Generel styling for innhold og siden generelt */
 
 #page {
     position: inherit;
@@ -156,6 +167,8 @@ body {
     animation-duration: 0.5s;
     border-radius: 10px;
 }
+
+
 
 .shortcutLinks {
     margin: 0 auto;
@@ -179,6 +192,20 @@ body {
     color: #d47706;
 }
 
+/* Generelt sideinnhold som tittler og slikt */
+
+h1 {
+    line-height: 50px;
+    font-family: "kulFont", "Century Gothic", sans-serif;
+    font-size: 300%;
+    display: inline;
+}
+
+#tittel {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
 #members {
     text-align: center;
 }
@@ -192,6 +219,8 @@ h2 {
 h3 {
     color: #f59e01;
 }
+
+/* Her er css for menyen i desktop-versjon, altså for større enn 1200px i bredde */
 
 #navbar {
     overflow: hidden;
@@ -226,6 +255,8 @@ h3 {
     vertical-align: middle;
 }
 
+/* Setter inn effekter for når bruker har peker over menyelementene */
+
 .navt a:hover {
     animation-name: scale;
     animation-duration: 0.1s;
@@ -246,6 +277,10 @@ h3 {
     animation-fill-mode: forwards;
 }
 
+/*  Meny slutt */
+
+/* Diverse logo stylinger */
+
 .logo {
     width: 100px;
     display: inline;
@@ -264,15 +299,8 @@ h3 {
     height: auto;
 }
 
-#developersDiv {
-    font-style: italic;
-}
+/* Slutt logo */
 
-#liste {
-    list-style-type: none;
-    padding: 0;
-    font-weight: bold;
-}
 
 #bryggeguide {
     width: 800px;
@@ -305,8 +333,6 @@ table {
 
 
 /*From this guy: https://catalin.red/css3-ordered-list-styles/*/
-
-
 /*Start rounded list*/
 
 .rounded-list {
@@ -407,6 +433,8 @@ a {
     width: 90%;
 }
 
+/* Størreser og posisjon av galleriinnhold: */
+
 div.imageGrid {
     margin: 0 auto;
     justify-self: center;
@@ -464,6 +492,9 @@ div.desc {
     color: black;
 }
 
+
+/* Forrige og neste-pilene for galleriet*/
+
 #prev {
     right: 70%;
     background-color: rgba(175, 159, 172, 0.67);
@@ -487,6 +518,7 @@ div.desc {
     color: white;
     z-index: 100;
 }
+/* Piler -slutt */
 
 .round {
     border-radius: 50%;
@@ -525,81 +557,6 @@ div.desc {
 /* Bildegalleriside slutt */
 
 
-/*Shapes for scroll*/
-
-.oval {
-    width: 200px;
-    height: 100px;
-    background: red;
-    -moz-border-radius: 100px / 50px;
-    -webkit-border-radius: 100px / 50px;
-    border-radius: 100px / 50px;
-}
-
-.tv {
-    position: relative;
-    width: 200px;
-    height: 150px;
-    margin: 20px 0;
-    background: red;
-    border-radius: 50% / 10%;
-    color: white;
-    text-align: center;
-    text-indent: .1em;
-}
-
-.tv:before {
-    content: '';
-    position: absolute;
-    top: 10%;
-    bottom: 10%;
-    right: -5%;
-    left: -5%;
-    background: inherit;
-    border-radius: 5% / 50%;
-}
-
-.chevron {
-    position: relative;
-    text-align: center;
-    padding: 12px;
-    margin-bottom: 6px;
-    height: 60px;
-    width: 200px;
-}
-
-.chevron:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 51%;
-    background: red;
-    -webkit-transform: skew(0deg, 6deg);
-    -moz-transform: skew(0deg, 6deg);
-    -ms-transform: skew(0deg, 6deg);
-    -o-transform: skew(0deg, 6deg);
-    transform: skew(0deg, 6deg);
-}
-
-.chevron:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    background: red;
-    -webkit-transform: skew(0deg, -6deg);
-    -moz-transform: skew(0deg, -6deg);
-    -ms-transform: skew(0deg, -6deg);
-    -o-transform: skew(0deg, -6deg);
-    transform: skew(0deg, -6deg);
-}
-
-/* End shapes */
-
 #bildeGalleriH1 {
     padding-top: 0;
     margin-top: 40px;
@@ -607,32 +564,12 @@ div.desc {
 }
 
 @font-face {
-    font-family: fancyFont;
-    src: url(../fonts/alex-brush/AlexBrush-Regular.ttf);
-}
-
-@font-face {
-    font-family: fancyFont2;
-    src: url(../fonts/allura/Allura-Regular.otf);
-}
-
-@font-face {
     font-family: kulFont;
     src: url(../fonts/blackjack/blackjack.otf);
 }
 
-h1 {
-    line-height: 50px;
-    font-family: "kulFont", "Century Gothic", sans-serif;
-    font-size: 300%;
-    display: inline;
-}
 
-#tittel {
-    margin-bottom: 50px;
-    margin-top: 30px;
-}
-
+/* Kalkulator id-er med styling for resultat og input */
 #result {
     visibility: hidden;
     display: inline-block;
@@ -649,6 +586,8 @@ h1 {
     text-align: center;
 }
 
+/*   */
+
 #alkoholAvsnitt {
     position: relative;
     margin: 0 auto;
@@ -660,15 +599,8 @@ h1 {
     height: 100%;
 }
 
-#cover {
-    position: fixed;
-    top: 30%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    z-index: 10;
-    display: none;
-}
+
+/* Styling av pop-up elementer og pop-up bilder med denne funskjonen  */
 
 #overlay-back {
     position: fixed;
@@ -715,6 +647,8 @@ h1 {
     display: inline-block;
 }
 
+/* bryggelaug pop-up styling  */
+
 #infoDiv {
     position: relative;
     width: 40%;
@@ -757,12 +691,12 @@ h2.bryggeluagHeader {
     line-height: 140%;
     font-size: 70%;
 }
-
+/* Slutt på bryggelaug og pop-up effekter.  */
 
 /*Ølbildet som er øverst til venstre som man kan trykke på*/
 
 
-/*Start Øl teller */
+/* Start av Øl teller styling */
 
 #oel {
     font-size: 120%;
@@ -831,6 +765,8 @@ h2.bryggeluagHeader {
 
 /*End øl css*/
 
+/* Footer styling  */
+
 #footer {
     margin-top: 50px;
     height: 100px;
@@ -848,6 +784,8 @@ h2.bryggeluagHeader {
     margin-left: 30%;
 }
 
+/* Bli medlem elementer (input)  */
+
 #name, #mail, #linjeforening {
     width: 100%;
     padding: 12px 20px;
@@ -861,7 +799,12 @@ h2.bryggeluagHeader {
 #btnSubmit {
     height: 50%;
 }
+
+/* Slutt på Bli medlem styling */
+
 /* .push must be the same height as .footer */
+
+/*  Diverse keyframes, hovedsaklig for menyen og transition mellom sider */
 
 @keyframes spin {
     0% {
@@ -900,3 +843,4 @@ h2.bryggeluagHeader {
         margin-left: 0;
     }
 }
+/* Slutt på keyframes  */
