@@ -378,9 +378,6 @@ table {
     background: #f59e01;
 }
 
-.rounded-list li:hover:before {
-    transform: rotate(360deg);
-}
 
 .rounded-list li:before {
     content: counter(li);
@@ -415,6 +412,9 @@ table {
 
 .sectionDesign p {
     line-height: 40px;
+    position:relative;
+    left:5%;
+    width:85%;
 }
 /*End section design*/
 
@@ -553,6 +553,10 @@ div.desc {
 
 #calculatorFrm {
     text-align: center;
+}
+#calculatorFrm p{
+    text-align: center;
+    left:7%;
 }
 /* Slutt på kalkulator */
 
