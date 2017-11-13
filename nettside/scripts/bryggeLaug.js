@@ -5,17 +5,17 @@ let overlayBack = document.getElementById("overlay-back");
 
 //Objekt over alle bryggelaugene i Gløshaugen bryggeforum
 let bryggelaug = [{
-    name: "Ontap",
-    linjeforening: "Online",
-    styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
-    medlemmer: 33,
-    logo: "ontap.png",
-    leder: "Aslak Hollund",
-    kontaktinfo: {
-        telefon: 123456789,
-        epost: "test@test.no"
+        name: "Ontap",
+        linjeforening: "Online",
+        styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
+        medlemmer: 33,
+        logo: "ontap.png",
+        leder: "Aslak Hollund",
+        kontaktinfo: {
+            telefon: 123456789,
+            epost: "test@test.no"
+        }
     },
-},
 
     {
         name: "Invitro",
@@ -27,7 +27,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -40,7 +40,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 12345678,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -53,7 +53,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -66,7 +66,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -79,7 +79,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -92,7 +92,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -105,7 +105,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -118,7 +118,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -131,7 +131,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -144,7 +144,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -157,7 +157,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -170,7 +170,7 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
@@ -183,8 +183,8 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
-    },
+        }
+    }
 ];
 
 function clickOverlay() {
@@ -209,10 +209,12 @@ for (let i = 0; i < bryggelaug.length; i++) {
 
     div.setAttribute("class", "bryggelaugDiv");
 
-    div.innerHTML = "<h2 class='bryggeluagHeader'>"  + bryggelaug[i].name +  "</h2>";
+    div.innerHTML = "<h2 class='bryggeluagHeader'>" + bryggelaug[i].name + "</h2>";
 
     div.appendChild(img);
     wrapperLaug.appendChild(div);
+    /*
+        content.appendChild(wrapperLaug);*/
 
     let x = document.getElementById(i);
     x.onclick = function () {
@@ -245,5 +247,7 @@ for (let i = 0; i < bryggelaug.length; i++) {
 
         cover.style.display = overlayBack.style.display = "block";
         cover.style.visibility = overlayBack.style.visibility = "visible";
+
+
     }
 }

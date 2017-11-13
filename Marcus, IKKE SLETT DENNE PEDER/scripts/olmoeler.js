@@ -1,6 +1,6 @@
 /*
 FILE NAME: scripts/olmoeler.js
-WRITTEN BY: Marcus Tiedemann Økland Henriksbø
+WRITTEN BY: Marcus Tiedemann Økland Henriksbø, Filip Østervold Tangen
 WHEN: November 2017
 PURPOSE: Counter for beer
  */

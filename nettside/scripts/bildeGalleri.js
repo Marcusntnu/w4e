@@ -17,9 +17,9 @@ let prev = document.getElementById("prev");
 
 //Variabel for å holde filnavn og bildebesrkivelse.
 let imageFileNames = [{
-    fileName: "1.jpg",
-    description: "Nå er Mannhullets IPA fra IPA-off på tapp! Kom og kjøp før det blir tomt!"
-},
+        fileName: "1.jpg",
+        description: "Nå er Mannhullets IPA fra IPA-off på tapp! Kom og kjøp før det blir tomt!"
+    },
     {
         fileName: "2.jpg",
         description: "Sigurd Aurvåg Sørum"
@@ -35,7 +35,7 @@ let imageFileNames = [{
     {
         fileName: "5.jpg",
         description: "Er det det at Haakon og Sigrid alene har blitt satt i spotligthen som utløser frustrasjonen? " +
-        "Men Hvorfor er da Kristian så fornøyd?"
+            "Men Hvorfor er da Kristian så fornøyd?"
     },
     {
         fileName: "6.jpg",
@@ -52,8 +52,8 @@ let imageFileNames = [{
     {
         fileName: "9.jpg",
         description: "Maltet har kommet. \n" +
-        "Lagres på samfundet. Kan hentes når det har blitt betalt for. Ta kontakt med " +
-        "<a href='mailto:sampleEmail@domain.com'>Sigbjørn Albert</a>"
+            "Lagres på samfundet. Kan hentes når det har blitt betalt for. Ta kontakt med " +
+            "<a href='mailto:sampleEmail@domain.com'>Sigbjørn Albert</a>"
     },
     {
         fileName: "10.jpg",
@@ -66,7 +66,7 @@ Variablen I er en teller, som inkrementerer for hver gang brukeren trykker på k
 Når I er det samme som antall filnavn, skal den hoppe tibake til start*/
 let i = 0;
 
-function nextFun () {
+function nextFun() {
     let x = document.querySelector(".coverImgGalleri");
     i = Number(x.id);
     //evt.preventDefault();
@@ -82,7 +82,7 @@ function nextFun () {
 /*Denne funksjonen er den motsatte av den forrige, da denne går bakover i bilder*/
 
 
-function prevFun () {
+function prevFun() {
     let x = document.querySelector(".coverImgGalleri");
     i = Number(x.id);
     //evt.preventDefault();
@@ -128,13 +128,11 @@ for (let i = 0; i < imageFileNames.length; i++) {
         //img.setAttribute("id", "img" + imageFileNames[this.id]);
         img.setAttribute("id", this.id);
         img.setAttribute("class", "coverImgGalleri");
-        img.setAttribute("onkeydown", "keydown()");
+
 
         cover.innerHTML += "<img id=\"prev\" onclick='prevFun()' src=\"images/arrow2.png\" class=\"previous round\">\n" +
             "    <img id=\"next\" onclick='nextFun()' src=\"images/arrow.png\" class=\"next round\">";
 
-        /*next.addEventListener("click", "nextFun()");
-        prev.addEventListener("click", "prevFun()");*/
         cover.appendChild(img);
 
         cover.style.display = overlayBack.style.display = "block";
@@ -143,13 +141,11 @@ for (let i = 0; i < imageFileNames.length; i++) {
 }
 
 window.onkeydown = function (evt) {
-    console.log(evt.keyCode);
-    if(evt.keyCode === 39){
+    if (evt.keyCode === 39) {
         nextFun();
-    }else if(evt.keyCode === 37){
+    } else if (evt.keyCode === 37) {
         prevFun();
+    } else if (evt.keyCode === 27) {
+        clickOverlay();
     }
 };
-
-//Høyre === 39
-//Venstre === 37
