@@ -212,8 +212,7 @@ for (let i = 0; i < bryggelaug.length; i++) {
     div.innerHTML = "<h2 class='bryggeluagHeader'>"  + bryggelaug[i].name +  "</h2>";
 
     div.appendChild(img);
-    wrapperLaug.appendChild(div);/*
-    content.appendChild(wrapperLaug);*/
+    wrapperLaug.appendChild(div);
 
     let x = document.getElementById(i);
     x.onclick = function () {
@@ -246,7 +245,5 @@ for (let i = 0; i < bryggelaug.length; i++) {
 
         cover.style.display = overlayBack.style.display = "block";
         cover.style.visibility = overlayBack.style.visibility = "visible";
-
-
     }
 }

@@ -5,9 +5,6 @@ WHEN: November 2017
 PURPOSE: store the navbar for use on all pages
  */
 
-
-
-
 function loadfooter(){
     let footer = document.getElementById("footer");
 
@@ -16,7 +13,6 @@ function loadfooter(){
 
 }
 
-addLoadEvent(loadfooter);
-
+loadfooter();
 
 

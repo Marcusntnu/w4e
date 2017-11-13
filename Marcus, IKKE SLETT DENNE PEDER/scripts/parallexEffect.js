@@ -1,5 +1,3 @@
-
-
 (function(){
     addLoadEvent(load_page);
     addLoadEvent(parallex);

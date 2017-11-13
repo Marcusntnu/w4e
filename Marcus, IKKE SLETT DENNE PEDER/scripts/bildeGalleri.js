@@ -85,7 +85,6 @@ function nextFun () {
 function prevFun () {
     let x = document.querySelector(".coverImgGalleri");
     i = Number(x.id);
-    console.log("X: " + x + ", I: " + i);
     //evt.preventDefault();
     if (i === 0) {
         i = imageFileNames.length - 1;
@@ -129,7 +128,7 @@ for (let i = 0; i < imageFileNames.length; i++) {
         //img.setAttribute("id", "img" + imageFileNames[this.id]);
         img.setAttribute("id", this.id);
         img.setAttribute("class", "coverImgGalleri");
-
+        img.setAttribute("onkeydown", "keydown()");
 
         cover.innerHTML += "<img id=\"prev\" onclick='prevFun()' src=\"images/arrow2.png\" class=\"previous round\">\n" +
             "    <img id=\"next\" onclick='nextFun()' src=\"images/arrow.png\" class=\"next round\">";
@@ -142,3 +141,15 @@ for (let i = 0; i < imageFileNames.length; i++) {
         cover.style.visibility = overlayBack.style.visibility = "visible";
     }
 }
+
+window.onkeydown = function (evt) {
+    console.log(evt.keyCode);
+    if(evt.keyCode === 39){
+        nextFun();
+    }else if(evt.keyCode === 37){
+        prevFun();
+    }
+};
+
+//Høyre === 39
+//Venstre === 37
