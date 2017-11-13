@@ -1,11 +1,10 @@
 
 
-(function(){
+
     addLoadEvent(load_page);
     addLoadEvent(parallex);
     window.onscroll = parallex;
 
-})();
 
 function parallex(){
     let parallax2 = document.querySelectorAll("body"),
