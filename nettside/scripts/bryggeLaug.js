@@ -1,4 +1,3 @@
-let content = document.getElementById("content");
 let cover = document.getElementById("cover");
 let wrapperLaug = document.getElementById("wrapperLaug");
 let overlayBack = document.getElementById("overlay-back");
@@ -203,7 +202,7 @@ for (let i = 0; i < bryggelaug.length; i++) {
 
     img.setAttribute("class", "bryggelaugImg");
     img.setAttribute("onclick", "clickLaug()");
-    img.setAttribute("id", i);
+    img.setAttribute("id", i.toString());
     img.setAttribute("alt", bryggelaug[i].logo);
     img.setAttribute("src", "images/Logoer/" + bryggelaug[i].logo);
 
@@ -216,14 +215,14 @@ for (let i = 0; i < bryggelaug.length; i++) {
     /*
         content.appendChild(wrapperLaug);*/
 
-    let x = document.getElementById(i);
+    let x = document.getElementById(i.toString());
     x.onclick = function () {
         let img = document.createElement("img");
         let div = document.createElement("div");
         let divKontakt = document.createElement("div");
 
         img.setAttribute("src", "images/Logoer/" + bryggelaug[this.id].logo);
-        img.setAttribute("id", i);
+        img.setAttribute("id", i.toString());
         img.setAttribute("class", "coverImg");
         img.setAttribute("alt", bryggelaug[i].logo);
 
