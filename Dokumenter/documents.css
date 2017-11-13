@@ -91,6 +91,12 @@ p {
     text-align: center;
 
 
+
+}
+
+
+h2{
+    font-size:30px;
 }
 #headingOne{
     position:relative;
@@ -136,7 +142,9 @@ table, td, th, tr {
 
 
 
-
+p{
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+}
 
 
 /*LIST STYLING FROM THIS WEBSITE */
@@ -150,20 +158,16 @@ ol {
     padding: 0;
 }
 
-li {
+ol li {
     font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
     border-bottom: 1px solid #ccc;
-}
 
-li:last-child {
-    border: none;
-}
-
-li a{
     text-decoration: none;
     color: #000;
     display: block;
-    width: 200px;
+    width: auto;
+    margin:0 auto;
+    line-height: 40px;
 
     -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
     -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
@@ -172,8 +176,15 @@ li a{
     transition: font-size 0.3s ease, background-color 0.3s ease;
 }
 
-li a:hover {
-    font-size: 30px;
+
+
+ol li:last-child {
+    border: none;
+}
+
+
+ol li:hover {
+    font-size: 21px;
     background: #f6f6f6;
 }
 
