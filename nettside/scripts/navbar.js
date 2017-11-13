@@ -25,9 +25,7 @@ function loadNavbar() {
     let navbar = document.getElementById("navbar");
 
     navbar.innerHTML =
-        "<div id = \"scroll\">" +
-        "</div>" +
-
+        "<div id = \"fixednav\">" +
         "<p id=\"oel\"></p>" +
         "<ul class=\"navt\">\n" +
         "\n" +
@@ -53,7 +51,7 @@ function loadNavbar() {
         "    <li><a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
         "    </li>\n" +
         "</ul>" +
-
+        "</div>" +
         "   <div class=\"navNarrow\">\n" +
         "                <img src='images/hamburger_icon.png' id='menyLogo' onclick='fjernmeny()'><p id=\"menytekst\">Meny</p></img>\n" +
         "                <div class=\"narrowLinks hidden\" >\n" +

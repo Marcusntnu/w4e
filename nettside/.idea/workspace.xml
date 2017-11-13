@@ -14,44 +14,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bildeGalleri.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/bildeGalleri.js">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="276">
+              <caret line="600" column="16" lean-forward="true" selection-start-line="600" selection-start-column="16" selection-end-line="600" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/navbar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bliMedlem.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bliMedlem.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bryggeguide.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bryggeguide.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bryggelaug.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bryggelaug.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="8" column="69" lean-forward="false" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -59,66 +39,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="50" column="102" lean-forward="true" selection-start-line="50" selection-start-column="102" selection-end-line="50" selection-end-column="102" />
               <folding>
                 <marker date="1510589329000" expanded="true" signature="1452:2142" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beregninger.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beregninger.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="33" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bildegalleri.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bildegalleri.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="69" lean-forward="false" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bryggeLaug.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/bryggeLaug.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3450">
-              <caret line="230" column="34" lean-forward="false" selection-start-line="230" selection-start-column="34" selection-end-line="230" selection-end-column="34" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/calculator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/footer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <marker date="1510586167000" expanded="false" signature="0:148" ph="/*...*/" />
               </folding>
             </state>
           </provider>
@@ -130,10 +54,18 @@
     <findStrings>
       <find>footer</find>
       <find>members</find>
-      <find>cover</find>
       <find>input</find>
       <find>console</find>
       <find>imageView</find>
+      <find>zoom</find>
+      <find>rounded</find>
+      <find>scale</find>
+      <find>content</find>
+      <find>navt</find>
+      <find>overla</find>
+      <find>nav</find>
+      <find>page</find>
+      <find>cover</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -141,9 +73,7 @@
       <list>
         <option value="$PROJECT_DIR$/scripts/parallexEffect.js" />
         <option value="$PROJECT_DIR$/scripts/footer.js" />
-        <option value="$PROJECT_DIR$/scripts/navbar.js" />
         <option value="$PROJECT_DIR$/scripts/olmoeler.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/scripts/bryggeLaug.js" />
         <option value="$PROJECT_DIR$/scripts/bildeGalleri.js" />
         <option value="$PROJECT_DIR$/bildegalleri.html" />
@@ -152,6 +82,8 @@
         <option value="$PROJECT_DIR$/bliMedlem.html" />
         <option value="$PROJECT_DIR$/bryggeguide.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scripts/navbar.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -210,12 +142,6 @@
             <path>
               <item name="nettside" type="b2602c69:ProjectViewProjectNode" />
               <item name="nettside" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="logoer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettside" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettside" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -263,12 +189,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510583099034</updated>
-      <workItem from="1510583100477" duration="5398000" />
+      <workItem from="1510583100477" duration="8229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5398000" />
+    <option name="totallyTimeSpent" value="8229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
@@ -318,26 +244,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="57" lean-forward="false" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
-          <folding>
-            <marker date="1510586839000" expanded="true" signature="0:140" ph="/*...*/" />
-            <marker date="1510586839000" expanded="true" signature="241:514" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="322:359" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="365:512" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="403:506" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="432:476" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="538:2530" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="2406:2462" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="2583:2795" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="2688:2737" ph="{...}" />
-            <marker date="1510586839000" expanded="true" signature="2743:2793" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/olmoeler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -350,14 +256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="323" column="0" lean-forward="true" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -382,22 +280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beregninger.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bildegalleri.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="69" lean-forward="false" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bliMedlem.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -414,6 +296,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/bildeGalleri.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bryggelaug.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
@@ -422,13 +314,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/bildeGalleri.js">
+    <entry file="file://$PROJECT_DIR$/beregninger.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bildegalleri.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="69" lean-forward="false" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -442,10 +340,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="600" column="16" lean-forward="true" selection-start-line="600" selection-start-column="16" selection-end-line="600" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="50" column="102" lean-forward="true" selection-start-line="50" selection-start-column="102" selection-end-line="50" selection-end-column="102" />
           <folding>
             <marker date="1510589329000" expanded="true" signature="1452:2142" ph="..." />
           </folding>
