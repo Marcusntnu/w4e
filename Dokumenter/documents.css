@@ -60,7 +60,9 @@ p {
     padding: 5px;
 }
 
-
+.shortcutLinks a{
+    margin-left:10px;
+}
 
 .double-border {
     background-color: #ffffff;
@@ -142,6 +144,19 @@ table, td, th, tr {
 
 
 
+.sectionDesign {
+    width: 90%;
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+*{
+    line-height:40px;
+}
+
 p{
     font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
 }
@@ -174,8 +189,12 @@ ol li {
     -o-transition: font-size 0.3s ease, background-color 0.3s ease;
     -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
     transition: font-size 0.3s ease, background-color 0.3s ease;
+    position:relative;
+    width:90%;
+    left:2%;
 }
 
+ol li ol li {position:relative;left:5%;}
 
 
 ol li:last-child {
