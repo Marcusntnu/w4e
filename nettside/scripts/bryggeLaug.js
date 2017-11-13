@@ -1,23 +1,32 @@
-let content = document.getElementById("content");
+/*
+FILE NAME: scripts/bryggeLaug.js
+WRITTEN BY: Sander Bjerklund Lindberg
+WHEN: November 2017
+PURPOSE: Adds bryggelaug to the page
+ */
+
+//Referanser til HTML elementer
 let cover = document.getElementById("cover");
 let wrapperLaug = document.getElementById("wrapperLaug");
 let overlayBack = document.getElementById("overlay-back");
 
 //Objekt over alle bryggelaugene i Gløshaugen bryggeforum
 let bryggelaug = [{
-    name: "Ontap",
-    linjeforening: "Online",
-    styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
-    medlemmer: 33,
-    logo: "ontap.png",
-    leder: "Aslak Hollund",
-    kontaktinfo: {
-        telefon: 123456789,
-        epost: "test@test.no"
+        //Online
+        name: "Ontap",
+        linjeforening: "Online",
+        styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
+        medlemmer: 33,
+        logo: "ontap.png",
+        leder: "Aslak Hollund",
+        kontaktinfo: {
+            telefon: 123456789,
+            epost: "test@test.no"
+        }
     },
-},
 
     {
+        //Volvox&Alkymisten
         name: "Invitro",
         linjeforening: "Volvox&Alkymisten",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -27,10 +36,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Aarhønen
         name: "AarhøneKroa Pikobryggeri",
         linjeforening: "Aarhønen",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -40,10 +50,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 12345678,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Delta
         name: "Delta Bryggelaug",
         linjeforening: "Delta",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -53,10 +64,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Janus
         name: "Indøk Ølbryggelaug",
         linjeforening: "Janus",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -66,10 +78,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Smørekommen
         name: "Maskins BrüggeCom",
         linjeforening: "Smørekoppen",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -79,10 +92,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Omega
         name: "Omega Haandbrygercommitée",
         linjeforening: "Omega",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -92,10 +106,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Timini
         name: "Nanobryggeriet",
         linjeforening: "Timini",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -105,10 +120,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Emil
         name: "Ølkom",
         linjeforening: "Emil",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -118,10 +134,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Nabla
         name: "Nablas Ølbryggerlaug",
         linjeforening: "Nabla",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -131,10 +148,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Abakus
         name: "Ababrygg",
         linjeforening: "Abakus",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -144,10 +162,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Hoiskolens Chemikerforening
         name: "CHØLeSCAB",
         linjeforening: "Høiskolens Chemikerforening",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -157,10 +176,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Mannhullet
         name: "Mannhullet",
         linjeforening: "Mannhullet",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -170,10 +190,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
+        }
     },
 
     {
+        //Emil
         name: "Fylkesbrygg",
         linjeforening: "Emil",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -183,10 +204,11 @@ let bryggelaug = [{
         kontaktinfo: {
             telefon: 123456789,
             epost: "test@test.no"
-        },
-    },
+        }
+    }
 ];
 
+//Funksjon for å fjerne "popup" av bruggelaug
 function clickOverlay() {
     cover.innerHTML = "";
     cover.style.display = overlayBack.style.display = "none";
@@ -194,34 +216,37 @@ function clickOverlay() {
 
 }
 
+/*Loopen looper igjennom objektet og lager en div + img elementer og putter riktig bilde inn i riktig img-element, basert
+på plassen i objektet. */
+
 for (let i = 0; i < bryggelaug.length; i++) {
     let img = document.createElement("img");
     let div = document.createElement("div");
-    let div2 = document.createElement("div");
 
-    div2.setAttribute("class", "imageGrid");
 
     img.setAttribute("class", "bryggelaugImg");
     img.setAttribute("onclick", "clickLaug()");
-    img.setAttribute("id", i);
+    img.setAttribute("id", i.toString());
     img.setAttribute("alt", bryggelaug[i].logo);
     img.setAttribute("src", "images/Logoer/" + bryggelaug[i].logo);
 
     div.setAttribute("class", "bryggelaugDiv");
 
-    div.innerHTML = "<h2 class='bryggeluagHeader'>"  + bryggelaug[i].name +  "</h2>";
+    div.innerHTML = "<h2 class='bryggeluagHeader'>" + bryggelaug[i].name + "</h2>";
 
     div.appendChild(img);
     wrapperLaug.appendChild(div);
 
-    let x = document.getElementById(i);
+    //Lager en referanse til bildet som er lagt til hver gang loopen kjører.
+    let x = document.getElementById(i.toString());
+    //Setter en "onclick" på dette bildet. Denne funksjonen sører for at "popup" virker.
     x.onclick = function () {
         let img = document.createElement("img");
         let div = document.createElement("div");
         let divKontakt = document.createElement("div");
 
         img.setAttribute("src", "images/Logoer/" + bryggelaug[this.id].logo);
-        img.setAttribute("id", i);
+        img.setAttribute("id", i.toString());
         img.setAttribute("class", "coverImg");
         img.setAttribute("alt", bryggelaug[i].logo);
 

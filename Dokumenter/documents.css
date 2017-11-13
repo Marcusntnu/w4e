@@ -125,4 +125,12 @@ a {
 a:hover {
     font-size: 102%;
     color: #b45569;
+
 }
+table, td, th, tr {
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
