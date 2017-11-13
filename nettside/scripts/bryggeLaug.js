@@ -228,7 +228,7 @@ for (let i = 0; i < bryggelaug.length; i++) {
     img.setAttribute("onclick", "clickLaug()");
     img.setAttribute("id", i.toString());
     img.setAttribute("alt", bryggelaug[i].logo);
-    img.setAttribute("src", "images/Logoer/" + bryggelaug[i].logo);
+    img.setAttribute("src", "images/logoer/" + bryggelaug[i].logo);
 
     div.setAttribute("class", "bryggelaugDiv");
 
@@ -245,7 +245,7 @@ for (let i = 0; i < bryggelaug.length; i++) {
         let div = document.createElement("div");
         let divKontakt = document.createElement("div");
 
-        img.setAttribute("src", "images/Logoer/" + bryggelaug[this.id].logo);
+        img.setAttribute("src", "images/logoer/" + bryggelaug[this.id].logo);
         img.setAttribute("id", i.toString());
         img.setAttribute("class", "coverImg");
         img.setAttribute("alt", bryggelaug[i].logo);
