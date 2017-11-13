@@ -6,14 +6,9 @@ PURPOSE: Slideshow for the gallery page
  */
 
 //Referanser til HTML elementer
-//let prev = document.getElementById("prev");
-//let next = document.getElementById("next");
-//let slideshowImg = document.getElementById("slideshowImg");
 let imageContainer = document.getElementById("wrapperGalleri");
 let overlayBack = document.getElementById("overlay-back");
 let cover = document.getElementById("coverGalleri");
-let next = document.getElementById("next");
-let prev = document.getElementById("prev");
 
 //Variabel for å holde filnavn og bildebesrkivelse.
 let imageFileNames = [{
@@ -85,7 +80,6 @@ function nextFun() {
 function prevFun() {
     let x = document.querySelector(".coverImgGalleri");
     i = Number(x.id);
-    //evt.preventDefault();
     if (i === 0) {
         i = imageFileNames.length - 1;
     } else {
@@ -101,7 +95,8 @@ function clickOverlay() {
     cover.style.visibility = overlayBack.style.visibility = "hidden";
 }
 
-//Loop for å legge til alle bildene i filnavn-arrayet i HTMLen.
+/*Loopen looper igjennom objektet og lager en div + img elementer og putter riktig bilde inn i riktig img-element, basert
+på plassen i objektet. */
 for (let i = 0; i < imageFileNames.length; i++) {
     let img = document.createElement("img");
     let y = document.createElement("div");
@@ -120,6 +115,7 @@ for (let i = 0; i < imageFileNames.length; i++) {
 
     imageContainer.appendChild(z);
 
+    //Lager en referanse til bildet som er lagt til hver gang loopen kjører.
     let elem = document.getElementById(i.toString());
     elem.onclick = function () {
         let img = document.createElement("img");

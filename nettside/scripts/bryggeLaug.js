@@ -1,9 +1,18 @@
+/*
+FILE NAME: scripts/bryggeLaug.js
+WRITTEN BY: Sander Bjerklund Lindberg
+WHEN: November 2017
+PURPOSE: Adds bryggelaug to the page
+ */
+
+//Referanser til HTML elementer
 let cover = document.getElementById("cover");
 let wrapperLaug = document.getElementById("wrapperLaug");
 let overlayBack = document.getElementById("overlay-back");
 
 //Objekt over alle bryggelaugene i Gløshaugen bryggeforum
 let bryggelaug = [{
+        //Online
         name: "Ontap",
         linjeforening: "Online",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -17,6 +26,7 @@ let bryggelaug = [{
     },
 
     {
+        //Volvox&Alkymisten
         name: "Invitro",
         linjeforening: "Volvox&Alkymisten",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -30,6 +40,7 @@ let bryggelaug = [{
     },
 
     {
+        //Aarhønen
         name: "AarhøneKroa Pikobryggeri",
         linjeforening: "Aarhønen",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -43,6 +54,7 @@ let bryggelaug = [{
     },
 
     {
+        //Delta
         name: "Delta Bryggelaug",
         linjeforening: "Delta",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -56,6 +68,7 @@ let bryggelaug = [{
     },
 
     {
+        //Janus
         name: "Indøk Ølbryggelaug",
         linjeforening: "Janus",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -69,6 +82,7 @@ let bryggelaug = [{
     },
 
     {
+        //Smørekommen
         name: "Maskins BrüggeCom",
         linjeforening: "Smørekoppen",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -82,6 +96,7 @@ let bryggelaug = [{
     },
 
     {
+        //Omega
         name: "Omega Haandbrygercommitée",
         linjeforening: "Omega",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -95,6 +110,7 @@ let bryggelaug = [{
     },
 
     {
+        //Timini
         name: "Nanobryggeriet",
         linjeforening: "Timini",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -108,6 +124,7 @@ let bryggelaug = [{
     },
 
     {
+        //Emil
         name: "Ølkom",
         linjeforening: "Emil",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -121,6 +138,7 @@ let bryggelaug = [{
     },
 
     {
+        //Nabla
         name: "Nablas Ølbryggerlaug",
         linjeforening: "Nabla",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -134,6 +152,7 @@ let bryggelaug = [{
     },
 
     {
+        //Abakus
         name: "Ababrygg",
         linjeforening: "Abakus",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -147,6 +166,7 @@ let bryggelaug = [{
     },
 
     {
+        //Hoiskolens Chemikerforening
         name: "CHØLeSCAB",
         linjeforening: "Høiskolens Chemikerforening",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -160,6 +180,7 @@ let bryggelaug = [{
     },
 
     {
+        //Mannhullet
         name: "Mannhullet",
         linjeforening: "Mannhullet",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -173,6 +194,7 @@ let bryggelaug = [{
     },
 
     {
+        //Emil
         name: "Fylkesbrygg",
         linjeforening: "Emil",
         styremedlemmer: "Styremedlem 1, styremedlem 2, styremedlem 3, styremedlem 4 ....",
@@ -186,6 +208,7 @@ let bryggelaug = [{
     }
 ];
 
+//Funksjon for å fjerne "popup" av bruggelaug
 function clickOverlay() {
     cover.innerHTML = "";
     cover.style.display = overlayBack.style.display = "none";
@@ -193,12 +216,13 @@ function clickOverlay() {
 
 }
 
+/*Loopen looper igjennom objektet og lager en div + img elementer og putter riktig bilde inn i riktig img-element, basert
+på plassen i objektet. */
+
 for (let i = 0; i < bryggelaug.length; i++) {
     let img = document.createElement("img");
     let div = document.createElement("div");
-    let div2 = document.createElement("div");
 
-    div2.setAttribute("class", "imageGrid");
 
     img.setAttribute("class", "bryggelaugImg");
     img.setAttribute("onclick", "clickLaug()");
@@ -212,10 +236,10 @@ for (let i = 0; i < bryggelaug.length; i++) {
 
     div.appendChild(img);
     wrapperLaug.appendChild(div);
-    /*
-        content.appendChild(wrapperLaug);*/
 
+    //Lager en referanse til bildet som er lagt til hver gang loopen kjører.
     let x = document.getElementById(i.toString());
+    //Setter en "onclick" på dette bildet. Denne funksjonen sører for at "popup" virker.
     x.onclick = function () {
         let img = document.createElement("img");
         let div = document.createElement("div");
@@ -246,7 +270,5 @@ for (let i = 0; i < bryggelaug.length; i++) {
 
         cover.style.display = overlayBack.style.display = "block";
         cover.style.visibility = overlayBack.style.visibility = "visible";
-
-
     }
 }
