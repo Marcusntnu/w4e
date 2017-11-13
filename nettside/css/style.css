@@ -43,7 +43,8 @@ PURPOSE: Style the page and make it functional
     #footer {
         display: none !important;
     }
-    .navt {
+    /* Den fixednav er div-en som inneholder den store menyen */
+    #fixednav{
         display: none;
     }
     tbody {
@@ -151,7 +152,7 @@ body {
     background-color: rgba(250, 245, 242, 1);
     width: 90%;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 100px;
     padding-bottom: 50px;
     min-height: 70%;
     animation-name: fadein;
@@ -214,33 +215,49 @@ h3 {
 
 /* Her er css for menyen i desktop-versjon, altså for større enn 1200px i bredde */
 
+#fixednav{
+    position: fixed;
+    background: rgb(251, 248, 255);
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    height: 65px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
 #navbar {
     overflow: hidden;
     background: rgba(251, 249, 255, 1);
 }
 
 .navt {
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     float: right;
     width: 70%;
-    text-align: right;
+    position: relative;
+    z-index: 900;
+    left: 6%;
 }
 
 .navt li {
     margin-top: 0;
     font-size: 100%;
     display: inline;
+    margin-bottom: -10px;
 }
 
 .navt a {
     font-family: "Century Gothic", sans-serif;
     display: inline-block;
-    padding: 0 12px;
+    padding: 0 10px;
     color: black;
     text-decoration: double;
     line-height: 350%;
     border-bottom: 5px solid transparent;
+
 }
 
 .navt img {
@@ -468,7 +485,7 @@ div.desc {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 10;
+    z-index: 52;
 }
 
 .coverImgGalleri {
@@ -564,7 +581,7 @@ div.desc {
     background: #000;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    z-index: 5;
+    z-index: 51;
     display: none;
 }
 
@@ -582,7 +599,7 @@ div.desc {
     left: 25%;
     width: 50%;
     height: 50%;
-    z-index: 10;
+    z-index: 52;
     display: none;
     border-radius: 2%;
     background-color: white;
@@ -655,7 +672,7 @@ h2.bryggeluagHeader {
     color: #39373c;
     position: relative;
     float: left;
-    left: 150px;
+    left: 2%;
     margin: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -778,7 +795,7 @@ h2.bryggeluagHeader {
         transform: scale(1);
     }
     to {
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 }
 
