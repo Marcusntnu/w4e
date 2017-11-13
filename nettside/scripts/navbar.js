@@ -6,7 +6,9 @@ PURPOSE: store the navbar for use on all pages
  */
 
 
-//Innholdet i elementet med id = "navbar" skal byttes ut med navbaren
+//Tar en funksjon og gjør slik at den blir kallet når websiden er ferdig loaded.
+//Funksjonen gjør det mulig å kalle flere funksjoner, ikke bare en slik window.onload gjør.
+//Ofte brukt kode, finnes mange projekter som bruker den.
 function addLoadEvent(func) {
     let oldonload = window.onload;
     if (typeof window.onload != 'function') {
@@ -20,7 +22,7 @@ function addLoadEvent(func) {
         }
     }
 }
-
+//Loader navbaren via DOM
 function loadNavbar() {
     let navbar = document.getElementById("navbar");
 
@@ -63,6 +65,8 @@ function loadNavbar() {
         "                    <a href=\"bryggelaug.html\">Bryggelaug</a>\n" +
         "                </div>\n" +
         "            </div>";
+
+
     let navLinks = document.querySelector('.navNarrow');
     let narrowLinks = document.querySelector('.narrowLinks');
 

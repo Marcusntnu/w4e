@@ -2,8 +2,9 @@
 FILE NAME: scripts/navbar.js
 WRITTEN BY: Marcus Tiedemann Økland Henriksbø
 WHEN: November 2017
-PURPOSE: store the navbar for use on all pages
+PURPOSE: Store the footer on all pages
  */
+
 function loadfooter() {
     let footer = document.getElementById("footer");
 
@@ -11,5 +12,4 @@ function loadfooter() {
 
 
 }
-
 loadfooter();
