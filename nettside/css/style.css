@@ -78,22 +78,25 @@ PURPOSE: Style the page and make it functional
         font-size: 50%;
     }
 }
+/* Start av CSS uten meddia queries */
 
-.fum {
-    font-size: 2em;
+body {
+    font-size: 17px;
+    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
+    line-height: 150%;
+    background-image: url("../images/beerpattern3.jpg");
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
 }
 
-.fo-bars:before {
-    content: "\f0c9";
-}
+/* Dette er for mobil-menyen*/
 
 #menyLogo {
     height: 40px;
     width: 40px;
 }
 
-
-/* Dette er for mobil-menyen*/
 #menytekst {
     margin: 0;
     font-family: "Century Gothic", sans-serif;
@@ -107,18 +110,6 @@ PURPOSE: Style the page and make it functional
 
 .hidden {
     display: none;
-}
-
-
-
-body {
-    font-size: 17px;
-    font-family: "Proxima Nova", "Times New Roman", "sans-serif";
-    line-height: 150%;
-    background-image: url("../images/beerpattern3.jpg");
-    background-repeat: repeat;
-    margin: 0;
-    padding: 0;
 }
 
 /* Her css-en for loading-skjermen */
@@ -168,8 +159,6 @@ body {
     border-radius: 10px;
 }
 
-
-
 .shortcutLinks {
     margin: 0 auto;
     padding-bottom: 20px;
@@ -193,6 +182,9 @@ body {
 }
 
 /* Generelt sideinnhold som tittler og slikt */
+a {
+    text-decoration: none;
+}
 
 h1 {
     line-height: 50px;
@@ -373,10 +365,6 @@ table {
     transform: rotate(360deg);
 }
 
-a {
-    text-decoration: none;
-}
-
 .rounded-list li:before {
     content: counter(li);
     counter-increment: li;
@@ -394,8 +382,6 @@ a {
     border-radius: 2em;
     transition: all .3s ease-out;
 }
-
-
 /*End rounded list*/
 
 
@@ -413,8 +399,6 @@ a {
 .sectionDesign p {
     line-height: 40px;
 }
-
-
 /*End section design*/
 
 
@@ -433,7 +417,7 @@ a {
     width: 90%;
 }
 
-/* Størreser og posisjon av galleriinnhold: */
+/* Størreser og posisjon av galleriinnhold og bryggelaug pop.up: */
 
 div.imageGrid {
     margin: 0 auto;
@@ -476,24 +460,38 @@ div.desc {
     margin: 0 auto;
 }
 
-.imageView {
-    display: inline-block;
-    width: 400px;
+
+/* Litt mer css for galleriet */
+
+
+#coverGalleri {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+}
+
+.coverImgGalleri {
+    position: relative;
+    width: auto;
+    height: calc(90vw / 2/* 200px*/
+    );
+    transform: translate(-50%, -50%);
+    top: -150px;
+}
+
+#bildeGalleriH1 {
+    padding-top: 0;
+    margin-top: 40px;
     text-align: center;
-}
-
-.imageView a {
-    text-decoration: none;
-    padding: 8px 16px;
-}
-
-.imageView a:hover {
-    background-color: #ddd;
-    color: black;
 }
 
 
 /* Forrige og neste-pilene for galleriet*/
+
+.round {
+    border-radius: 50%;
+}
 
 #prev {
     right: 70%;
@@ -520,53 +518,7 @@ div.desc {
 }
 /* Piler -slutt */
 
-.round {
-    border-radius: 50%;
-}
-
-#slideshow {
-    margin: auto;
-    width: 100%;
-    height: 400px;
-}
-
-#slideshowImg {
-    width: 400px;
-    height: 400px;
-    max-width: 100%;
-    max-height: 400px;
-}
-
-#coverGalleri {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 10;
-}
-
-.coverImgGalleri {
-    position: relative;
-    width: auto;
-    height: calc(90vw / 2/* 200px*/
-    );
-    transform: translate(-50%, -50%);
-    top: -150px;
-}
-
-
 /* Bildegalleriside slutt */
-
-
-#bildeGalleriH1 {
-    padding-top: 0;
-    margin-top: 40px;
-    text-align: center;
-}
-
-@font-face {
-    font-family: kulFont;
-    src: url(../fonts/blackjack/blackjack.otf);
-}
 
 
 /* Kalkulator id-er med styling for resultat og input */
@@ -585,8 +537,9 @@ div.desc {
 #calculatorFrm {
     text-align: center;
 }
+/* Slutt på kalkulator */
 
-/*   */
+/* Avsnitt om alkohol styling  */
 
 #alkoholAvsnitt {
     position: relative;
@@ -647,7 +600,7 @@ div.desc {
     display: inline-block;
 }
 
-/* bryggelaug pop-up styling  */
+/* Bryggelaug pop-up styling  */
 
 #infoDiv {
     position: relative;
@@ -694,8 +647,6 @@ h2.bryggeluagHeader {
 /* Slutt på bryggelaug og pop-up effekter.  */
 
 /*Ølbildet som er øverst til venstre som man kan trykke på*/
-
-
 /* Start av Øl teller styling */
 
 #oel {
@@ -755,13 +706,11 @@ h2.bryggeluagHeader {
     overflow: hidden;
 }
 
-
 /*Prevent blue outline on the beer when clicking on it*/
 
 :focus {
     outline: none !important;
 }
-
 
 /*End øl css*/
 
@@ -843,4 +792,10 @@ h2.bryggeluagHeader {
         margin-left: 0;
     }
 }
+
+@font-face {
+    font-family: kulFont;
+    src: url(../fonts/blackjack/blackjack.otf);
+}
+
 /* Slutt på keyframes  */
